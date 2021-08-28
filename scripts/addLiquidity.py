@@ -27,18 +27,9 @@ def main():
     
     swap = Swap.at(SWAP_ADDRESS)
     coins = [ERC20Mock.at(address) for address in COINS]
-
-
-    print("Deployed at:")
-    print("Swap:", swap.address)
     
     for coin in coins:
         coin.approve(swap.address, "100000000000000000000000", {"from": admin})
     
     swap.addLiquidity(['100000000000000000000000', '100000000000000000000000'], '0', '1000000000000000000000000000000000000', {'from': admin})
     
-
-    with open("swap.json", "w") as f:
-        json.dump(swap.abi, f)
-
-    return swap
