@@ -20,7 +20,8 @@ COINS = [
 
 
 def main():
-    admin = accounts.load('mob')
+    network.gas_limit(8000000)
+    admin = accounts.load('dev-1')
 
     if COINS:
         coins = [interface.ERC20(addr) for addr in COINS]
