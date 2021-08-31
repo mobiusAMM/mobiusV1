@@ -661,12 +661,14 @@ library SwapUtils {
         uint256 totalSupply = self.lpToken.totalSupply();
         require(amount <= totalSupply, "Cannot exceed total supply");
 
-        uint256 feeAdjustedAmount =
-            amount
-                .mul(
-                FEE_DENOMINATOR.sub(calculateCurrentWithdrawFee(self, account))
-            )
-                .div(FEE_DENOMINATOR);
+        uint256 feeAdjustedAmount = amount;
+
+            // No fees for withdrawals!
+            // amount
+            //     .mul(
+            //     FEE_DENOMINATOR.sub(calculateCurrentWithdrawFee(self, account))
+            // )
+            //     .div(FEE_DENOMINATOR);
 
         uint256[] memory amounts = new uint256[](self.pooledTokens.length);
 

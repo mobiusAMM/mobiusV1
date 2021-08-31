@@ -28,23 +28,21 @@ def main():
     network.gas_limit(8000000)
     admin = accounts.load('dev-1')
 
-    if COINS:
-        coins = [interface.ERC20(addr) for addr in COINS]
-    else:
-        coins = [
-            ERC20Mock.deploy(name, name, 18, TEST_ACCOUNTS, {"from": accounts[0]}) for name in ["TC1", "TC2"]
-        ]
+    
+    coins = [
+        ERC20Mock.deploy(name, name, 18, TEST_ACCOUNTS, {"from": accounts[0]}) for name in ["TC3", "TC4", 'TC5']
+    ]
 
     MathUtils.deploy({"from": admin})
     SwapUtils.deploy({"from": admin})
 
     swap = Swap.deploy(
         coins,
-        [18, 18],
+        [18, 18, 18],
         "Mobius LP", 
         "MobLP", 
         1500, 
-        .004, 
+        .002, 
         .001, 
         0,
         0,
@@ -58,7 +56,7 @@ def main():
     for coin in coins:
         coin.approve(swap.address, "100000000000000000", {"from": admin})
     
-    swap.addLiquidity(['100000000000000000', '100000000000000000'], '0', '1000000000000000000000000000000000000', {'from': admin})
+    swap.addLiquidity(['100000000000000000', '100000000000000000', "100000000000000000"], '0', '1000000000000000000000000000000000000', {'from': admin})
     
 
     with open("swap.json", "w") as f:
