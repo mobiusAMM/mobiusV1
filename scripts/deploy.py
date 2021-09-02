@@ -1,11 +1,8 @@
-import requests
 from brownie.network.gas.strategies import GasNowScalingStrategy
 from brownie import (
     accounts,
-    LPToken,
     Swap,
     ERC20Mock,
-    compile_source,
     SwapUtils, 
     MathUtils
 )
@@ -14,14 +11,14 @@ import json
 
 
 COINS = [
-    # "0x765de816845861e75a25fca122bb6898b8b1282a",  # cUSD
-    # "0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73"  # cEUR
+    "0x765de816845861e75a25fca122bb6898b8b1282a",  # cUSD
+    "0x93DB49bE12B864019dA9Cb147ba75cDC0506190e"  # bUSDC
 ]
 
 
 def main():
     network.gas_limit(8000000)
-    admin = accounts.load('dev-1')
+    admin = accounts.load('kyle_personal')
 
     if COINS:
         coins = [interface.ERC20(addr) for addr in COINS]
@@ -36,16 +33,21 @@ def main():
     swap = Swap.deploy(
         coins,
         [18, 18],
-        "Mobius LP", 
+        "Mobius cUSD/bUSDC LP", 
         "MobLP", 
-        1500, 
-        .001, 
-        0, 
+        200, 
+        10 ** 7, # .1% swap fee
+        10 ** 9, # 10% admin fee
         0,
         0,
-        accounts[0], 
+        admin.address, 
         {"from": admin},
     )
+
+    for coin in coins:
+        coin.approve(swap.address, 2*10**18, {"from": admin})
+    
+    swap.addLiquidity([2*10**18, 2*10**18], '0', '1000000000000000000000000000000000000', {'from': admin})
 
     print("Deployed at:")
     print("Swap:", swap.address)
