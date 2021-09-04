@@ -7,16 +7,16 @@ import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/token/ERC20/SafeERC2
 import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/utils/EnumerableSet.sol';
 import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/math/SafeMath.sol';
 import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol';
-import "./NerveToken.sol";
+import "./MobiToken.sol";
 
-// MasterMind is the master of Nerve. He can make Nerve and he is a fair guy.
+// MobiusStrip is the master of Mobi. He can make Mobi and he is a fair guy.
 //
 
 // Note that it's ownable and the owner wields tremendous power. The ownership
-// will be transferred to a governance smart contract once Nerve is sufficiently
+// will be transferred to a governance smart contract once Mobi is sufficiently
 // distributed and the community can show to govern itself.
 
-contract MasterMind is Ownable {
+contract MobiusStrip is Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
     // Info of each user.
@@ -24,13 +24,13 @@ contract MasterMind is Ownable {
         uint256 amount; // How many LP tokens the user has provided.
         uint256 rewardDebt; // Reward debt. See explanation below.
         //
-        // We do some fancy math here. Basically, any point in time, the amount of NRV
+        // We do some fancy math here. Basically, any point in time, the amount of MOBI
         // entitled to a user but is pending to be distributed is:
         //
-        //   pending reward = (user.amount * pool.accNervePerShare) - user.rewardDebt
+        //   pending reward = (user.amount * pool.accMobiPerShare) - user.rewardDebt
         //
         // Whenever a user deposits or withdraws LP tokens to a pool. Here's what happens:
-        //   1. The pool's `accNervePerShare` (and `lastRewardBlock`) gets updated.
+        //   1. The pool's `accMobiPerShare` (and `lastRewardBlock`) gets updated.
         //   2. User receives the pending reward sent to his/her address.
         //   3. User's `amount` gets updated.
         //   4. User's `rewardDebt` gets updated.
@@ -38,18 +38,18 @@ contract MasterMind is Ownable {
     // Info of each pool.
     struct PoolInfo {
         IERC20 lpToken; // Address of LP token contract.
-        uint256 allocPoint; // How many allocation points assigned to this pool. NRV to distribute per block.
-        uint256 lastRewardBlock; // Last block number that NRV distribution occurs.
-        uint256 accNervePerShare; // Accumulated NRV per share, times 1e12. See below.
+        uint256 allocPoint; // How many allocation points assigned to this pool. MOBI to distribute per block.
+        uint256 lastRewardBlock; // Last block number that MOBI distribution occurs.
+        uint256 accMobiPerShare; // Accumulated MOBI per share, times 1e12. See below.
     }
     // The NERVE TOKEN!
-    NerveToken public nerve;
+    MobiToken public mobi;
     // Dev address.
     address public devaddr;
     // Block number when bonus NERVE period ends.
     uint256 public bonusEndBlock;
     // NERVE tokens created per block.
-    uint256 public nervePerBlock;
+    uint256 public mobiPerBlock;
     // Bonus muliplier for early NERVE makers.
     uint256 public constant BONUS_MULTIPLIER = 10;
     // Info of each pool.
@@ -58,7 +58,7 @@ contract MasterMind is Ownable {
     mapping(uint256 => mapping(address => UserInfo)) public userInfo;
     // Total allocation poitns. Must be the sum of all allocation points in all pools.
     uint256 public totalAllocPoint = 0;
-    // The block number when nerve mining starts.
+    // The block number when mobi mining starts.
     uint256 public startBlock;
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
     event Withdraw(address indexed user, uint256 indexed pid, uint256 amount);
@@ -69,15 +69,15 @@ contract MasterMind is Ownable {
     );
 
     constructor(
-        NerveToken _nerve,
+        MobiToken _mobi,
         address _devaddr,
-        uint256 _nervePerBlock,
+        uint256 _mobiPerBlock,
         uint256 _startBlock,
         uint256 _bonusEndBlock
     ) public {
-        nerve = _nerve;
+        mobi = _mobi;
         devaddr = _devaddr;
-        nervePerBlock = _nervePerBlock;
+        mobiPerBlock = _mobiPerBlock;
         bonusEndBlock = _bonusEndBlock;
         startBlock = _startBlock;
     }
@@ -86,8 +86,8 @@ contract MasterMind is Ownable {
         return poolInfo.length;
     }
 
-    function setNervePerBlock(uint256 _nervePerBlock) public onlyOwner {
-        nervePerBlock = _nervePerBlock;
+    function setMobiPerBlock(uint256 _mobiPerBlock) public onlyOwner {
+        mobiPerBlock = _mobiPerBlock;
     }
 
     // Add a new lp to the pool. Can only be called by the owner.
@@ -108,7 +108,7 @@ contract MasterMind is Ownable {
                 lpToken: _lpToken,
                 allocPoint: _allocPoint,
                 lastRewardBlock: lastRewardBlock,
-                accNervePerShare: 0
+                accMobiPerShare: 0
             })
         );
     }
@@ -147,27 +147,27 @@ contract MasterMind is Ownable {
     }
 
     // View function to see pending NERVE on frontend.
-    function pendingNerve(uint256 _pid, address _user)
+    function pendingMobi(uint256 _pid, address _user)
         external
         view
         returns (uint256)
     {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][_user];
-        uint256 accNervePerShare = pool.accNervePerShare;
+        uint256 accMobiPerShare = pool.accMobiPerShare;
         uint256 lpSupply = pool.lpToken.balanceOf(address(this));
         if (block.number > pool.lastRewardBlock && lpSupply != 0) {
             uint256 multiplier =
                 getMultiplier(pool.lastRewardBlock, block.number);
-            uint256 nerveReward =
-                multiplier.mul(nervePerBlock).mul(pool.allocPoint).div(
+            uint256 mobiReward =
+                multiplier.mul(mobiPerBlock).mul(pool.allocPoint).div(
                     totalAllocPoint
                 );
-            accNervePerShare = accNervePerShare.add(
-                nerveReward.mul(1e12).div(lpSupply)
+            accMobiPerShare = accMobiPerShare.add(
+                mobiReward.mul(1e12).div(lpSupply)
             );
         }
-        return user.amount.mul(accNervePerShare).div(1e12).sub(user.rewardDebt);
+        return user.amount.mul(accMobiPerShare).div(1e12).sub(user.rewardDebt);
     }
 
     // Update reward vairables for all pools. Be careful of gas spending!
@@ -190,29 +190,29 @@ contract MasterMind is Ownable {
             return;
         }
         uint256 multiplier = getMultiplier(pool.lastRewardBlock, block.number);
-        uint256 nerveReward =
-            multiplier.mul(nervePerBlock).mul(pool.allocPoint).div(
+        uint256 mobiReward =
+            multiplier.mul(mobiPerBlock).mul(pool.allocPoint).div(
                 totalAllocPoint
             );
-        nerve.mint(devaddr, nerveReward.div(10));
-        nerve.mint(address(this), nerveReward);
-        pool.accNervePerShare = pool.accNervePerShare.add(
-            nerveReward.mul(1e12).div(lpSupply)
+        mobi.mint(devaddr, mobiReward.div(10));
+        mobi.mint(address(this), mobiReward);
+        pool.accMobiPerShare = pool.accMobiPerShare.add(
+            mobiReward.mul(1e12).div(lpSupply)
         );
         pool.lastRewardBlock = block.number;
     }
 
-    // Deposit LP tokens to MasterMind for nerve allocation.
+    // Deposit LP tokens to MobiusStrip for mobi allocation.
     function deposit(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
         updatePool(_pid);
         if (user.amount > 0) {
             uint256 pending =
-                user.amount.mul(pool.accNervePerShare).div(1e12).sub(
+                user.amount.mul(pool.accMobiPerShare).div(1e12).sub(
                     user.rewardDebt
                 );
-            safeNerveTransfer(msg.sender, pending);
+            safeMobiTransfer(msg.sender, pending);
         }
         pool.lpToken.safeTransferFrom(
             address(msg.sender),
@@ -220,23 +220,23 @@ contract MasterMind is Ownable {
             _amount
         );
         user.amount = user.amount.add(_amount);
-        user.rewardDebt = user.amount.mul(pool.accNervePerShare).div(1e12);
+        user.rewardDebt = user.amount.mul(pool.accMobiPerShare).div(1e12);
         emit Deposit(msg.sender, _pid, _amount);
     }
 
-    // Withdraw LP tokens from MasterMind.
+    // Withdraw LP tokens from MobiusStrip.
     function withdraw(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
         require(user.amount >= _amount, "withdraw: not good");
         updatePool(_pid);
         uint256 pending =
-            user.amount.mul(pool.accNervePerShare).div(1e12).sub(
+            user.amount.mul(pool.accMobiPerShare).div(1e12).sub(
                 user.rewardDebt
             );
-        safeNerveTransfer(msg.sender, pending);
+        safeMobiTransfer(msg.sender, pending);
         user.amount = user.amount.sub(_amount);
-        user.rewardDebt = user.amount.mul(pool.accNervePerShare).div(1e12);
+        user.rewardDebt = user.amount.mul(pool.accMobiPerShare).div(1e12);
         pool.lpToken.safeTransfer(address(msg.sender), _amount);
         emit Withdraw(msg.sender, _pid, _amount);
     }
@@ -251,13 +251,13 @@ contract MasterMind is Ownable {
         user.rewardDebt = 0;
     }
 
-    // Safe nerve transfer function, just in case if rounding error causes pool to not have enough nerves.
-    function safeNerveTransfer(address _to, uint256 _amount) internal {
-        uint256 nerveBal = nerve.balanceOf(address(this));
-        if (_amount > nerveBal) {
-            nerve.transfer(_to, nerveBal);
+    // Safe mobi transfer function, just in case if rounding error causes pool to not have enough mobis.
+    function safeMobiTransfer(address _to, uint256 _amount) internal {
+        uint256 mobiBal = mobi.balanceOf(address(this));
+        if (_amount > mobiBal) {
+            mobi.transfer(_to, mobiBal);
         } else {
-            nerve.transfer(_to, _amount);
+            mobi.transfer(_to, _amount);
         }
     }
 

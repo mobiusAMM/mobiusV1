@@ -21,7 +21,7 @@ COINS = [
     "0xCC531BfBA46cA251D3D9f3aCc37ABD5DCF3ed0B3"
 ]
 
-recipient = "0xE35E97438Fd16593e285546260C8585dea7909Dd"
+recipient = "0x4ea77424Da100ac856ece3DDfAbd8B528570Ca0d"
 
 
 def main():

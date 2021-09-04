@@ -8,11 +8,11 @@ import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol';
 import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/access/AccessControl.sol';
 
 
-// NerveToken with Governance.
-contract NerveToken is ERC20, ERC20Burnable, Ownable, AccessControl {
+// MobiusToken with Governance.
+contract MobiToken is ERC20, ERC20Burnable, Ownable, AccessControl {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
-    constructor() public ERC20("Nerve", "NRV") {
+    constructor() public ERC20("Mobius", "MOBI") {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     }
 
@@ -127,9 +127,9 @@ contract NerveToken is ERC20, ERC20Burnable, Ownable, AccessControl {
         );
 
         address signatory = ecrecover(digest, v, r, s);
-        require(signatory != address(0), "NRV::delegateBySig: invalid signature");
-        require(nonce == nonces[signatory]++, "NRV::delegateBySig: invalid nonce");
-        require(now <= expiry, "NRV::delegateBySig: signature expired");
+        require(signatory != address(0), "MOBI::delegateBySig: invalid signature");
+        require(nonce == nonces[signatory]++, "MOBI::delegateBySig: invalid nonce");
+        require(now <= expiry, "MOBI::delegateBySig: signature expired");
         return _delegate(signatory, delegatee);
     }
 
@@ -159,7 +159,7 @@ contract NerveToken is ERC20, ERC20Burnable, Ownable, AccessControl {
         view
         returns (uint256)
     {
-        require(blockNumber < block.number, "NRV::getPriorVotes: not yet determined");
+        require(blockNumber < block.number, "MOBI::getPriorVotes: not yet determined");
 
         uint32 nCheckpoints = numCheckpoints[account];
         if (nCheckpoints == 0) {
@@ -196,7 +196,7 @@ contract NerveToken is ERC20, ERC20Burnable, Ownable, AccessControl {
         internal
     {
         address currentDelegate = _delegates[delegator];
-        uint256 delegatorBalance = balanceOf(delegator); // balance of underlying NRVs (not scaled);
+        uint256 delegatorBalance = balanceOf(delegator); // balance of underlying MOBIs (not scaled);
         _delegates[delegator] = delegatee;
 
         emit DelegateChanged(delegator, currentDelegate, delegatee);
@@ -232,7 +232,7 @@ contract NerveToken is ERC20, ERC20Burnable, Ownable, AccessControl {
     )
         internal
     {
-        uint32 blockNumber = safe32(block.number, "NRV::_writeCheckpoint: block number exceeds 32 bits");
+        uint32 blockNumber = safe32(block.number, "MOBI::_writeCheckpoint: block number exceeds 32 bits");
 
         if (nCheckpoints > 0 && checkpoints[delegatee][nCheckpoints - 1].fromBlock == blockNumber) {
             checkpoints[delegatee][nCheckpoints - 1].votes = newVotes;
