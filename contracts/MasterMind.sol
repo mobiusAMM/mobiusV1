@@ -2,11 +2,11 @@
 
 pragma solidity 0.6.12;
 
-import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/token/ERC20/IERC20.sol';
-import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/token/ERC20/SafeERC20.sol';
-import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/utils/EnumerableSet.sol';
-import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/math/SafeMath.sol';
-import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol';
+import './openzeppelin-contracts@3.4.0/contracts/token/ERC20/IERC20.sol';
+import './openzeppelin-contracts@3.4.0/contracts/token/ERC20/SafeERC20.sol';
+import './openzeppelin-contracts@3.4.0/contracts/utils/EnumerableSet.sol';
+import './openzeppelin-contracts@3.4.0/contracts/math/SafeMath.sol';
+import './openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol';
 import "./NerveToken.sol";
 
 // MasterMind is the master of Nerve. He can make Nerve and he is a fair guy.

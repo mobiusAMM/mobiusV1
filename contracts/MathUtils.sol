@@ -2,7 +2,7 @@
 
 pragma solidity 0.6.12;
 
-import 'OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/math/SafeMath.sol';
+import './openzeppelin-contracts@3.4.0/contracts/math/SafeMath.sol';
 
 /**
  * @title MathUtils library
