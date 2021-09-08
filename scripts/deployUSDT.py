@@ -33,7 +33,7 @@ def main():
     swap = Swap.deploy(
         coins,
         [18, 18],
-        "Mobius cUSD/bUSDC LP", 
+        "Mobius cUSD/cUSDT LP", 
         "MobLP", 
         50, 
         10 ** 7, # .1% swap fee
