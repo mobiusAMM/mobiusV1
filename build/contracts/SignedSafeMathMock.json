@@ -1,0 +1,6506 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "add",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "div",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "mul",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "sub",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "28": "contracts/openzeppelin-contracts@3.4.0/contracts/math/SignedSafeMath.sol",
+    "85": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/SignedSafeMathMock.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/SignedSafeMathMock.sol",
+    "exportedSymbols": {
+      "SignedSafeMathMock": [
+        14864
+      ]
+    },
+    "id": 14865,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 14798,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:85"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/math/SignedSafeMath.sol",
+        "file": "../math/SignedSafeMath.sol",
+        "id": 14799,
+        "nodeType": "ImportDirective",
+        "scope": 14865,
+        "sourceUnit": 10116,
+        "src": "66:36:85",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 14864,
+        "linearizedBaseContracts": [
+          14864
+        ],
+        "name": "SignedSafeMathMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 14814,
+              "nodeType": "Block",
+              "src": "200:48:85",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 14810,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14801,
+                        "src": "236:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 14811,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14803,
+                        "src": "239:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 14808,
+                        "name": "SignedSafeMath",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10115,
+                        "src": "217:14:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SignedSafeMath_$10115_$",
+                          "typeString": "type(library SignedSafeMath)"
+                        }
+                      },
+                      "id": 14809,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "mul",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9994,
+                      "src": "217:18:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$",
+                        "typeString": "function (int256,int256) pure returns (int256)"
+                      }
+                    },
+                    "id": 14812,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "217:24:85",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 14807,
+                  "id": 14813,
+                  "nodeType": "Return",
+                  "src": "210:31:85"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "bbe93d91",
+            "id": 14815,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mul",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 14804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14801,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14815,
+                  "src": "151:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14800,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14803,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14815,
+                  "src": "161:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14802,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "161:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "150:20:85"
+            },
+            "returnParameters": {
+              "id": 14807,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14806,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14815,
+                  "src": "192:6:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14805,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "192:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "191:8:85"
+            },
+            "scope": 14864,
+            "src": "138:110:85",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 14830,
+              "nodeType": "Block",
+              "src": "316:48:85",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 14826,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14817,
+                        "src": "352:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 14827,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14819,
+                        "src": "355:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 14824,
+                        "name": "SignedSafeMath",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10115,
+                        "src": "333:14:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SignedSafeMath_$10115_$",
+                          "typeString": "type(library SignedSafeMath)"
+                        }
+                      },
+                      "id": 14825,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "div",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10034,
+                      "src": "333:18:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$",
+                        "typeString": "function (int256,int256) pure returns (int256)"
+                      }
+                    },
+                    "id": 14828,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "333:24:85",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 14823,
+                  "id": 14829,
+                  "nodeType": "Return",
+                  "src": "326:31:85"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "43509138",
+            "id": 14831,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "div",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 14820,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14817,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14831,
+                  "src": "267:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14816,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "267:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14819,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14831,
+                  "src": "277:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14818,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "277:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "266:20:85"
+            },
+            "returnParameters": {
+              "id": 14823,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14822,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14831,
+                  "src": "308:6:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14821,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "308:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "307:8:85"
+            },
+            "scope": 14864,
+            "src": "254:110:85",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 14846,
+              "nodeType": "Block",
+              "src": "432:48:85",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 14842,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14833,
+                        "src": "468:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 14843,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14835,
+                        "src": "471:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 14840,
+                        "name": "SignedSafeMath",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10115,
+                        "src": "449:14:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SignedSafeMath_$10115_$",
+                          "typeString": "type(library SignedSafeMath)"
+                        }
+                      },
+                      "id": 14841,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sub",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10074,
+                      "src": "449:18:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$",
+                        "typeString": "function (int256,int256) pure returns (int256)"
+                      }
+                    },
+                    "id": 14844,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "449:24:85",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 14839,
+                  "id": 14845,
+                  "nodeType": "Return",
+                  "src": "442:31:85"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "adefc37b",
+            "id": 14847,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sub",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 14836,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14833,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14847,
+                  "src": "383:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14832,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "383:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14835,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14847,
+                  "src": "393:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14834,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "393:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "382:20:85"
+            },
+            "returnParameters": {
+              "id": 14839,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14838,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14847,
+                  "src": "424:6:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14837,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "423:8:85"
+            },
+            "scope": 14864,
+            "src": "370:110:85",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 14862,
+              "nodeType": "Block",
+              "src": "548:48:85",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 14858,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14849,
+                        "src": "584:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 14859,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14851,
+                        "src": "587:1:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 14856,
+                        "name": "SignedSafeMath",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10115,
+                        "src": "565:14:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SignedSafeMath_$10115_$",
+                          "typeString": "type(library SignedSafeMath)"
+                        }
+                      },
+                      "id": 14857,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "add",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10114,
+                      "src": "565:18:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$",
+                        "typeString": "function (int256,int256) pure returns (int256)"
+                      }
+                    },
+                    "id": 14860,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "565:24:85",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 14855,
+                  "id": 14861,
+                  "nodeType": "Return",
+                  "src": "558:31:85"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "a5f3c23b",
+            "id": 14863,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 14852,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14849,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14863,
+                  "src": "499:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14848,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "499:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14851,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14863,
+                  "src": "509:8:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14850,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "509:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "498:20:85"
+            },
+            "returnParameters": {
+              "id": 14855,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14854,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 14863,
+                  "src": "540:6:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 14853,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "540:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "539:8:85"
+            },
+            "scope": 14864,
+            "src": "486:110:85",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 14865,
+        "src": "104:494:85"
+      }
+    ],
+    "src": "33:566:85"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610416806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80634350913814610051578063a5f3c23b14610086578063adefc37b146100a9578063bbe93d91146100cc575b600080fd5b6100746004803603604081101561006757600080fd5b50803590602001356100ef565b60408051918252519081900360200190f35b6100746004803603604081101561009c57600080fd5b5080359060200135610104565b610074600480360360408110156100bf57600080fd5b5080359060200135610110565b610074600480360360408110156100e257600080fd5b508035906020013561011c565b60006100fb8383610128565b90505b92915050565b60006100fb83836101e0565b60006100fb8383610245565b60006100fb83836102aa565b60008161017c576040805162461bcd60e51b815260206004820181905260248201527f5369676e6564536166654d6174683a206469766973696f6e206279207a65726f604482015290519081900360640190fd5b816000191480156101905750600160ff1b83145b156101cc5760405162461bcd60e51b81526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b60008284816101d757fe5b05949350505050565b60008282018183128015906101f55750838112155b8061020a575060008312801561020a57508381125b6100fb5760405162461bcd60e51b81526004018080602001828103825260218152602001806103546021913960400191505060405180910390fd5b600081830381831280159061025a5750838113155b8061026f575060008312801561026f57508381135b6100fb5760405162461bcd60e51b81526004018080602001828103825260248152602001806103bd6024913960400191505060405180910390fd5b6000826102b9575060006100fe565b826000191480156102cd5750600160ff1b82145b156103095760405162461bcd60e51b81526004018080602001828103825260278152602001806103966027913960400191505060405180910390fd5b8282028284828161031657fe5b05146100fb5760405162461bcd60e51b81526004018080602001828103825260278152602001806103966027913960400191505060405180910390fdfe5369676e6564536166654d6174683a206164646974696f6e206f766572666c6f775369676e6564536166654d6174683a206469766973696f6e206f766572666c6f775369676e6564536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f775369676e6564536166654d6174683a207375627472616374696f6e206f766572666c6f77a264697066735822122012340796f7eaa87194b63037c4c93c79ee55195e8f8bdecf6ddbb8ca6feb007f64736f6c634300060c0033",
+  "bytecodeSha1": "31063d7e504aab212f3cca3f9ef8080e68929d2b",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "SignedSafeMathMock",
+  "coverageMap": {
+    "branches": {
+      "28": {
+        "SignedSafeMath.add": {
+          "14": [
+            2563,
+            2569,
+            false
+          ],
+          "15": [
+            2573,
+            2579,
+            true
+          ],
+          "16": [
+            2585,
+            2590,
+            false
+          ],
+          "17": [
+            2594,
+            2599,
+            true
+          ]
+        },
+        "SignedSafeMath.div": {
+          "11": [
+            1587,
+            1593,
+            true
+          ],
+          "12": [
+            1650,
+            1657,
+            false
+          ],
+          "13": [
+            1661,
+            1677,
+            true
+          ]
+        },
+        "SignedSafeMath.mul": {
+          "22": [
+            787,
+            793,
+            false
+          ],
+          "23": [
+            848,
+            855,
+            false
+          ],
+          "24": [
+            859,
+            875,
+            true
+          ],
+          "25": [
+            965,
+            975,
+            true
+          ]
+        },
+        "SignedSafeMath.sub": {
+          "18": [
+            2117,
+            2123,
+            false
+          ],
+          "19": [
+            2127,
+            2133,
+            true
+          ],
+          "20": [
+            2139,
+            2144,
+            false
+          ],
+          "21": [
+            2148,
+            2153,
+            true
+          ]
+        }
+      },
+      "85": {}
+    },
+    "statements": {
+      "28": {
+        "SignedSafeMath.add": {
+          "6": [
+            2554,
+            2638
+          ]
+        },
+        "SignedSafeMath.div": {
+          "4": [
+            1579,
+            1630
+          ],
+          "5": [
+            1640,
+            1716
+          ]
+        },
+        "SignedSafeMath.mul": {
+          "8": [
+            809,
+            817
+          ],
+          "9": [
+            838,
+            920
+          ],
+          "10": [
+            957,
+            1019
+          ]
+        },
+        "SignedSafeMath.sub": {
+          "7": [
+            2108,
+            2195
+          ]
+        }
+      },
+      "85": {
+        "SignedSafeMathMock.add": {
+          "1": [
+            558,
+            589
+          ]
+        },
+        "SignedSafeMathMock.div": {
+          "0": [
+            326,
+            357
+          ]
+        },
+        "SignedSafeMathMock.mul": {
+          "3": [
+            210,
+            241
+          ]
+        },
+        "SignedSafeMathMock.sub": {
+          "2": [
+            442,
+            473
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "SignedSafeMath"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b506004361061004c5760003560e01c80634350913814610051578063a5f3c23b14610086578063adefc37b146100a9578063bbe93d91146100cc575b600080fd5b6100746004803603604081101561006757600080fd5b50803590602001356100ef565b60408051918252519081900360200190f35b6100746004803603604081101561009c57600080fd5b5080359060200135610104565b610074600480360360408110156100bf57600080fd5b5080359060200135610110565b610074600480360360408110156100e257600080fd5b508035906020013561011c565b60006100fb8383610128565b90505b92915050565b60006100fb83836101e0565b60006100fb8383610245565b60006100fb83836102aa565b60008161017c576040805162461bcd60e51b815260206004820181905260248201527f5369676e6564536166654d6174683a206469766973696f6e206279207a65726f604482015290519081900360640190fd5b816000191480156101905750600160ff1b83145b156101cc5760405162461bcd60e51b81526004018080602001828103825260218152602001806103756021913960400191505060405180910390fd5b60008284816101d757fe5b05949350505050565b60008282018183128015906101f55750838112155b8061020a575060008312801561020a57508381125b6100fb5760405162461bcd60e51b81526004018080602001828103825260218152602001806103546021913960400191505060405180910390fd5b600081830381831280159061025a5750838113155b8061026f575060008312801561026f57508381135b6100fb5760405162461bcd60e51b81526004018080602001828103825260248152602001806103bd6024913960400191505060405180910390fd5b6000826102b9575060006100fe565b826000191480156102cd5750600160ff1b82145b156103095760405162461bcd60e51b81526004018080602001828103825260278152602001806103966027913960400191505060405180910390fd5b8282028284828161031657fe5b05146100fb5760405162461bcd60e51b81526004018080602001828103825260278152602001806103966027913960400191505060405180910390fdfe5369676e6564536166654d6174683a206164646974696f6e206f766572666c6f775369676e6564536166654d6174683a206469766973696f6e206f766572666c6f775369676e6564536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f775369676e6564536166654d6174683a207375627472616374696f6e206f766572666c6f77a264697066735822122012340796f7eaa87194b63037c4c93c79ee55195e8f8bdecf6ddbb8ca6feb007f64736f6c634300060c0033",
+  "deployedSourceMap": "104:494:85:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;254:110;;;;;;;;;;;;;;;;-1:-1:-1;254:110:85;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;486;;;;;;;;;;;;;;;;-1:-1:-1;486:110:85;;;;;;;:::i;370:::-;;;;;;;;;;;;;;;;-1:-1:-1;370:110:85;;;;;;;:::i;138:::-;;;;;;;;;;;;;;;;-1:-1:-1;138:110:85;;;;;;;:::i;254:::-;308:6;333:24;352:1;355;333:18;:24::i;:::-;326:31;;254:110;;;;;:::o;486:::-;540:6;565:24;584:1;587;565:18;:24::i;370:110::-;424:6;449:24;468:1;471;449:18;:24::i;138:110::-;192:6;217:24;236:1;239;217:18;:24::i;1505:264:28:-;1561:6;1587;1579:51;;;;;-1:-1:-1;;;1579:51:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1650:1;-1:-1:-1;;1650:7:28;:27;;;;;-1:-1:-1;;;1661:1:28;:16;1650:27;1648:30;1640:76;;;;-1:-1:-1;;;1640:76:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1727:8;1742:1;1738;:5;;;;;;;1505:264;-1:-1:-1;;;;1505:264:28:o;2454:210::-;2510:6;2539:5;;;2563:6;;;;;;:16;;;2578:1;2573;:6;;2563:16;2562:38;;;;2589:1;2585;:5;:14;;;;;2598:1;2594;:5;2585:14;2554:84;;;;-1:-1:-1;;;2554:84:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2008:213;2064:6;2093:5;;;2117:6;;;;;;:16;;;2132:1;2127;:6;;2117:16;2116:38;;;;2143:1;2139;:5;:14;;;;;2152:1;2148;:5;2139:14;2108:87;;;;-1:-1:-1;;;2108:87:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;491:554;547:6;787;783:45;;-1:-1:-1;816:1:28;809:8;;783:45;848:1;-1:-1:-1;;848:7:28;:27;;;;;-1:-1:-1;;;859:1:28;:16;848:27;846:30;838:82;;;;-1:-1:-1;;;838:82:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;942:5;;;946:1;942;:5;:1;965:5;;;;;:10;957:62;;;;-1:-1:-1;;;957:62:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    104,
+    598
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x4C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x43509138 EQ PUSH2 0x51 JUMPI DUP1 PUSH4 0xA5F3C23B EQ PUSH2 0x86 JUMPI DUP1 PUSH4 0xADEFC37B EQ PUSH2 0xA9 JUMPI DUP1 PUSH4 0xBBE93D91 EQ PUSH2 0xCC JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x74 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x67 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0xEF JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH2 0x74 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x9C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0x104 JUMP JUMPDEST PUSH2 0x74 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0xBF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0x110 JUMP JUMPDEST PUSH2 0x74 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0xE2 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0x11C JUMP JUMPDEST PUSH1 0x0 PUSH2 0xFB DUP4 DUP4 PUSH2 0x128 JUMP JUMPDEST SWAP1 POP JUMPDEST SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x0 PUSH2 0xFB DUP4 DUP4 PUSH2 0x1E0 JUMP JUMPDEST PUSH1 0x0 PUSH2 0xFB DUP4 DUP4 PUSH2 0x245 JUMP JUMPDEST PUSH1 0x0 PUSH2 0xFB DUP4 DUP4 PUSH2 0x2AA JUMP JUMPDEST PUSH1 0x0 DUP2 PUSH2 0x17C JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x24 DUP3 ADD MSTORE PUSH32 0x5369676E6564536166654D6174683A206469766973696F6E206279207A65726F PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST DUP2 PUSH1 0x0 NOT EQ DUP1 ISZERO PUSH2 0x190 JUMPI POP PUSH1 0x1 PUSH1 0xFF SHL DUP4 EQ JUMPDEST ISZERO PUSH2 0x1CC JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x21 DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x375 PUSH1 0x21 SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP3 DUP5 DUP2 PUSH2 0x1D7 JUMPI INVALID JUMPDEST SDIV SWAP5 SWAP4 POP POP POP POP JUMP JUMPDEST PUSH1 0x0 DUP3 DUP3 ADD DUP2 DUP4 SLT DUP1 ISZERO SWAP1 PUSH2 0x1F5 JUMPI POP DUP4 DUP2 SLT ISZERO JUMPDEST DUP1 PUSH2 0x20A JUMPI POP PUSH1 0x0 DUP4 SLT DUP1 ISZERO PUSH2 0x20A JUMPI POP DUP4 DUP2 SLT JUMPDEST PUSH2 0xFB JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x21 DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x354 PUSH1 0x21 SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP2 DUP4 SUB DUP2 DUP4 SLT DUP1 ISZERO SWAP1 PUSH2 0x25A JUMPI POP DUP4 DUP2 SGT ISZERO JUMPDEST DUP1 PUSH2 0x26F JUMPI POP PUSH1 0x0 DUP4 SLT DUP1 ISZERO PUSH2 0x26F JUMPI POP DUP4 DUP2 SGT JUMPDEST PUSH2 0xFB JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x24 DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x3BD PUSH1 0x24 SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP3 PUSH2 0x2B9 JUMPI POP PUSH1 0x0 PUSH2 0xFE JUMP JUMPDEST DUP3 PUSH1 0x0 NOT EQ DUP1 ISZERO PUSH2 0x2CD JUMPI POP PUSH1 0x1 PUSH1 0xFF SHL DUP3 EQ JUMPDEST ISZERO PUSH2 0x309 JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x27 DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x396 PUSH1 0x27 SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST DUP3 DUP3 MUL DUP3 DUP5 DUP3 DUP2 PUSH2 0x316 JUMPI INVALID JUMPDEST SDIV EQ PUSH2 0xFB JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x27 DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x396 PUSH1 0x27 SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT INVALID MSTORE8 PUSH10 0x676E6564536166654D61 PUSH21 0x683A206164646974696F6E206F766572666C6F7753 PUSH10 0x676E6564536166654D61 PUSH21 0x683A206469766973696F6E206F766572666C6F7753 PUSH10 0x676E6564536166654D61 PUSH21 0x683A206D756C7469706C69636174696F6E206F7665 PUSH19 0x666C6F775369676E6564536166654D6174683A KECCAK256 PUSH20 0x75627472616374696F6E206F766572666C6F77A2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SLT CALLVALUE SMOD SWAP7 0xF7 0xEA 0xA8 PUSH18 0x94B63037C4C93C79EE55195E8F8BDECF6DDB 0xB8 0xCA PUSH16 0xEB007F64736F6C634300060C00330000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "MSTORE",
+      "path": "85"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "CALLVALUE",
+      "path": "85"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "ISZERO",
+      "path": "85"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "REVERT",
+      "path": "85"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "POP",
+      "path": "85"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "CALLDATASIZE",
+      "path": "85"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "LT",
+      "path": "85"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x4C"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "SHR",
+      "path": "85"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH4",
+      "path": "85",
+      "value": "0x43509138"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "EQ",
+      "path": "85"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x51"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH4",
+      "path": "85",
+      "value": "0xA5F3C23B"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "EQ",
+      "path": "85"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x86"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH4",
+      "path": "85",
+      "value": "0xADEFC37B"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "EQ",
+      "path": "85"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0xA9"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH4",
+      "path": "85",
+      "value": "0xBBE93D91"
+    },
+    "71": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "EQ",
+      "path": "85"
+    },
+    "72": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0xCC"
+    },
+    "75": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "76": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "77": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "79": {
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "80": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        104,
+        598
+      ],
+      "op": "REVERT",
+      "path": "85"
+    },
+    "81": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "82": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x74"
+    },
+    "85": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x4"
+    },
+    "87": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "88": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "CALLDATASIZE",
+      "path": "85"
+    },
+    "89": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SUB",
+      "path": "85"
+    },
+    "90": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x40"
+    },
+    "92": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP2",
+      "path": "85"
+    },
+    "93": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "LT",
+      "path": "85"
+    },
+    "94": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "ISZERO",
+      "path": "85"
+    },
+    "95": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x67"
+    },
+    "98": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "99": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "101": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "102": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "REVERT",
+      "path": "85"
+    },
+    "103": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "104": {
+      "op": "POP"
+    },
+    "105": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "106": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "107": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "108": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x20"
+    },
+    "110": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "ADD",
+      "path": "85"
+    },
+    "111": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "112": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0xEF"
+    },
+    "115": {
+      "fn": "SignedSafeMathMock.div",
+      "jump": "i",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "116": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "117": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x40"
+    },
+    "119": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "120": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "MLOAD",
+      "path": "85"
+    },
+    "121": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP2",
+      "path": "85"
+    },
+    "122": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP3",
+      "path": "85"
+    },
+    "123": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "MSTORE",
+      "path": "85"
+    },
+    "124": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "MLOAD",
+      "path": "85"
+    },
+    "125": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "126": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "DUP2",
+      "path": "85"
+    },
+    "127": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "128": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SUB",
+      "path": "85"
+    },
+    "129": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x20"
+    },
+    "131": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "ADD",
+      "path": "85"
+    },
+    "132": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "133": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "RETURN",
+      "path": "85"
+    },
+    "134": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "135": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x74"
+    },
+    "138": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x4"
+    },
+    "140": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "141": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "CALLDATASIZE",
+      "path": "85"
+    },
+    "142": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "SUB",
+      "path": "85"
+    },
+    "143": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x40"
+    },
+    "145": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "DUP2",
+      "path": "85"
+    },
+    "146": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "LT",
+      "path": "85"
+    },
+    "147": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "ISZERO",
+      "path": "85"
+    },
+    "148": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x9C"
+    },
+    "151": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "152": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "154": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "155": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "REVERT",
+      "path": "85"
+    },
+    "156": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "157": {
+      "op": "POP"
+    },
+    "158": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "159": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "160": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "161": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x20"
+    },
+    "163": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "ADD",
+      "path": "85"
+    },
+    "164": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "165": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x104"
+    },
+    "168": {
+      "fn": "SignedSafeMathMock.add",
+      "jump": "i",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "169": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "170": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x74"
+    },
+    "173": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x4"
+    },
+    "175": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "176": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "CALLDATASIZE",
+      "path": "85"
+    },
+    "177": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "SUB",
+      "path": "85"
+    },
+    "178": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x40"
+    },
+    "180": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "DUP2",
+      "path": "85"
+    },
+    "181": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "LT",
+      "path": "85"
+    },
+    "182": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "ISZERO",
+      "path": "85"
+    },
+    "183": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0xBF"
+    },
+    "186": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "187": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "189": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "190": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "REVERT",
+      "path": "85"
+    },
+    "191": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "192": {
+      "op": "POP"
+    },
+    "193": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "194": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "195": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "196": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x20"
+    },
+    "198": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "ADD",
+      "path": "85"
+    },
+    "199": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "200": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x110"
+    },
+    "203": {
+      "fn": "SignedSafeMathMock.sub",
+      "jump": "i",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "204": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "205": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x74"
+    },
+    "208": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x4"
+    },
+    "210": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "211": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "CALLDATASIZE",
+      "path": "85"
+    },
+    "212": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "SUB",
+      "path": "85"
+    },
+    "213": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x40"
+    },
+    "215": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "DUP2",
+      "path": "85"
+    },
+    "216": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "LT",
+      "path": "85"
+    },
+    "217": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "ISZERO",
+      "path": "85"
+    },
+    "218": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0xE2"
+    },
+    "221": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "JUMPI",
+      "path": "85"
+    },
+    "222": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "224": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "225": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "REVERT",
+      "path": "85"
+    },
+    "226": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "227": {
+      "op": "POP"
+    },
+    "228": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "DUP1",
+      "path": "85"
+    },
+    "229": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "230": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "231": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x20"
+    },
+    "233": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "ADD",
+      "path": "85"
+    },
+    "234": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "CALLDATALOAD",
+      "path": "85"
+    },
+    "235": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x11C"
+    },
+    "238": {
+      "fn": "SignedSafeMathMock.mul",
+      "jump": "i",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "239": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "240": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        308,
+        314
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "242": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        333,
+        357
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "statement": 0,
+      "value": "0xFB"
+    },
+    "245": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        352,
+        353
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "246": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        355,
+        356
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "247": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        333,
+        351
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x128"
+    },
+    "250": {
+      "fn": "SignedSafeMathMock.div",
+      "jump": "i",
+      "offset": [
+        333,
+        357
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "251": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        333,
+        357
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "252": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        326,
+        357
+      ],
+      "op": "SWAP1",
+      "path": "85"
+    },
+    "253": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        326,
+        357
+      ],
+      "op": "POP",
+      "path": "85"
+    },
+    "254": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "255": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP3",
+      "path": "85"
+    },
+    "256": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "SWAP2",
+      "path": "85"
+    },
+    "257": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "POP",
+      "path": "85"
+    },
+    "258": {
+      "fn": "SignedSafeMathMock.div",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "POP",
+      "path": "85"
+    },
+    "259": {
+      "fn": "SignedSafeMathMock.div",
+      "jump": "o",
+      "offset": [
+        254,
+        364
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "260": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        486,
+        596
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "261": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        540,
+        546
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "263": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        565,
+        589
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "statement": 1,
+      "value": "0xFB"
+    },
+    "266": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        584,
+        585
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "267": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        587,
+        588
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "268": {
+      "fn": "SignedSafeMathMock.add",
+      "offset": [
+        565,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x1E0"
+    },
+    "271": {
+      "fn": "SignedSafeMathMock.add",
+      "jump": "i",
+      "offset": [
+        565,
+        589
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "272": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        370,
+        480
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "273": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        424,
+        430
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "275": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        449,
+        473
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "statement": 2,
+      "value": "0xFB"
+    },
+    "278": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        468,
+        469
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "279": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        471,
+        472
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "280": {
+      "fn": "SignedSafeMathMock.sub",
+      "offset": [
+        449,
+        467
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x245"
+    },
+    "283": {
+      "fn": "SignedSafeMathMock.sub",
+      "jump": "i",
+      "offset": [
+        449,
+        473
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "284": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        138,
+        248
+      ],
+      "op": "JUMPDEST",
+      "path": "85"
+    },
+    "285": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        192,
+        198
+      ],
+      "op": "PUSH1",
+      "path": "85",
+      "value": "0x0"
+    },
+    "287": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        217,
+        241
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "statement": 3,
+      "value": "0xFB"
+    },
+    "290": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        236,
+        237
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "291": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        239,
+        240
+      ],
+      "op": "DUP4",
+      "path": "85"
+    },
+    "292": {
+      "fn": "SignedSafeMathMock.mul",
+      "offset": [
+        217,
+        235
+      ],
+      "op": "PUSH2",
+      "path": "85",
+      "value": "0x2AA"
+    },
+    "295": {
+      "fn": "SignedSafeMathMock.mul",
+      "jump": "i",
+      "offset": [
+        217,
+        241
+      ],
+      "op": "JUMP",
+      "path": "85"
+    },
+    "296": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1505,
+        1769
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "297": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1561,
+        1567
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "299": {
+      "branch": 11,
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1587,
+        1593
+      ],
+      "op": "DUP2",
+      "path": "28",
+      "statement": 4
+    },
+    "300": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x17C"
+    },
+    "303": {
+      "branch": 11,
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "304": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "306": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "307": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "308": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "312": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "314": {
+      "op": "SHL"
+    },
+    "315": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "316": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "317": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "319": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "321": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "322": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "323": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "324": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "325": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "326": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x24"
+    },
+    "328": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "329": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "330": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "331": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH32",
+      "path": "28",
+      "value": "0x5369676E6564536166654D6174683A206469766973696F6E206279207A65726F"
+    },
+    "364": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x44"
+    },
+    "366": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "367": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "368": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "369": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "370": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "371": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "372": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "373": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "374": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "375": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x64"
+    },
+    "377": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "378": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "379": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "380": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1579,
+        1630
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "381": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1651
+      ],
+      "op": "DUP2",
+      "path": "28",
+      "statement": 5
+    },
+    "382": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "384": {
+      "op": "NOT"
+    },
+    "385": {
+      "branch": 12,
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1657
+      ],
+      "op": "EQ",
+      "path": "28"
+    },
+    "386": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1677
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "387": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1677
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "388": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1677
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x190"
+    },
+    "391": {
+      "branch": 12,
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1677
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "392": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1677
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "393": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "395": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "397": {
+      "op": "SHL"
+    },
+    "398": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1661,
+        1662
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "399": {
+      "branch": 13,
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1661,
+        1677
+      ],
+      "op": "EQ",
+      "path": "28"
+    },
+    "400": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1650,
+        1677
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "401": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1648,
+        1678
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "402": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x1CC"
+    },
+    "405": {
+      "branch": 13,
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "406": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "408": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "409": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "413": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "415": {
+      "op": "SHL"
+    },
+    "416": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "417": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "418": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "420": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "421": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "422": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "423": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "425": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "426": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "427": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "428": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "429": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "430": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "431": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x21"
+    },
+    "433": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "434": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "435": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "437": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "438": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "439": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x375"
+    },
+    "442": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x21"
+    },
+    "444": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "445": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "CODECOPY",
+      "path": "28"
+    },
+    "446": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "448": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "449": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "450": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "451": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "452": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "454": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "455": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "456": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "457": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "458": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "459": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "460": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1640,
+        1716
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "461": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1727,
+        1735
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "463": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1742,
+        1743
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "464": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1739
+      ],
+      "op": "DUP5",
+      "path": "28"
+    },
+    "465": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "466": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x1D7"
+    },
+    "469": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "470": {
+      "dev": "Division by zero",
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "INVALID",
+      "path": "28"
+    },
+    "471": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "472": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "SDIV",
+      "path": "28"
+    },
+    "473": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1738,
+        1743
+      ],
+      "op": "SWAP5",
+      "path": "28"
+    },
+    "474": {
+      "fn": "SignedSafeMath.div",
+      "offset": [
+        1505,
+        1769
+      ],
+      "op": "SWAP4",
+      "path": "28"
+    },
+    "475": {
+      "op": "POP"
+    },
+    "476": {
+      "op": "POP"
+    },
+    "477": {
+      "op": "POP"
+    },
+    "478": {
+      "op": "POP"
+    },
+    "479": {
+      "fn": "SignedSafeMath.div",
+      "jump": "o",
+      "offset": [
+        1505,
+        1769
+      ],
+      "op": "JUMP",
+      "path": "28"
+    },
+    "480": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2454,
+        2664
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "481": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2510,
+        2516
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "483": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2539,
+        2544
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "484": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2539,
+        2544
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "485": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2539,
+        2544
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "486": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2569
+      ],
+      "op": "DUP2",
+      "path": "28",
+      "statement": 6
+    },
+    "487": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2569
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "488": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2569
+      ],
+      "op": "SLT",
+      "path": "28"
+    },
+    "489": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2569
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "490": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2569
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "491": {
+      "branch": 14,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2569
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "492": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2579
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x1F5"
+    },
+    "495": {
+      "branch": 14,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2579
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "496": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2579
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "497": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2578,
+        2579
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "498": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2573,
+        2574
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "499": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2573,
+        2579
+      ],
+      "op": "SLT",
+      "path": "28"
+    },
+    "500": {
+      "branch": 15,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2573,
+        2579
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "501": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2563,
+        2579
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "502": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2562,
+        2600
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "503": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2562,
+        2600
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x20A"
+    },
+    "506": {
+      "branch": 15,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2562,
+        2600
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "507": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2562,
+        2600
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "508": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2589,
+        2590
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "510": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2586
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "511": {
+      "branch": 16,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2590
+      ],
+      "op": "SLT",
+      "path": "28"
+    },
+    "512": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2599
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "513": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2599
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "514": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2599
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x20A"
+    },
+    "517": {
+      "branch": 16,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2599
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "518": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2599
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "519": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2598,
+        2599
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "520": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2594,
+        2595
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "521": {
+      "branch": 17,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2594,
+        2599
+      ],
+      "op": "SLT",
+      "path": "28"
+    },
+    "522": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2585,
+        2599
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "523": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0xFB"
+    },
+    "526": {
+      "branch": 17,
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "527": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "529": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "530": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "534": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "536": {
+      "op": "SHL"
+    },
+    "537": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "538": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "539": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "541": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "542": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "543": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "544": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "546": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "547": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "548": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "549": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "550": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "551": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "552": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x21"
+    },
+    "554": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "555": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "556": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "558": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "559": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "560": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x354"
+    },
+    "563": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x21"
+    },
+    "565": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "566": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "CODECOPY",
+      "path": "28"
+    },
+    "567": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "569": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "570": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "571": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "572": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "573": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "575": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "576": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "577": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "578": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "579": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "580": {
+      "fn": "SignedSafeMath.add",
+      "offset": [
+        2554,
+        2638
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "581": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2008,
+        2221
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "582": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2064,
+        2070
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "584": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2093,
+        2098
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "585": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2093,
+        2098
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "586": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2093,
+        2098
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "587": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2123
+      ],
+      "op": "DUP2",
+      "path": "28",
+      "statement": 7
+    },
+    "588": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2123
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "589": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2123
+      ],
+      "op": "SLT",
+      "path": "28"
+    },
+    "590": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2123
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "591": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2123
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "592": {
+      "branch": 18,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2123
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "593": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2133
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x25A"
+    },
+    "596": {
+      "branch": 18,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2133
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "597": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2133
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "598": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2132,
+        2133
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "599": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2127,
+        2128
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "600": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2127,
+        2133
+      ],
+      "op": "SGT",
+      "path": "28"
+    },
+    "601": {
+      "branch": 19,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2127,
+        2133
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "602": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2117,
+        2133
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "603": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2116,
+        2154
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "604": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2116,
+        2154
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x26F"
+    },
+    "607": {
+      "branch": 19,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2116,
+        2154
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "608": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2116,
+        2154
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "609": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2143,
+        2144
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "611": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2140
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "612": {
+      "branch": 20,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2144
+      ],
+      "op": "SLT",
+      "path": "28"
+    },
+    "613": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2153
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "614": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2153
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "615": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2153
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x26F"
+    },
+    "618": {
+      "branch": 20,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2153
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "619": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2153
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "620": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2152,
+        2153
+      ],
+      "op": "DUP4",
+      "path": "28"
+    },
+    "621": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2148,
+        2149
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "622": {
+      "branch": 21,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2148,
+        2153
+      ],
+      "op": "SGT",
+      "path": "28"
+    },
+    "623": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2139,
+        2153
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "624": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0xFB"
+    },
+    "627": {
+      "branch": 21,
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "628": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "630": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "631": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "635": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "637": {
+      "op": "SHL"
+    },
+    "638": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "639": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "640": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "642": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "643": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "644": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "645": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "647": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "648": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "649": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "650": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "651": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "652": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "653": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x24"
+    },
+    "655": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "656": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "657": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "659": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "660": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "661": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x3BD"
+    },
+    "664": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x24"
+    },
+    "666": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "667": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "CODECOPY",
+      "path": "28"
+    },
+    "668": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "670": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "671": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "672": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "673": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "674": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "676": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "677": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "678": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "679": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "680": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "681": {
+      "fn": "SignedSafeMath.sub",
+      "offset": [
+        2108,
+        2195
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "682": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        491,
+        1045
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "683": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        547,
+        553
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x0"
+    },
+    "685": {
+      "branch": 22,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        787,
+        793
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "686": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        783,
+        828
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x2B9"
+    },
+    "689": {
+      "branch": 22,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        783,
+        828
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "690": {
+      "op": "POP"
+    },
+    "691": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        816,
+        817
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "statement": 8,
+      "value": "0x0"
+    },
+    "693": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        809,
+        817
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0xFE"
+    },
+    "696": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        809,
+        817
+      ],
+      "op": "JUMP",
+      "path": "28"
+    },
+    "697": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        783,
+        828
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "698": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        849
+      ],
+      "op": "DUP3",
+      "path": "28",
+      "statement": 9
+    },
+    "699": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "701": {
+      "op": "NOT"
+    },
+    "702": {
+      "branch": 23,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        855
+      ],
+      "op": "EQ",
+      "path": "28"
+    },
+    "703": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "704": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "705": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x2CD"
+    },
+    "708": {
+      "branch": 23,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "709": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "710": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "712": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "714": {
+      "op": "SHL"
+    },
+    "715": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        859,
+        860
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "716": {
+      "branch": 24,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        859,
+        875
+      ],
+      "op": "EQ",
+      "path": "28"
+    },
+    "717": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "718": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        846,
+        876
+      ],
+      "op": "ISZERO",
+      "path": "28"
+    },
+    "719": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x309"
+    },
+    "722": {
+      "branch": 24,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "723": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "725": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "726": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "730": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "732": {
+      "op": "SHL"
+    },
+    "733": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "734": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "735": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "737": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "738": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "739": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "740": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "742": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "743": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "744": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "745": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "746": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "747": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "748": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x27"
+    },
+    "750": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "751": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "752": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "754": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "755": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "756": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x396"
+    },
+    "759": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x27"
+    },
+    "761": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "762": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "CODECOPY",
+      "path": "28"
+    },
+    "763": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "765": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "766": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "767": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "768": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "769": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "771": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "772": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "773": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "774": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "775": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "776": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "REVERT",
+      "path": "28"
+    },
+    "777": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        838,
+        920
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "778": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        942,
+        947
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "779": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        942,
+        947
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "780": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        942,
+        947
+      ],
+      "op": "MUL",
+      "path": "28"
+    },
+    "781": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        946,
+        947
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "782": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        942,
+        943
+      ],
+      "op": "DUP5",
+      "path": "28"
+    },
+    "783": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        942,
+        947
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "784": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        942,
+        943
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "785": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        965,
+        970
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "statement": 10,
+      "value": "0x316"
+    },
+    "788": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        965,
+        970
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "789": {
+      "dev": "Division by zero",
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        965,
+        970
+      ],
+      "op": "INVALID",
+      "path": "28"
+    },
+    "790": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        965,
+        970
+      ],
+      "op": "JUMPDEST",
+      "path": "28"
+    },
+    "791": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        965,
+        970
+      ],
+      "op": "SDIV",
+      "path": "28"
+    },
+    "792": {
+      "branch": 25,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        965,
+        975
+      ],
+      "op": "EQ",
+      "path": "28"
+    },
+    "793": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0xFB"
+    },
+    "796": {
+      "branch": 25,
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "JUMPI",
+      "path": "28"
+    },
+    "797": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "799": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "800": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "804": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "806": {
+      "op": "SHL"
+    },
+    "807": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "808": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "809": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x4"
+    },
+    "811": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "812": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "813": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "814": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "816": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "817": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "818": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "819": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "820": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP3",
+      "path": "28"
+    },
+    "821": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "822": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x27"
+    },
+    "824": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP2",
+      "path": "28"
+    },
+    "825": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "MSTORE",
+      "path": "28"
+    },
+    "826": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x20"
+    },
+    "828": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "829": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "830": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH2",
+      "path": "28",
+      "value": "0x396"
+    },
+    "833": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x27"
+    },
+    "835": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "836": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "CODECOPY",
+      "path": "28"
+    },
+    "837": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "839": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "ADD",
+      "path": "28"
+    },
+    "840": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "841": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "842": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "POP",
+      "path": "28"
+    },
+    "843": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "PUSH1",
+      "path": "28",
+      "value": "0x40"
+    },
+    "845": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "MLOAD",
+      "path": "28"
+    },
+    "846": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "DUP1",
+      "path": "28"
+    },
+    "847": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "SWAP2",
+      "path": "28"
+    },
+    "848": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "SUB",
+      "path": "28"
+    },
+    "849": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "SWAP1",
+      "path": "28"
+    },
+    "850": {
+      "fn": "SignedSafeMath.mul",
+      "offset": [
+        957,
+        1019
+      ],
+      "op": "REVERT",
+      "path": "28"
+    }
+  },
+  "sha1": "accc00daa6503afb97a4184b57d1eb6337bbf903",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"../math/SignedSafeMath.sol\";\n\ncontract SignedSafeMathMock {\n    function mul(int256 a, int256 b) public pure returns (int256) {\n        return SignedSafeMath.mul(a, b);\n    }\n\n    function div(int256 a, int256 b) public pure returns (int256) {\n        return SignedSafeMath.div(a, b);\n    }\n\n    function sub(int256 a, int256 b) public pure returns (int256) {\n        return SignedSafeMath.sub(a, b);\n    }\n\n    function add(int256 a, int256 b) public pure returns (int256) {\n        return SignedSafeMath.add(a, b);\n    }\n}\n",
+  "sourceMap": "104:494:85:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/SignedSafeMathMock.sol",
+  "type": "contract"
+}

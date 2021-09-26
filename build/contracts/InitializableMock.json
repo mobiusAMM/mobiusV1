@@ -1,0 +1,6524 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "fail",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initializeNested",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_x",
+          "type": "uint256"
+        }
+      ],
+      "name": "initializeWithX",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initializerRan",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_x",
+          "type": "uint256"
+        }
+      ],
+      "name": "nonInitializable",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "x",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "101": "contracts/openzeppelin-contracts@3.4.0/contracts/proxy/Initializable.sol",
+    "135": "contracts/openzeppelin-contracts@3.4.0/contracts/utils/Address.sol",
+    "72": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/InitializableMock.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/InitializableMock.sol",
+    "exportedSymbols": {
+      "InitializableMock": [
+        13315
+      ]
+    },
+    "id": 13316,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13256,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:72"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/proxy/Initializable.sol",
+        "file": "../proxy/Initializable.sol",
+        "id": 13257,
+        "nodeType": "ImportDirective",
+        "scope": 13316,
+        "sourceUnit": 16455,
+        "src": "66:36:72",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 13259,
+              "name": "Initializable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 16454,
+              "src": "238:13:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Initializable_$16454",
+                "typeString": "contract Initializable"
+              }
+            },
+            "id": 13260,
+            "nodeType": "InheritanceSpecifier",
+            "src": "238:13:72"
+          }
+        ],
+        "contractDependencies": [
+          16454
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 13258,
+          "nodeType": "StructuredDocumentation",
+          "src": "104:103:72",
+          "text": " @title InitializableMock\n @dev This contract is a mock to test initializable functionality"
+        },
+        "fullyImplemented": true,
+        "id": 13315,
+        "linearizedBaseContracts": [
+          13315,
+          16454
+        ],
+        "name": "InitializableMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "c3b8ef2a",
+            "id": 13262,
+            "mutability": "mutable",
+            "name": "initializerRan",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 13315,
+            "src": "257:26:72",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 13261,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "257:4:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "0c55699c",
+            "id": 13264,
+            "mutability": "mutable",
+            "name": "x",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 13315,
+            "src": "287:16:72",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13263,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "287:7:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13273,
+              "nodeType": "Block",
+              "src": "349:32:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13271,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13269,
+                      "name": "initializerRan",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13262,
+                      "src": "355:14:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 13270,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "372:4:72",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "355:21:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 13272,
+                  "nodeType": "ExpressionStatement",
+                  "src": "355:21:72"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "8129fc1c",
+            "id": 13274,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 13267,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 13266,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 16437,
+                  "src": "337:11:72",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "337:11:72"
+              }
+            ],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13265,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "327:2:72"
+            },
+            "returnParameters": {
+              "id": 13268,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "349:0:72"
+            },
+            "scope": 13315,
+            "src": "308:73:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13282,
+              "nodeType": "Block",
+              "src": "432:23:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 13279,
+                      "name": "initialize",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13274,
+                      "src": "438:10:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 13280,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "438:12:72",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 13281,
+                  "nodeType": "ExpressionStatement",
+                  "src": "438:12:72"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "cb3a528d",
+            "id": 13283,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 13277,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 13276,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 16437,
+                  "src": "420:11:72",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "420:11:72"
+              }
+            ],
+            "name": "initializeNested",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13275,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "410:2:72"
+            },
+            "returnParameters": {
+              "id": 13278,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "432:0:72"
+            },
+            "scope": 13315,
+            "src": "385:70:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13294,
+              "nodeType": "Block",
+              "src": "523:17:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13292,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13290,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13264,
+                      "src": "529:1:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 13291,
+                      "name": "_x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13285,
+                      "src": "533:2:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "529:6:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 13293,
+                  "nodeType": "ExpressionStatement",
+                  "src": "529:6:72"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "0018eaa8",
+            "id": 13295,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 13288,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 13287,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 16437,
+                  "src": "511:11:72",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "511:11:72"
+              }
+            ],
+            "name": "initializeWithX",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13286,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13285,
+                  "mutability": "mutable",
+                  "name": "_x",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13295,
+                  "src": "484:10:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13284,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "484:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "483:12:72"
+            },
+            "returnParameters": {
+              "id": 13289,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "523:0:72"
+            },
+            "scope": 13315,
+            "src": "459:81:72",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13304,
+              "nodeType": "Block",
+              "src": "597:17:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13302,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13300,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13264,
+                      "src": "603:1:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 13301,
+                      "name": "_x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13297,
+                      "src": "607:2:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "603:6:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 13303,
+                  "nodeType": "ExpressionStatement",
+                  "src": "603:6:72"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "e955c9ec",
+            "id": 13305,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nonInitializable",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13298,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13297,
+                  "mutability": "mutable",
+                  "name": "_x",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13305,
+                  "src": "570:10:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13296,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "570:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "569:12:72"
+            },
+            "returnParameters": {
+              "id": 13299,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "597:0:72"
+            },
+            "scope": 13315,
+            "src": "544:70:72",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13313,
+              "nodeType": "Block",
+              "src": "646:61:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 13309,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "660:5:72",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "496e697469616c697a61626c654d6f636b20666f72636564206661696c757265",
+                        "id": 13310,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "667:34:72",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_70458f305ab12a5814a8a6125666b5faf9428e7481e52fe1e943f8addb4009b7",
+                          "typeString": "literal_string \"InitializableMock forced failure\""
+                        },
+                        "value": "InitializableMock forced failure"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_70458f305ab12a5814a8a6125666b5faf9428e7481e52fe1e943f8addb4009b7",
+                          "typeString": "literal_string \"InitializableMock forced failure\""
+                        }
+                      ],
+                      "id": 13308,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "652:7:72",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 13311,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "652:50:72",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 13312,
+                  "nodeType": "ExpressionStatement",
+                  "src": "652:50:72"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "a9cc4718",
+            "id": 13314,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fail",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13306,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "631:2:72"
+            },
+            "returnParameters": {
+              "id": 13307,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "646:0:72"
+            },
+            "scope": 13315,
+            "src": "618:89:72",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 13316,
+        "src": "208:502:72"
+      }
+    ],
+    "src": "33:678:72"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610425806100206000396000f3fe60806040526004361061006f5760003560e01c8063a9cc47181161004e578063a9cc4718146100cf578063c3b8ef2a146100e4578063cb3a528d1461010d578063e955c9ec146101225761006f565b806218eaa8146100745780630c55699c146100935780638129fc1c146100ba575b600080fd5b6100916004803603602081101561008a57600080fd5b503561013f565b005b34801561009f57600080fd5b506100a86101e7565b60408051918252519081900360200190f35b3480156100c657600080fd5b506100916101ed565b3480156100db57600080fd5b506100916102a0565b3480156100f057600080fd5b506100f96102ed565b604080519115158252519081900360200190f35b34801561011957600080fd5b506100916102fc565b6100916004803603602081101561013857600080fd5b50356103a5565b600054610100900460ff168061015857506101586103aa565b80610166575060005460ff16155b6101a15760405162461bcd60e51b815260040180806020018281038252602e8152602001806103c2602e913960400191505060405180910390fd5b600054610100900460ff161580156101cc576000805460ff1961ff0019909116610100171660011790555b600182905580156101e3576000805461ff00191690555b5050565b60015481565b600054610100900460ff168061020657506102066103aa565b80610214575060005460ff16155b61024f5760405162461bcd60e51b815260040180806020018281038252602e8152602001806103c2602e913960400191505060405180910390fd5b600054610100900460ff1615801561027a576000805460ff1961ff0019909116610100171660011790555b6000805462ff0000191662010000179055801561029d576000805461ff00191690555b50565b6040805162461bcd60e51b815260206004820181905260248201527f496e697469616c697a61626c654d6f636b20666f72636564206661696c757265604482015290519081900360640190fd5b60005462010000900460ff1681565b600054610100900460ff168061031557506103156103aa565b80610323575060005460ff16155b61035e5760405162461bcd60e51b815260040180806020018281038252602e8152602001806103c2602e913960400191505060405180910390fd5b600054610100900460ff16158015610389576000805460ff1961ff0019909116610100171660011790555b6103916101ed565b801561029d576000805461ff001916905550565b600155565b60006103b5306103bb565b15905090565b3b15159056fe496e697469616c697a61626c653a20636f6e747261637420697320616c726561647920696e697469616c697a6564a2646970667358221220b5dfe1d2092b6f94ea348987676228182d7ec87da76598324245ef82c416487164736f6c634300060c0033",
+  "bytecodeSha1": "96ebbf155d663610a9887342260fcee0c427521f",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "InitializableMock",
+  "coverageMap": {
+    "branches": {
+      "101": {
+        "InitializableMock.initializeNested": {
+          "7": [
+            1501,
+            1514,
+            true
+          ],
+          "8": [
+            1518,
+            1534,
+            true
+          ],
+          "9": [
+            1539,
+            1551,
+            true
+          ]
+        }
+      },
+      "135": {},
+      "72": {}
+    },
+    "statements": {
+      "101": {
+        "Initializable._isConstructor": {
+          "5": [
+            2005,
+            2046
+          ]
+        }
+      },
+      "135": {
+        "Address.isContract": {
+          "6": [
+            1117,
+            1132
+          ]
+        }
+      },
+      "72": {
+        "InitializableMock.fail": {
+          "2": [
+            652,
+            702
+          ]
+        },
+        "InitializableMock.initialize": {
+          "1": [
+            355,
+            376
+          ]
+        },
+        "InitializableMock.initializeNested": {
+          "3": [
+            438,
+            450
+          ]
+        },
+        "InitializableMock.initializeWithX": {
+          "0": [
+            529,
+            535
+          ]
+        },
+        "InitializableMock.nonInitializable": {
+          "4": [
+            603,
+            609
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "Address",
+    "Initializable"
+  ],
+  "deployedBytecode": "60806040526004361061006f5760003560e01c8063a9cc47181161004e578063a9cc4718146100cf578063c3b8ef2a146100e4578063cb3a528d1461010d578063e955c9ec146101225761006f565b806218eaa8146100745780630c55699c146100935780638129fc1c146100ba575b600080fd5b6100916004803603602081101561008a57600080fd5b503561013f565b005b34801561009f57600080fd5b506100a86101e7565b60408051918252519081900360200190f35b3480156100c657600080fd5b506100916101ed565b3480156100db57600080fd5b506100916102a0565b3480156100f057600080fd5b506100f96102ed565b604080519115158252519081900360200190f35b34801561011957600080fd5b506100916102fc565b6100916004803603602081101561013857600080fd5b50356103a5565b600054610100900460ff168061015857506101586103aa565b80610166575060005460ff16155b6101a15760405162461bcd60e51b815260040180806020018281038252602e8152602001806103c2602e913960400191505060405180910390fd5b600054610100900460ff161580156101cc576000805460ff1961ff0019909116610100171660011790555b600182905580156101e3576000805461ff00191690555b5050565b60015481565b600054610100900460ff168061020657506102066103aa565b80610214575060005460ff16155b61024f5760405162461bcd60e51b815260040180806020018281038252602e8152602001806103c2602e913960400191505060405180910390fd5b600054610100900460ff1615801561027a576000805460ff1961ff0019909116610100171660011790555b6000805462ff0000191662010000179055801561029d576000805461ff00191690555b50565b6040805162461bcd60e51b815260206004820181905260248201527f496e697469616c697a61626c654d6f636b20666f72636564206661696c757265604482015290519081900360640190fd5b60005462010000900460ff1681565b600054610100900460ff168061031557506103156103aa565b80610323575060005460ff16155b61035e5760405162461bcd60e51b815260040180806020018281038252602e8152602001806103c2602e913960400191505060405180910390fd5b600054610100900460ff16158015610389576000805460ff1961ff0019909116610100171660011790555b6103916101ed565b801561029d576000805461ff001916905550565b600155565b60006103b5306103bb565b15905090565b3b15159056fe496e697469616c697a61626c653a20636f6e747261637420697320616c726561647920696e697469616c697a6564a2646970667358221220b5dfe1d2092b6f94ea348987676228182d7ec87da76598324245ef82c416487164736f6c634300060c0033",
+  "deployedSourceMap": "208:502:72:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;459:81;;;;;;;;;;;;;;;;-1:-1:-1;459:81:72;;:::i;:::-;;287:16;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;308:73;;;;;;;;;;;;;:::i;618:89::-;;;;;;;;;;;;;:::i;257:26::-;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;385:70;;;;;;;;;;;;;:::i;544:::-;;;;;;;;;;;;;;;;-1:-1:-1;544:70:72;;:::i;459:81::-;1501:13:101;;;;;;;;:33;;;1518:16;:14;:16::i;:::-;1501:50;;;-1:-1:-1;1539:12:101;;;;1538:13;1501:50;1493:109;;;;-1:-1:-1;;;1493:109:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1613:19;1636:13;;;;;;1635:14;1659:98;;;;1693:13;:20;;-1:-1:-1;;;;1693:20:101;;;;;1727:19;1709:4;1727:19;;;1659:98;529:1:72::1;:6:::0;;;1779:66:101;;;;1829:5;1813:21;;-1:-1:-1;;1813:21:101;;;1779:66;459:81:72;;:::o;287:16::-;;;;:::o;308:73::-;1501:13:101;;;;;;;;:33;;;1518:16;:14;:16::i;:::-;1501:50;;;-1:-1:-1;1539:12:101;;;;1538:13;1501:50;1493:109;;;;-1:-1:-1;;;1493:109:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1613:19;1636:13;;;;;;1635:14;1659:98;;;;1693:13;:20;;-1:-1:-1;;;;1693:20:101;;;;;1727:19;1709:4;1727:19;;;1659:98;355:14:72::1;:21:::0;;-1:-1:-1;;355:21:72::1;::::0;::::1;::::0;;1779:66:101;;;;1829:5;1813:21;;-1:-1:-1;;1813:21:101;;;1779:66;308:73:72;:::o;618:89::-;652:50;;;-1:-1:-1;;;652:50:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;257:26;;;;;;;;;:::o;385:70::-;1501:13:101;;;;;;;;:33;;;1518:16;:14;:16::i;:::-;1501:50;;;-1:-1:-1;1539:12:101;;;;1538:13;1501:50;1493:109;;;;-1:-1:-1;;;1493:109:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1613:19;1636:13;;;;;;1635:14;1659:98;;;;1693:13;:20;;-1:-1:-1;;;;1693:20:101;;;;;1727:19;1709:4;1727:19;;;1659:98;438:12:72::1;:10;:12::i;:::-;1783:14:101::0;1779:66;;;1829:5;1813:21;;-1:-1:-1;;1813:21:101;;;385:70:72;:::o;544:::-;603:1;:6;544:70::o;1941:112:101:-;1989:4;2013:33;2040:4;2013:18;:33::i;:::-;2012:34;2005:41;;1941:112;:::o;726:413:135:-;1086:20;1124:8;;;726:413::o",
+  "language": "Solidity",
+  "natspec": {
+    "details": "This contract is a mock to test initializable functionality",
+    "kind": "dev",
+    "methods": {},
+    "title": "InitializableMock",
+    "version": 1
+  },
+  "offset": [
+    208,
+    710
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x6F JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xA9CC4718 GT PUSH2 0x4E JUMPI DUP1 PUSH4 0xA9CC4718 EQ PUSH2 0xCF JUMPI DUP1 PUSH4 0xC3B8EF2A EQ PUSH2 0xE4 JUMPI DUP1 PUSH4 0xCB3A528D EQ PUSH2 0x10D JUMPI DUP1 PUSH4 0xE955C9EC EQ PUSH2 0x122 JUMPI PUSH2 0x6F JUMP JUMPDEST DUP1 PUSH3 0x18EAA8 EQ PUSH2 0x74 JUMPI DUP1 PUSH4 0xC55699C EQ PUSH2 0x93 JUMPI DUP1 PUSH4 0x8129FC1C EQ PUSH2 0xBA JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x91 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH2 0x8A JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH2 0x13F JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x9F JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xA8 PUSH2 0x1E7 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xC6 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x91 PUSH2 0x1ED JUMP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xDB JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x91 PUSH2 0x2A0 JUMP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xF0 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xF9 PUSH2 0x2ED JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 ISZERO ISZERO DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x119 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x91 PUSH2 0x2FC JUMP JUMPDEST PUSH2 0x91 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH2 0x138 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH2 0x3A5 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP1 PUSH2 0x158 JUMPI POP PUSH2 0x158 PUSH2 0x3AA JUMP JUMPDEST DUP1 PUSH2 0x166 JUMPI POP PUSH1 0x0 SLOAD PUSH1 0xFF AND ISZERO JUMPDEST PUSH2 0x1A1 JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x2E DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x3C2 PUSH1 0x2E SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND ISZERO DUP1 ISZERO PUSH2 0x1CC JUMPI PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT PUSH2 0xFF00 NOT SWAP1 SWAP2 AND PUSH2 0x100 OR AND PUSH1 0x1 OR SWAP1 SSTORE JUMPDEST PUSH1 0x1 DUP3 SWAP1 SSTORE DUP1 ISZERO PUSH2 0x1E3 JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND SWAP1 SSTORE JUMPDEST POP POP JUMP JUMPDEST PUSH1 0x1 SLOAD DUP2 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP1 PUSH2 0x206 JUMPI POP PUSH2 0x206 PUSH2 0x3AA JUMP JUMPDEST DUP1 PUSH2 0x214 JUMPI POP PUSH1 0x0 SLOAD PUSH1 0xFF AND ISZERO JUMPDEST PUSH2 0x24F JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x2E DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x3C2 PUSH1 0x2E SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND ISZERO DUP1 ISZERO PUSH2 0x27A JUMPI PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT PUSH2 0xFF00 NOT SWAP1 SWAP2 AND PUSH2 0x100 OR AND PUSH1 0x1 OR SWAP1 SSTORE JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH3 0xFF0000 NOT AND PUSH3 0x10000 OR SWAP1 SSTORE DUP1 ISZERO PUSH2 0x29D JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND SWAP1 SSTORE JUMPDEST POP JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x24 DUP3 ADD MSTORE PUSH32 0x496E697469616C697A61626C654D6F636B20666F72636564206661696C757265 PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH3 0x10000 SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP1 PUSH2 0x315 JUMPI POP PUSH2 0x315 PUSH2 0x3AA JUMP JUMPDEST DUP1 PUSH2 0x323 JUMPI POP PUSH1 0x0 SLOAD PUSH1 0xFF AND ISZERO JUMPDEST PUSH2 0x35E JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x2E DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x3C2 PUSH1 0x2E SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND ISZERO DUP1 ISZERO PUSH2 0x389 JUMPI PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT PUSH2 0xFF00 NOT SWAP1 SWAP2 AND PUSH2 0x100 OR AND PUSH1 0x1 OR SWAP1 SSTORE JUMPDEST PUSH2 0x391 PUSH2 0x1ED JUMP JUMPDEST DUP1 ISZERO PUSH2 0x29D JUMPI PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND SWAP1 SSTORE POP JUMP JUMPDEST PUSH1 0x1 SSTORE JUMP JUMPDEST PUSH1 0x0 PUSH2 0x3B5 ADDRESS PUSH2 0x3BB JUMP JUMPDEST ISZERO SWAP1 POP SWAP1 JUMP JUMPDEST EXTCODESIZE ISZERO ISZERO SWAP1 JUMP INVALID 0x49 PUSH15 0x697469616C697A61626C653A20636F PUSH15 0x747261637420697320616C72656164 PUSH26 0x20696E697469616C697A6564A2646970667358221220B5DFE1D2 MULMOD 0x2B PUSH16 0x94EA348987676228182D7EC87DA76598 ORIGIN TIMESTAMP GASLIMIT 0xEF DUP3 0xC4 AND 0x48 PUSH18 0x64736F6C634300060C003300000000000000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x4"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "CALLDATASIZE",
+      "path": "72"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "LT",
+      "path": "72"
+    },
+    "9": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x6F"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "13": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "CALLDATALOAD",
+      "path": "72"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0xE0"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "SHR",
+      "path": "72"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0xA9CC4718"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "GT",
+      "path": "72"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x4E"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0xA9CC4718"
+    },
+    "36": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xCF"
+    },
+    "40": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "41": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0xC3B8EF2A"
+    },
+    "47": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "48": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xE4"
+    },
+    "51": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "52": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0xCB3A528D"
+    },
+    "58": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "59": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x10D"
+    },
+    "62": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "63": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0xE955C9EC"
+    },
+    "69": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "70": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x122"
+    },
+    "73": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "74": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x6F"
+    },
+    "77": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "78": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "79": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "80": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH3",
+      "path": "72",
+      "value": "0x18EAA8"
+    },
+    "84": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "85": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x74"
+    },
+    "88": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "89": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "90": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0xC55699C"
+    },
+    "95": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "96": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x93"
+    },
+    "99": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "100": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "101": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH4",
+      "path": "72",
+      "value": "0x8129FC1C"
+    },
+    "106": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "EQ",
+      "path": "72"
+    },
+    "107": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xBA"
+    },
+    "110": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "111": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "112": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "114": {
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "115": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        208,
+        710
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "116": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "117": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x91"
+    },
+    "120": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x4"
+    },
+    "122": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "123": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "CALLDATASIZE",
+      "path": "72"
+    },
+    "124": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "SUB",
+      "path": "72"
+    },
+    "125": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x20"
+    },
+    "127": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "128": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "LT",
+      "path": "72"
+    },
+    "129": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "130": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x8A"
+    },
+    "133": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "134": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "136": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "137": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "138": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "139": {
+      "op": "POP"
+    },
+    "140": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "CALLDATALOAD",
+      "path": "72"
+    },
+    "141": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x13F"
+    },
+    "144": {
+      "fn": "InitializableMock.initializeWithX",
+      "jump": "i",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "145": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "146": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "STOP",
+      "path": "72"
+    },
+    "147": {
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "148": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "CALLVALUE",
+      "path": "72"
+    },
+    "149": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "150": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "151": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x9F"
+    },
+    "154": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "155": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "157": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "158": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "159": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "160": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "161": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xA8"
+    },
+    "164": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x1E7"
+    },
+    "167": {
+      "fn": "InitializableMock.initializeWithX",
+      "jump": "i",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "168": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "169": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x40"
+    },
+    "171": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "172": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "MLOAD",
+      "path": "72"
+    },
+    "173": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "SWAP2",
+      "path": "72"
+    },
+    "174": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "DUP3",
+      "path": "72"
+    },
+    "175": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "176": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "MLOAD",
+      "path": "72"
+    },
+    "177": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "178": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "179": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "180": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "SUB",
+      "path": "72"
+    },
+    "181": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x20"
+    },
+    "183": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "ADD",
+      "path": "72"
+    },
+    "184": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "185": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "RETURN",
+      "path": "72"
+    },
+    "186": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "187": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "CALLVALUE",
+      "path": "72"
+    },
+    "188": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "189": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "190": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xC6"
+    },
+    "193": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "194": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "196": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "197": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "198": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "199": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "200": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x91"
+    },
+    "203": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x1ED"
+    },
+    "206": {
+      "fn": "InitializableMock.initialize",
+      "jump": "i",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "207": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "208": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "CALLVALUE",
+      "path": "72"
+    },
+    "209": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "210": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "211": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xDB"
+    },
+    "214": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "215": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "217": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "218": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "219": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "220": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "221": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x91"
+    },
+    "224": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x2A0"
+    },
+    "227": {
+      "fn": "InitializableMock.fail",
+      "jump": "i",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "228": {
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "229": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "CALLVALUE",
+      "path": "72"
+    },
+    "230": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "231": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "232": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xF0"
+    },
+    "235": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "236": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "238": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "239": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "240": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "241": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "242": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0xF9"
+    },
+    "245": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x2ED"
+    },
+    "248": {
+      "fn": "InitializableMock.fail",
+      "jump": "i",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "249": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "250": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x40"
+    },
+    "252": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "253": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "MLOAD",
+      "path": "72"
+    },
+    "254": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SWAP2",
+      "path": "72"
+    },
+    "255": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "256": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "257": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DUP3",
+      "path": "72"
+    },
+    "258": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "259": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "MLOAD",
+      "path": "72"
+    },
+    "260": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "261": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "262": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "263": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SUB",
+      "path": "72"
+    },
+    "264": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x20"
+    },
+    "266": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "ADD",
+      "path": "72"
+    },
+    "267": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "268": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "RETURN",
+      "path": "72"
+    },
+    "269": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "270": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "CALLVALUE",
+      "path": "72"
+    },
+    "271": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "272": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "273": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x119"
+    },
+    "276": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "277": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "279": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "280": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "281": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "282": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "283": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x91"
+    },
+    "286": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x2FC"
+    },
+    "289": {
+      "fn": "InitializableMock.initializeNested",
+      "jump": "i",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "290": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "291": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x91"
+    },
+    "294": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x4"
+    },
+    "296": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "297": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "CALLDATASIZE",
+      "path": "72"
+    },
+    "298": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "SUB",
+      "path": "72"
+    },
+    "299": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x20"
+    },
+    "301": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "302": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "LT",
+      "path": "72"
+    },
+    "303": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "ISZERO",
+      "path": "72"
+    },
+    "304": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x138"
+    },
+    "307": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "JUMPI",
+      "path": "72"
+    },
+    "308": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "310": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "311": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "312": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "313": {
+      "op": "POP"
+    },
+    "314": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "CALLDATALOAD",
+      "path": "72"
+    },
+    "315": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x3A5"
+    },
+    "318": {
+      "fn": "InitializableMock.nonInitializable",
+      "jump": "i",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "319": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "320": {
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "322": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "323": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "326": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "327": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "DIV",
+      "path": "101"
+    },
+    "328": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "330": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "331": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "332": {
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x158"
+    },
+    "335": {
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "336": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "337": {
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x158"
+    },
+    "340": {
+      "offset": [
+        1518,
+        1532
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3AA"
+    },
+    "343": {
+      "jump": "i",
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "JUMP",
+      "path": "101"
+    },
+    "344": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "345": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "346": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x166"
+    },
+    "349": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "350": {
+      "op": "POP"
+    },
+    "351": {
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "353": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "354": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "356": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "357": {
+      "offset": [
+        1538,
+        1551
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "358": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "359": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x1A1"
+    },
+    "362": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "363": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "365": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MLOAD",
+      "path": "101"
+    },
+    "366": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "370": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "372": {
+      "op": "SHL"
+    },
+    "373": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "374": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "375": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x4"
+    },
+    "377": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "378": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "379": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "380": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x20"
+    },
+    "382": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "383": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP3",
+      "path": "101"
+    },
+    "384": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "385": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SUB",
+      "path": "101"
+    },
+    "386": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP3",
+      "path": "101"
+    },
+    "387": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "388": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x2E"
+    },
+    "390": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "391": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "392": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x20"
+    },
+    "394": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "395": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "396": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3C2"
+    },
+    "399": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x2E"
+    },
+    "401": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "402": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "CODECOPY",
+      "path": "101"
+    },
+    "403": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "405": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "406": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "407": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "408": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "409": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "411": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MLOAD",
+      "path": "101"
+    },
+    "412": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "413": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "414": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SUB",
+      "path": "101"
+    },
+    "415": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "416": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "REVERT",
+      "path": "101"
+    },
+    "417": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "418": {
+      "offset": [
+        1613,
+        1632
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "420": {
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "421": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "424": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "425": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "DIV",
+      "path": "101"
+    },
+    "426": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "428": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "429": {
+      "offset": [
+        1635,
+        1649
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "430": {
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "431": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "432": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x1CC"
+    },
+    "435": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "436": {
+      "offset": [
+        1693,
+        1706
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "438": {
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "439": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "440": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "442": {
+      "op": "NOT"
+    },
+    "443": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "446": {
+      "op": "NOT"
+    },
+    "447": {
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "448": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "449": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "450": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "453": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "OR",
+      "path": "101"
+    },
+    "454": {
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "455": {
+      "offset": [
+        1709,
+        1713
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x1"
+    },
+    "457": {
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "OR",
+      "path": "101"
+    },
+    "458": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "459": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "SSTORE",
+      "path": "101"
+    },
+    "460": {
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "461": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        529,
+        530
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "statement": 0,
+      "value": "0x1"
+    },
+    "463": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        529,
+        535
+      ],
+      "op": "DUP3",
+      "path": "72"
+    },
+    "464": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        529,
+        535
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "465": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        529,
+        535
+      ],
+      "op": "SSTORE",
+      "path": "72"
+    },
+    "466": {
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "467": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "468": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x1E3"
+    },
+    "471": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "472": {
+      "offset": [
+        1829,
+        1834
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "474": {
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "475": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "476": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "479": {
+      "op": "NOT"
+    },
+    "480": {
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "481": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "482": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SSTORE",
+      "path": "101"
+    },
+    "483": {
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "484": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "485": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "486": {
+      "fn": "InitializableMock.initializeWithX",
+      "jump": "o",
+      "offset": [
+        459,
+        540
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "487": {
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "488": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x1"
+    },
+    "490": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "SLOAD",
+      "path": "72"
+    },
+    "491": {
+      "fn": "InitializableMock.initializeWithX",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "492": {
+      "fn": "InitializableMock.initializeWithX",
+      "jump": "o",
+      "offset": [
+        287,
+        303
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "493": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "494": {
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "496": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "497": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "500": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "501": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "DIV",
+      "path": "101"
+    },
+    "502": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "504": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "505": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "506": {
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x206"
+    },
+    "509": {
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "510": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "511": {
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x206"
+    },
+    "514": {
+      "offset": [
+        1518,
+        1532
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3AA"
+    },
+    "517": {
+      "jump": "i",
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "JUMP",
+      "path": "101"
+    },
+    "518": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "519": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "520": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x214"
+    },
+    "523": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "524": {
+      "op": "POP"
+    },
+    "525": {
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "527": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "528": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "530": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "531": {
+      "offset": [
+        1538,
+        1551
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "532": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "533": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x24F"
+    },
+    "536": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "537": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "539": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MLOAD",
+      "path": "101"
+    },
+    "540": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "544": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "546": {
+      "op": "SHL"
+    },
+    "547": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "548": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "549": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x4"
+    },
+    "551": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "552": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "553": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "554": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x20"
+    },
+    "556": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "557": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP3",
+      "path": "101"
+    },
+    "558": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "559": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SUB",
+      "path": "101"
+    },
+    "560": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP3",
+      "path": "101"
+    },
+    "561": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "562": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x2E"
+    },
+    "564": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "565": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "566": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x20"
+    },
+    "568": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "569": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "570": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3C2"
+    },
+    "573": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x2E"
+    },
+    "575": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "576": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "CODECOPY",
+      "path": "101"
+    },
+    "577": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "579": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "580": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "581": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "582": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "583": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "585": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MLOAD",
+      "path": "101"
+    },
+    "586": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "587": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "588": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SUB",
+      "path": "101"
+    },
+    "589": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "590": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "REVERT",
+      "path": "101"
+    },
+    "591": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "592": {
+      "offset": [
+        1613,
+        1632
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "594": {
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "595": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "598": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "599": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "DIV",
+      "path": "101"
+    },
+    "600": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "602": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "603": {
+      "offset": [
+        1635,
+        1649
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "604": {
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "605": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "606": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x27A"
+    },
+    "609": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "610": {
+      "offset": [
+        1693,
+        1706
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "612": {
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "613": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "614": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "616": {
+      "op": "NOT"
+    },
+    "617": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "620": {
+      "op": "NOT"
+    },
+    "621": {
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "622": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "623": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "624": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "627": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "OR",
+      "path": "101"
+    },
+    "628": {
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "629": {
+      "offset": [
+        1709,
+        1713
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x1"
+    },
+    "631": {
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "OR",
+      "path": "101"
+    },
+    "632": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "633": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "SSTORE",
+      "path": "101"
+    },
+    "634": {
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "635": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        369
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "statement": 1,
+      "value": "0x0"
+    },
+    "637": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "638": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "SLOAD",
+      "path": "72"
+    },
+    "639": {
+      "op": "PUSH3",
+      "value": "0xFF0000"
+    },
+    "643": {
+      "op": "NOT"
+    },
+    "644": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "AND",
+      "path": "72"
+    },
+    "645": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "PUSH3",
+      "path": "72",
+      "value": "0x10000"
+    },
+    "649": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "OR",
+      "path": "72"
+    },
+    "650": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "651": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        355,
+        376
+      ],
+      "op": "SSTORE",
+      "path": "72"
+    },
+    "652": {
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "653": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "654": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x29D"
+    },
+    "657": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "658": {
+      "offset": [
+        1829,
+        1834
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "660": {
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "661": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "662": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "665": {
+      "op": "NOT"
+    },
+    "666": {
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "667": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "668": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SSTORE",
+      "path": "101"
+    },
+    "669": {
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "670": {
+      "fn": "InitializableMock.initialize",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "671": {
+      "fn": "InitializableMock.initialize",
+      "jump": "o",
+      "offset": [
+        308,
+        381
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "672": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        618,
+        707
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "673": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "statement": 2,
+      "value": "0x40"
+    },
+    "675": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP1",
+      "path": "72"
+    },
+    "676": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "MLOAD",
+      "path": "72"
+    },
+    "677": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "681": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "683": {
+      "op": "SHL"
+    },
+    "684": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "685": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "686": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x20"
+    },
+    "688": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x4"
+    },
+    "690": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP3",
+      "path": "72"
+    },
+    "691": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "ADD",
+      "path": "72"
+    },
+    "692": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "693": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "694": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "695": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x24"
+    },
+    "697": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP3",
+      "path": "72"
+    },
+    "698": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "ADD",
+      "path": "72"
+    },
+    "699": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "700": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH32",
+      "path": "72",
+      "value": "0x496E697469616C697A61626C654D6F636B20666F72636564206661696C757265"
+    },
+    "733": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x44"
+    },
+    "735": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP3",
+      "path": "72"
+    },
+    "736": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "ADD",
+      "path": "72"
+    },
+    "737": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "MSTORE",
+      "path": "72"
+    },
+    "738": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "739": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "MLOAD",
+      "path": "72"
+    },
+    "740": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "741": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "742": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "743": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "SUB",
+      "path": "72"
+    },
+    "744": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x64"
+    },
+    "746": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "ADD",
+      "path": "72"
+    },
+    "747": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "748": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        652,
+        702
+      ],
+      "op": "REVERT",
+      "path": "72"
+    },
+    "749": {
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "750": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0x0"
+    },
+    "752": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SLOAD",
+      "path": "72"
+    },
+    "753": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH3",
+      "path": "72",
+      "value": "0x10000"
+    },
+    "757": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "SWAP1",
+      "path": "72"
+    },
+    "758": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DIV",
+      "path": "72"
+    },
+    "759": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "value": "0xFF"
+    },
+    "761": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "AND",
+      "path": "72"
+    },
+    "762": {
+      "fn": "InitializableMock.fail",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "DUP2",
+      "path": "72"
+    },
+    "763": {
+      "fn": "InitializableMock.fail",
+      "jump": "o",
+      "offset": [
+        257,
+        283
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "764": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "765": {
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "767": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "768": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "771": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "772": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "DIV",
+      "path": "101"
+    },
+    "773": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "775": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "776": {
+      "branch": 7,
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1514
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "777": {
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x315"
+    },
+    "780": {
+      "branch": 7,
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "781": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1534
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "782": {
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x315"
+    },
+    "785": {
+      "offset": [
+        1518,
+        1532
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3AA"
+    },
+    "788": {
+      "jump": "i",
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "JUMP",
+      "path": "101"
+    },
+    "789": {
+      "branch": 8,
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1518,
+        1534
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "790": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "791": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x323"
+    },
+    "794": {
+      "branch": 8,
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "795": {
+      "op": "POP"
+    },
+    "796": {
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "798": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "799": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "801": {
+      "branch": 9,
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1539,
+        1551
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "802": {
+      "offset": [
+        1538,
+        1551
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "803": {
+      "offset": [
+        1501,
+        1551
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "804": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x35E"
+    },
+    "807": {
+      "branch": 9,
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "808": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "810": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MLOAD",
+      "path": "101"
+    },
+    "811": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "815": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "817": {
+      "op": "SHL"
+    },
+    "818": {
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "819": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "820": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x4"
+    },
+    "822": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "823": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "824": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "825": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x20"
+    },
+    "827": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "828": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP3",
+      "path": "101"
+    },
+    "829": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "830": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SUB",
+      "path": "101"
+    },
+    "831": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP3",
+      "path": "101"
+    },
+    "832": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "833": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x2E"
+    },
+    "835": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP2",
+      "path": "101"
+    },
+    "836": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MSTORE",
+      "path": "101"
+    },
+    "837": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x20"
+    },
+    "839": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "840": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "841": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3C2"
+    },
+    "844": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x2E"
+    },
+    "846": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "847": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "CODECOPY",
+      "path": "101"
+    },
+    "848": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "850": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "ADD",
+      "path": "101"
+    },
+    "851": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "852": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "853": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "854": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x40"
+    },
+    "856": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "MLOAD",
+      "path": "101"
+    },
+    "857": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "858": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "859": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SUB",
+      "path": "101"
+    },
+    "860": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "861": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "REVERT",
+      "path": "101"
+    },
+    "862": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1493,
+        1602
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "863": {
+      "offset": [
+        1613,
+        1632
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "865": {
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "866": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "869": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "870": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "DIV",
+      "path": "101"
+    },
+    "871": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0xFF"
+    },
+    "873": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1636,
+        1649
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "874": {
+      "offset": [
+        1635,
+        1649
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "875": {
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "876": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "877": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x389"
+    },
+    "880": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "881": {
+      "offset": [
+        1693,
+        1706
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "883": {
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "884": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "885": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "887": {
+      "op": "NOT"
+    },
+    "888": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "891": {
+      "op": "NOT"
+    },
+    "892": {
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "893": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "SWAP2",
+      "path": "101"
+    },
+    "894": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "895": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x100"
+    },
+    "898": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1693,
+        1713
+      ],
+      "op": "OR",
+      "path": "101"
+    },
+    "899": {
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "900": {
+      "offset": [
+        1709,
+        1713
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x1"
+    },
+    "902": {
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "OR",
+      "path": "101"
+    },
+    "903": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "904": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1727,
+        1746
+      ],
+      "op": "SSTORE",
+      "path": "101"
+    },
+    "905": {
+      "offset": [
+        1659,
+        1757
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "906": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        438,
+        450
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "statement": 3,
+      "value": "0x391"
+    },
+    "909": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        438,
+        448
+      ],
+      "op": "PUSH2",
+      "path": "72",
+      "value": "0x1ED"
+    },
+    "912": {
+      "fn": "InitializableMock.initializeNested",
+      "jump": "i",
+      "offset": [
+        438,
+        450
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "913": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        438,
+        450
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "914": {
+      "offset": [
+        1783,
+        1797
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "915": {
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "916": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x29D"
+    },
+    "919": {
+      "offset": [
+        1779,
+        1845
+      ],
+      "op": "JUMPI",
+      "path": "101"
+    },
+    "920": {
+      "offset": [
+        1829,
+        1834
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "922": {
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "DUP1",
+      "path": "101"
+    },
+    "923": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SLOAD",
+      "path": "101"
+    },
+    "924": {
+      "op": "PUSH2",
+      "value": "0xFF00"
+    },
+    "927": {
+      "op": "NOT"
+    },
+    "928": {
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "AND",
+      "path": "101"
+    },
+    "929": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "930": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        1813,
+        1834
+      ],
+      "op": "SSTORE",
+      "path": "101"
+    },
+    "931": {
+      "fn": "InitializableMock.initializeNested",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "POP",
+      "path": "72"
+    },
+    "932": {
+      "fn": "InitializableMock.initializeNested",
+      "jump": "o",
+      "offset": [
+        385,
+        455
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "933": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "JUMPDEST",
+      "path": "72"
+    },
+    "934": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        603,
+        604
+      ],
+      "op": "PUSH1",
+      "path": "72",
+      "statement": 4,
+      "value": "0x1"
+    },
+    "936": {
+      "fn": "InitializableMock.nonInitializable",
+      "offset": [
+        603,
+        609
+      ],
+      "op": "SSTORE",
+      "path": "72"
+    },
+    "937": {
+      "fn": "InitializableMock.nonInitializable",
+      "jump": "o",
+      "offset": [
+        544,
+        614
+      ],
+      "op": "JUMP",
+      "path": "72"
+    },
+    "938": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        1941,
+        2053
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "939": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        1989,
+        1993
+      ],
+      "op": "PUSH1",
+      "path": "101",
+      "value": "0x0"
+    },
+    "941": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2013,
+        2046
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "statement": 5,
+      "value": "0x3B5"
+    },
+    "944": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2040,
+        2044
+      ],
+      "op": "ADDRESS",
+      "path": "101"
+    },
+    "945": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2013,
+        2031
+      ],
+      "op": "PUSH2",
+      "path": "101",
+      "value": "0x3BB"
+    },
+    "948": {
+      "fn": "Initializable._isConstructor",
+      "jump": "i",
+      "offset": [
+        2013,
+        2046
+      ],
+      "op": "JUMP",
+      "path": "101"
+    },
+    "949": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2013,
+        2046
+      ],
+      "op": "JUMPDEST",
+      "path": "101"
+    },
+    "950": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2012,
+        2046
+      ],
+      "op": "ISZERO",
+      "path": "101"
+    },
+    "951": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2005,
+        2046
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "952": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        2005,
+        2046
+      ],
+      "op": "POP",
+      "path": "101"
+    },
+    "953": {
+      "fn": "Initializable._isConstructor",
+      "offset": [
+        1941,
+        2053
+      ],
+      "op": "SWAP1",
+      "path": "101"
+    },
+    "954": {
+      "fn": "Initializable._isConstructor",
+      "jump": "o",
+      "offset": [
+        1941,
+        2053
+      ],
+      "op": "JUMP",
+      "path": "101"
+    },
+    "955": {
+      "fn": "Address.isContract",
+      "offset": [
+        726,
+        1139
+      ],
+      "op": "JUMPDEST",
+      "path": "135"
+    },
+    "956": {
+      "fn": "Address.isContract",
+      "offset": [
+        1086,
+        1106
+      ],
+      "op": "EXTCODESIZE",
+      "path": "135"
+    },
+    "957": {
+      "fn": "Address.isContract",
+      "offset": [
+        1124,
+        1132
+      ],
+      "op": "ISZERO",
+      "path": "135",
+      "statement": 6
+    },
+    "958": {
+      "fn": "Address.isContract",
+      "offset": [
+        1124,
+        1132
+      ],
+      "op": "ISZERO",
+      "path": "135"
+    },
+    "959": {
+      "fn": "Address.isContract",
+      "offset": [
+        1124,
+        1132
+      ],
+      "op": "SWAP1",
+      "path": "135"
+    },
+    "960": {
+      "fn": "Address.isContract",
+      "jump": "o",
+      "offset": [
+        726,
+        1139
+      ],
+      "op": "JUMP",
+      "path": "135"
+    }
+  },
+  "sha1": "eefd00245617ef5cf2f9dcaf390ff707dad91bf6",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"../proxy/Initializable.sol\";\n\n/**\n * @title InitializableMock\n * @dev This contract is a mock to test initializable functionality\n */\ncontract InitializableMock is Initializable {\n\n  bool public initializerRan;\n  uint256 public x;\n\n  function initialize() public initializer {\n    initializerRan = true;\n  }\n\n  function initializeNested() public initializer {\n    initialize();\n  }\n\n  function initializeWithX(uint256 _x) public payable initializer {\n    x = _x;\n  }\n\n  function nonInitializable(uint256 _x) public payable {\n    x = _x;\n  }\n\n  function fail() public pure {\n    require(false, \"InitializableMock forced failure\");\n  }\n\n}\n",
+  "sourceMap": "208:502:72:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/InitializableMock.sol",
+  "type": "contract"
+}

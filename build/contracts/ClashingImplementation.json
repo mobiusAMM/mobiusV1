@@ -1,0 +1,1155 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "delegatedFunction",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "34": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/ClashingImplementation.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/ClashingImplementation.sol",
+    "exportedSymbols": {
+      "ClashingImplementation": [
+        10457
+      ]
+    },
+    "id": 10458,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10439,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:34"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 10440,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:191:34",
+          "text": " @dev Implementation contract with an admin() function made to clash with\n @dev TransparentUpgradeableProxy's to test correct functioning of the\n @dev Transparent Proxy feature."
+        },
+        "fullyImplemented": true,
+        "id": 10457,
+        "linearizedBaseContracts": [
+          10457
+        ],
+        "name": "ClashingImplementation",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 10447,
+              "nodeType": "Block",
+              "src": "345:60:34",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "307830303030303030303030303030303030303030303030303030303030303030303131313131313432",
+                    "id": 10445,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "358:42:34",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    },
+                    "value": "0x0000000000000000000000000000000011111142"
+                  },
+                  "functionReturnParameters": 10444,
+                  "id": 10446,
+                  "nodeType": "Return",
+                  "src": "351:49:34"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "f851a440",
+            "id": 10448,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "admin",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10441,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "310:2:34"
+            },
+            "returnParameters": {
+              "id": 10444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10443,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10448,
+                  "src": "336:7:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10442,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "336:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "335:9:34"
+            },
+            "scope": 10457,
+            "src": "296:109:34",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10455,
+              "nodeType": "Block",
+              "src": "467:22:34",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 10453,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "480:4:34",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 10452,
+                  "id": 10454,
+                  "nodeType": "Return",
+                  "src": "473:11:34"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "abf8e0e7",
+            "id": 10456,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegatedFunction",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10449,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "435:2:34"
+            },
+            "returnParameters": {
+              "id": 10452,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10451,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10456,
+                  "src": "461:4:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10450,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:4:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:6:34"
+            },
+            "scope": 10457,
+            "src": "409:80:34",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10458,
+        "src": "259:232:34"
+      }
+    ],
+    "src": "33:459:34"
+  },
+  "bytecode": "608060405234801561001057600080fd5b5060b68061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063abf8e0e7146037578063f851a440146051575b600080fd5b603d6073565b604080519115158252519081900360200190f35b60576078565b604080516001600160a01b039092168252519081900360200190f35b600190565b63111111429056fea2646970667358221220036869aea7dc9cf536f854bd5a6f3ce485d2d8d4fc3fc44dcd535335145cd65c64736f6c634300060c0033",
+  "bytecodeSha1": "5eb4c0f14931fd2c1a5c405f81536d4855c65f09",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "ClashingImplementation",
+  "coverageMap": {
+    "branches": {
+      "34": {}
+    },
+    "statements": {
+      "34": {
+        "ClashingImplementation.admin": {
+          "1": [
+            351,
+            400
+          ]
+        },
+        "ClashingImplementation.delegatedFunction": {
+          "0": [
+            473,
+            484
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "6080604052348015600f57600080fd5b506004361060325760003560e01c8063abf8e0e7146037578063f851a440146051575b600080fd5b603d6073565b604080519115158252519081900360200190f35b60576078565b604080516001600160a01b039092168252519081900360200190f35b600190565b63111111429056fea2646970667358221220036869aea7dc9cf536f854bd5a6f3ce485d2d8d4fc3fc44dcd535335145cd65c64736f6c634300060c0033",
+  "deployedSourceMap": "259:232:34:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;409:80;;;:::i;:::-;;;;;;;;;;;;;;;;;;296:109;;;:::i;:::-;;;;-1:-1:-1;;;;;296:109:34;;;;;;;;;;;;;;409:80;480:4;409:80;:::o;296:109::-;358:42;296:109;:::o",
+  "language": "Solidity",
+  "natspec": {
+    "details": "Implementation contract with an admin() function made to clash withTransparentUpgradeableProxy's to test correct functioning of theTransparent Proxy feature.",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    259,
+    491
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xABF8E0E7 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0xF851A440 EQ PUSH1 0x51 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3D PUSH1 0x73 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 ISZERO ISZERO DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x57 PUSH1 0x78 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x1 SWAP1 JUMP JUMPDEST PUSH4 0x11111142 SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SUB PUSH9 0x69AEA7DC9CF536F854 0xBD GAS PUSH16 0x3CE485D2D8D4FC3FC44DCD535335145C 0xD6 0x5C PUSH5 0x736F6C6343 STOP MOD 0xC STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "MSTORE",
+      "path": "34"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "CALLVALUE",
+      "path": "34"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "ISZERO",
+      "path": "34"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0xF"
+    },
+    "10": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "JUMPI",
+      "path": "34"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x0"
+    },
+    "13": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "14": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "REVERT",
+      "path": "34"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "POP",
+      "path": "34"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x4"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "CALLDATASIZE",
+      "path": "34"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "LT",
+      "path": "34"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x32"
+    },
+    "23": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "JUMPI",
+      "path": "34"
+    },
+    "24": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "CALLDATALOAD",
+      "path": "34"
+    },
+    "27": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0xE0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "SHR",
+      "path": "34"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH4",
+      "path": "34",
+      "value": "0xABF8E0E7"
+    },
+    "36": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "EQ",
+      "path": "34"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x37"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "JUMPI",
+      "path": "34"
+    },
+    "40": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "41": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH4",
+      "path": "34",
+      "value": "0xF851A440"
+    },
+    "46": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "EQ",
+      "path": "34"
+    },
+    "47": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x51"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "JUMPI",
+      "path": "34"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "51": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x0"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "54": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        259,
+        491
+      ],
+      "op": "REVERT",
+      "path": "34"
+    },
+    "55": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "56": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x3D"
+    },
+    "58": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x73"
+    },
+    "60": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "jump": "i",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "JUMP",
+      "path": "34"
+    },
+    "61": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "62": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x40"
+    },
+    "64": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "65": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "MLOAD",
+      "path": "34"
+    },
+    "66": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "SWAP2",
+      "path": "34"
+    },
+    "67": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "ISZERO",
+      "path": "34"
+    },
+    "68": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "ISZERO",
+      "path": "34"
+    },
+    "69": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "DUP3",
+      "path": "34"
+    },
+    "70": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "MSTORE",
+      "path": "34"
+    },
+    "71": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "MLOAD",
+      "path": "34"
+    },
+    "72": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "73": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "DUP2",
+      "path": "34"
+    },
+    "74": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "75": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "SUB",
+      "path": "34"
+    },
+    "76": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x20"
+    },
+    "78": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "ADD",
+      "path": "34"
+    },
+    "79": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "80": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "RETURN",
+      "path": "34"
+    },
+    "81": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "82": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x57"
+    },
+    "84": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x78"
+    },
+    "86": {
+      "fn": "ClashingImplementation.admin",
+      "jump": "i",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "JUMP",
+      "path": "34"
+    },
+    "87": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "88": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x40"
+    },
+    "90": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "DUP1",
+      "path": "34"
+    },
+    "91": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "MLOAD",
+      "path": "34"
+    },
+    "92": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "94": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "96": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "98": {
+      "op": "SHL"
+    },
+    "99": {
+      "op": "SUB"
+    },
+    "100": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "101": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SWAP3",
+      "path": "34"
+    },
+    "102": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "AND",
+      "path": "34"
+    },
+    "103": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "DUP3",
+      "path": "34"
+    },
+    "104": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "MSTORE",
+      "path": "34"
+    },
+    "105": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "MLOAD",
+      "path": "34"
+    },
+    "106": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "107": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "DUP2",
+      "path": "34"
+    },
+    "108": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "109": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SUB",
+      "path": "34"
+    },
+    "110": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "value": "0x20"
+    },
+    "112": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "ADD",
+      "path": "34"
+    },
+    "113": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "114": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "RETURN",
+      "path": "34"
+    },
+    "115": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "116": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        480,
+        484
+      ],
+      "op": "PUSH1",
+      "path": "34",
+      "statement": 0,
+      "value": "0x1"
+    },
+    "118": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "119": {
+      "fn": "ClashingImplementation.delegatedFunction",
+      "jump": "o",
+      "offset": [
+        409,
+        489
+      ],
+      "op": "JUMP",
+      "path": "34"
+    },
+    "120": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "JUMPDEST",
+      "path": "34"
+    },
+    "121": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        358,
+        400
+      ],
+      "op": "PUSH4",
+      "path": "34",
+      "statement": 1,
+      "value": "0x11111142"
+    },
+    "126": {
+      "fn": "ClashingImplementation.admin",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "SWAP1",
+      "path": "34"
+    },
+    "127": {
+      "fn": "ClashingImplementation.admin",
+      "jump": "o",
+      "offset": [
+        296,
+        405
+      ],
+      "op": "JUMP",
+      "path": "34"
+    }
+  },
+  "sha1": "df10dacad1a745fd94efeb1c739dc01e5e53f30f",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\n\n/**\n * @dev Implementation contract with an admin() function made to clash with\n * @dev TransparentUpgradeableProxy's to test correct functioning of the\n * @dev Transparent Proxy feature.\n */\ncontract ClashingImplementation {\n\n  function admin() external pure returns (address) {\n    return 0x0000000000000000000000000000000011111142;\n  }\n\n  function delegatedFunction() external pure returns (bool) {\n    return true;\n  }\n}\n",
+  "sourceMap": "259:232:34:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/ClashingImplementation.sol",
+  "type": "contract"
+}

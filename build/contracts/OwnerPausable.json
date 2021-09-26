@@ -1,0 +1,6315 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Paused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Unpaused",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "13": "contracts/openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol",
+    "137": "contracts/openzeppelin-contracts@3.4.0/contracts/utils/Context.sol",
+    "142": "contracts/openzeppelin-contracts@3.4.0/contracts/utils/Pausable.sol",
+    "4": "contracts/OwnerPausable.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/OwnerPausable.sol",
+    "exportedSymbols": {
+      "OwnerPausable": [
+        1678
+      ]
+    },
+    "id": 1679,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1646,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol",
+        "file": "./openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol",
+        "id": 1647,
+        "nodeType": "ImportDirective",
+        "scope": 1679,
+        "sourceUnit": 7755,
+        "src": "58:69:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/utils/Pausable.sol",
+        "file": "./openzeppelin-contracts@3.4.0/contracts/utils/Pausable.sol",
+        "id": 1648,
+        "nodeType": "ImportDirective",
+        "scope": 1679,
+        "sourceUnit": 24048,
+        "src": "128:69:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1650,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 7754,
+              "src": "425:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$7754",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 1651,
+            "nodeType": "InheritanceSpecifier",
+            "src": "425:7:4"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1652,
+              "name": "Pausable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 24047,
+              "src": "434:8:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Pausable_$24047",
+                "typeString": "contract Pausable"
+              }
+            },
+            "id": 1653,
+            "nodeType": "InheritanceSpecifier",
+            "src": "434:8:4"
+          }
+        ],
+        "contractDependencies": [
+          7754,
+          22742,
+          24047
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 1649,
+          "nodeType": "StructuredDocumentation",
+          "src": "199:199:4",
+          "text": " @title OwnerPausable\n @notice An ownable contract allows the owner to pause and unpause the\n contract without a delay.\n @dev Only methods using the provided modifiers will be paused."
+        },
+        "fullyImplemented": true,
+        "id": 1678,
+        "linearizedBaseContracts": [
+          1678,
+          24047,
+          7754,
+          22742
+        ],
+        "name": "OwnerPausable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1664,
+              "nodeType": "Block",
+              "src": "562:34:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1659,
+                        "name": "Pausable",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 24047,
+                        "src": "572:8:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Pausable_$24047_$",
+                          "typeString": "type(contract Pausable)"
+                        }
+                      },
+                      "id": 1661,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_pause",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 24030,
+                      "src": "572:15:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 1662,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "572:17:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1663,
+                  "nodeType": "ExpressionStatement",
+                  "src": "572:17:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 1654,
+              "nodeType": "StructuredDocumentation",
+              "src": "449:72:4",
+              "text": " @notice Pause the contract. Revert if already paused."
+            },
+            "functionSelector": "8456cb59",
+            "id": 1665,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1657,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1656,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 7703,
+                  "src": "552:9:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "552:9:4"
+              }
+            ],
+            "name": "pause",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1655,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "540:2:4"
+            },
+            "returnParameters": {
+              "id": 1658,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "562:0:4"
+            },
+            "scope": 1678,
+            "src": "526:70:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 1676,
+              "nodeType": "Block",
+              "src": "721:36:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1671,
+                        "name": "Pausable",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 24047,
+                        "src": "731:8:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Pausable_$24047_$",
+                          "typeString": "type(contract Pausable)"
+                        }
+                      },
+                      "id": 1673,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_unpause",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 24046,
+                      "src": "731:17:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 1674,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "731:19:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1675,
+                  "nodeType": "ExpressionStatement",
+                  "src": "731:19:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 1666,
+              "nodeType": "StructuredDocumentation",
+              "src": "602:76:4",
+              "text": " @notice Unpause the contract. Revert if already unpaused."
+            },
+            "functionSelector": "3f4ba83a",
+            "id": 1677,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 1669,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 1668,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 7703,
+                  "src": "711:9:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "711:9:4"
+              }
+            ],
+            "name": "unpause",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1667,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "699:2:4"
+            },
+            "returnParameters": {
+              "id": 1670,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "721:0:4"
+            },
+            "scope": 1678,
+            "src": "683:74:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1679,
+        "src": "399:360:4"
+      }
+    ],
+    "src": "33:727:4"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50600061001b610077565b600080546001600160a01b0319166001600160a01b0383169081178255604051929350917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a3506000805460ff60a01b1916905561007b565b3390565b6105368061008a6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80633f4ba83a146100675780635c975abb14610071578063715018a61461008d5780638456cb59146100955780638da5cb5b1461009d578063f2fde38b146100c1575b600080fd5b61006f6100e7565b005b610079610153565b604080519115158252519081900360200190f35b61006f610163565b61006f61020f565b6100a5610279565b604080516001600160a01b039092168252519081900360200190f35b61006f600480360360208110156100d757600080fd5b50356001600160a01b0316610288565b6100ef61038a565b6001600160a01b0316610100610279565b6001600160a01b031614610149576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b61015161038e565b565b600054600160a01b900460ff1690565b61016b61038a565b6001600160a01b031661017c610279565b6001600160a01b0316146101c5576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b61021761038a565b6001600160a01b0316610228610279565b6001600160a01b031614610271576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b610151610431565b6000546001600160a01b031690565b61029061038a565b6001600160a01b03166102a1610279565b6001600160a01b0316146102ea576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b6001600160a01b03811661032f5760405162461bcd60e51b81526004018080602001828103825260268152602001806104bb6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b3390565b610396610153565b6103de576040805162461bcd60e51b815260206004820152601460248201527314185d5cd8589b194e881b9bdd081c185d5cd95960621b604482015290519081900360640190fd5b6000805460ff60a01b191690557f5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa61041461038a565b604080516001600160a01b039092168252519081900360200190a1565b610439610153565b1561047e576040805162461bcd60e51b815260206004820152601060248201526f14185d5cd8589b194e881c185d5cd95960821b604482015290519081900360640190fd5b6000805460ff60a01b1916600160a01b1790557f62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a25861041461038a56fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f20616464726573734f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572a26469706673582212202ba2071b4a6ff6879d6102c20ef3dc42d86540c403284d2d989d8dddd312e58664736f6c634300060c0033",
+  "bytecodeSha1": "548e9b40fe9ca53fc06f65df5e1170038137dba4",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "OwnerPausable",
+  "coverageMap": {
+    "branches": {
+      "13": {
+        "Ownable.transferOwnership": {
+          "14": [
+            1297,
+            1320,
+            true
+          ],
+          "15": [
+            2099,
+            2121,
+            true
+          ]
+        }
+      },
+      "137": {},
+      "142": {
+        "Pausable._unpause": {
+          "16": [
+            1631,
+            1639,
+            true
+          ]
+        }
+      },
+      "4": {}
+    },
+    "statements": {
+      "13": {
+        "Ownable.owner": {
+          "5": [
+            1150,
+            1163
+          ]
+        },
+        "Ownable.renounceOwnership": {
+          "2": [
+            1781,
+            1826
+          ],
+          "3": [
+            1836,
+            1855
+          ]
+        },
+        "Ownable.transferOwnership": {
+          "6": [
+            2091,
+            2164
+          ],
+          "7": [
+            2174,
+            2217
+          ],
+          "8": [
+            2227,
+            2244
+          ]
+        }
+      },
+      "137": {
+        "Context._msgSender": {
+          "9": [
+            678,
+            695
+          ]
+        }
+      },
+      "142": {
+        "Pausable._pause": {
+          "12": [
+            1876,
+            1890
+          ],
+          "13": [
+            1900,
+            1925
+          ]
+        },
+        "Pausable._unpause": {
+          "10": [
+            2122,
+            2137
+          ],
+          "11": [
+            2147,
+            2174
+          ]
+        },
+        "Pausable.paused": {
+          "1": [
+            1115,
+            1129
+          ]
+        }
+      },
+      "4": {
+        "OwnerPausable.pause": {
+          "4": [
+            572,
+            589
+          ]
+        },
+        "OwnerPausable.unpause": {
+          "0": [
+            731,
+            750
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "Context",
+    "Ownable",
+    "Pausable"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100625760003560e01c80633f4ba83a146100675780635c975abb14610071578063715018a61461008d5780638456cb59146100955780638da5cb5b1461009d578063f2fde38b146100c1575b600080fd5b61006f6100e7565b005b610079610153565b604080519115158252519081900360200190f35b61006f610163565b61006f61020f565b6100a5610279565b604080516001600160a01b039092168252519081900360200190f35b61006f600480360360208110156100d757600080fd5b50356001600160a01b0316610288565b6100ef61038a565b6001600160a01b0316610100610279565b6001600160a01b031614610149576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b61015161038e565b565b600054600160a01b900460ff1690565b61016b61038a565b6001600160a01b031661017c610279565b6001600160a01b0316146101c5576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b61021761038a565b6001600160a01b0316610228610279565b6001600160a01b031614610271576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b610151610431565b6000546001600160a01b031690565b61029061038a565b6001600160a01b03166102a1610279565b6001600160a01b0316146102ea576040805162461bcd60e51b815260206004820181905260248201526000805160206104e1833981519152604482015290519081900360640190fd5b6001600160a01b03811661032f5760405162461bcd60e51b81526004018080602001828103825260268152602001806104bb6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b3390565b610396610153565b6103de576040805162461bcd60e51b815260206004820152601460248201527314185d5cd8589b194e881b9bdd081c185d5cd95960621b604482015290519081900360640190fd5b6000805460ff60a01b191690557f5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa61041461038a565b604080516001600160a01b039092168252519081900360200190a1565b610439610153565b1561047e576040805162461bcd60e51b815260206004820152601060248201526f14185d5cd8589b194e881c185d5cd95960821b604482015290519081900360640190fd5b6000805460ff60a01b1916600160a01b1790557f62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a25861041461038a56fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f20616464726573734f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572a26469706673582212202ba2071b4a6ff6879d6102c20ef3dc42d86540c403284d2d989d8dddd312e58664736f6c634300060c0033",
+  "deployedSourceMap": "399:360:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;683:74;;;:::i;:::-;;1052:84:142;;;:::i;:::-;;;;;;;;;;;;;;;;;;1717:145:13;;;:::i;526:70:4:-;;;:::i;1085:85:13:-;;;:::i;:::-;;;;-1:-1:-1;;;;;1085:85:13;;;;;;;;;;;;;;2011:240;;;;;;;;;;;;;;;;-1:-1:-1;2011:240:13;-1:-1:-1;;;;;2011:240:13;;:::i;683:74:4:-;1308:12:13;:10;:12::i;:::-;-1:-1:-1;;;;;1297:23:13;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1297:23:13;;1289:68;;;;;-1:-1:-1;;;1289:68:13;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;1289:68:13;;;;;;;;;;;;;;;731:19:4::1;:17;:19::i;:::-;683:74::o:0;1052:84:142:-;1099:4;1122:7;-1:-1:-1;;;1122:7:142;;;;;1052:84::o;1717:145:13:-;1308:12;:10;:12::i;:::-;-1:-1:-1;;;;;1297:23:13;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1297:23:13;;1289:68;;;;;-1:-1:-1;;;1289:68:13;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;1289:68:13;;;;;;;;;;;;;;;1823:1:::1;1807:6:::0;;1786:40:::1;::::0;-1:-1:-1;;;;;1807:6:13;;::::1;::::0;1786:40:::1;::::0;1823:1;;1786:40:::1;1853:1;1836:19:::0;;-1:-1:-1;;;;;;1836:19:13::1;::::0;;1717:145::o;526:70:4:-;1308:12:13;:10;:12::i;:::-;-1:-1:-1;;;;;1297:23:13;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1297:23:13;;1289:68;;;;;-1:-1:-1;;;1289:68:13;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;1289:68:13;;;;;;;;;;;;;;;572:17:4::1;:15;:17::i;1085:85:13:-:0;1131:7;1157:6;-1:-1:-1;;;;;1157:6:13;1085:85;:::o;2011:240::-;1308:12;:10;:12::i;:::-;-1:-1:-1;;;;;1297:23:13;:7;:5;:7::i;:::-;-1:-1:-1;;;;;1297:23:13;;1289:68;;;;;-1:-1:-1;;;1289:68:13;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;1289:68:13;;;;;;;;;;;;;;;-1:-1:-1;;;;;2099:22:13;::::1;2091:73;;;;-1:-1:-1::0;;;2091:73:13::1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2200:6;::::0;;2179:38:::1;::::0;-1:-1:-1;;;;;2179:38:13;;::::1;::::0;2200:6;::::1;::::0;2179:38:::1;::::0;::::1;2227:6;:17:::0;;-1:-1:-1;;;;;;2227:17:13::1;-1:-1:-1::0;;;;;2227:17:13;;;::::1;::::0;;;::::1;::::0;;2011:240::o;598:104:137:-;685:10;598:104;:::o;2064:117:142:-;1631:8;:6;:8::i;:::-;1623:41;;;;;-1:-1:-1;;;1623:41:142;;;;;;;;;;;;-1:-1:-1;;;1623:41:142;;;;;;;;;;;;;;;2132:5:::1;2122:15:::0;;-1:-1:-1;;;;2122:15:142::1;::::0;;2152:22:::1;2161:12;:10;:12::i;:::-;2152:22;::::0;;-1:-1:-1;;;;;2152:22:142;;::::1;::::0;;;;;;;::::1;::::0;;::::1;2064:117::o:0;1817:115::-;1366:8;:6;:8::i;:::-;1365:9;1357:38;;;;;-1:-1:-1;;;1357:38:142;;;;;;;;;;;;-1:-1:-1;;;1357:38:142;;;;;;;;;;;;;;;1876:7:::1;:14:::0;;-1:-1:-1;;;;1876:14:142::1;-1:-1:-1::0;;;1876:14:142::1;::::0;;1905:20:::1;1912:12;:10;:12::i",
+  "language": "Solidity",
+  "natspec": {
+    "details": "Only methods using the provided modifiers will be paused.",
+    "kind": "dev",
+    "methods": {
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "pause()": {
+        "notice": "Pause the contract. Revert if already paused."
+      },
+      "paused()": {
+        "details": "Returns true if the contract is paused, and false otherwise."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "unpause()": {
+        "notice": "Unpause the contract. Revert if already unpaused."
+      }
+    },
+    "notice": "An ownable contract allows the owner to pause and unpause the contract without a delay.",
+    "title": "OwnerPausable",
+    "version": 1
+  },
+  "offset": [
+    399,
+    759
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x62 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x3F4BA83A EQ PUSH2 0x67 JUMPI DUP1 PUSH4 0x5C975ABB EQ PUSH2 0x71 JUMPI DUP1 PUSH4 0x715018A6 EQ PUSH2 0x8D JUMPI DUP1 PUSH4 0x8456CB59 EQ PUSH2 0x95 JUMPI DUP1 PUSH4 0x8DA5CB5B EQ PUSH2 0x9D JUMPI DUP1 PUSH4 0xF2FDE38B EQ PUSH2 0xC1 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x6F PUSH2 0xE7 JUMP JUMPDEST STOP JUMPDEST PUSH2 0x79 PUSH2 0x153 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 ISZERO ISZERO DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH2 0x6F PUSH2 0x163 JUMP JUMPDEST PUSH2 0x6F PUSH2 0x20F JUMP JUMPDEST PUSH2 0xA5 PUSH2 0x279 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH2 0x6F PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH2 0xD7 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH2 0x288 JUMP JUMPDEST PUSH2 0xEF PUSH2 0x38A JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH2 0x100 PUSH2 0x279 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND EQ PUSH2 0x149 JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x24 DUP3 ADD MSTORE PUSH1 0x0 DUP1 MLOAD PUSH1 0x20 PUSH2 0x4E1 DUP4 CODECOPY DUP2 MLOAD SWAP2 MSTORE PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH2 0x151 PUSH2 0x38E JUMP JUMPDEST JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x1 PUSH1 0xA0 SHL SWAP1 DIV PUSH1 0xFF AND SWAP1 JUMP JUMPDEST PUSH2 0x16B PUSH2 0x38A JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH2 0x17C PUSH2 0x279 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND EQ PUSH2 0x1C5 JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x24 DUP3 ADD MSTORE PUSH1 0x0 DUP1 MLOAD PUSH1 0x20 PUSH2 0x4E1 DUP4 CODECOPY DUP2 MLOAD SWAP2 MSTORE PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND SWAP1 PUSH32 0x8BE0079C531659141344CD1FD0A4F28419497F9722A3DAAFE3B4186F6B6457E0 SWAP1 DUP4 SWAP1 LOG3 PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB NOT AND SWAP1 SSTORE JUMP JUMPDEST PUSH2 0x217 PUSH2 0x38A JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH2 0x228 PUSH2 0x279 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND EQ PUSH2 0x271 JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x24 DUP3 ADD MSTORE PUSH1 0x0 DUP1 MLOAD PUSH1 0x20 PUSH2 0x4E1 DUP4 CODECOPY DUP2 MLOAD SWAP2 MSTORE PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH2 0x151 PUSH2 0x431 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND SWAP1 JUMP JUMPDEST PUSH2 0x290 PUSH2 0x38A JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH2 0x2A1 PUSH2 0x279 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND EQ PUSH2 0x2EA JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD DUP2 SWAP1 MSTORE PUSH1 0x24 DUP3 ADD MSTORE PUSH1 0x0 DUP1 MLOAD PUSH1 0x20 PUSH2 0x4E1 DUP4 CODECOPY DUP2 MLOAD SWAP2 MSTORE PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 AND PUSH2 0x32F JUMPI PUSH1 0x40 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x4 ADD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE PUSH1 0x26 DUP2 MSTORE PUSH1 0x20 ADD DUP1 PUSH2 0x4BB PUSH1 0x26 SWAP2 CODECOPY PUSH1 0x40 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP1 DUP6 AND SWAP4 SWAP3 AND SWAP2 PUSH32 0x8BE0079C531659141344CD1FD0A4F28419497F9722A3DAAFE3B4186F6B6457E0 SWAP2 LOG3 PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB NOT AND PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP3 SWAP1 SWAP3 AND SWAP2 SWAP1 SWAP2 OR SWAP1 SSTORE JUMP JUMPDEST CALLER SWAP1 JUMP JUMPDEST PUSH2 0x396 PUSH2 0x153 JUMP JUMPDEST PUSH2 0x3DE JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x14 PUSH1 0x24 DUP3 ADD MSTORE PUSH20 0x14185D5CD8589B194E881B9BDD081C185D5CD959 PUSH1 0x62 SHL PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF PUSH1 0xA0 SHL NOT AND SWAP1 SSTORE PUSH32 0x5DB9EE0A495BF2E6FF9C91A7834C1BA4FDD244A5E8AA4E537BD38AEAE4B073AA PUSH2 0x414 PUSH2 0x38A JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 LOG1 JUMP JUMPDEST PUSH2 0x439 PUSH2 0x153 JUMP JUMPDEST ISZERO PUSH2 0x47E JUMPI PUSH1 0x40 DUP1 MLOAD PUSH3 0x461BCD PUSH1 0xE5 SHL DUP2 MSTORE PUSH1 0x20 PUSH1 0x4 DUP3 ADD MSTORE PUSH1 0x10 PUSH1 0x24 DUP3 ADD MSTORE PUSH16 0x14185D5CD8589B194E881C185D5CD959 PUSH1 0x82 SHL PUSH1 0x44 DUP3 ADD MSTORE SWAP1 MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x64 ADD SWAP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF PUSH1 0xA0 SHL NOT AND PUSH1 0x1 PUSH1 0xA0 SHL OR SWAP1 SSTORE PUSH32 0x62E78CEA01BEE320CD4E420270B5EA74000D11B0C9F74754EBDBFC544B05A258 PUSH2 0x414 PUSH2 0x38A JUMP INVALID 0x4F PUSH24 0x6E61626C653A206E6577206F776E65722069732074686520 PUSH27 0x65726F20616464726573734F776E61626C653A2063616C6C657220 PUSH10 0x73206E6F742074686520 PUSH16 0x776E6572A26469706673582212202BA2 SMOD SHL 0x4A PUSH16 0xF6879D6102C20EF3DC42D86540C40328 0x4D 0x2D SWAP9 SWAP14 DUP14 0xDD 0xD3 SLT 0xE5 DUP7 PUSH5 0x736F6C6343 STOP MOD 0xC STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "MSTORE",
+      "path": "4"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "CALLVALUE",
+      "path": "4"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "ISZERO",
+      "path": "4"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "REVERT",
+      "path": "4"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "POP",
+      "path": "4"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "CALLDATASIZE",
+      "path": "4"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "LT",
+      "path": "4"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x62"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "CALLDATALOAD",
+      "path": "4"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "SHR",
+      "path": "4"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "4",
+      "value": "0x3F4BA83A"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "EQ",
+      "path": "4"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x67"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "4",
+      "value": "0x5C975ABB"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "EQ",
+      "path": "4"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x71"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "4",
+      "value": "0x715018A6"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "EQ",
+      "path": "4"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x8D"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "4",
+      "value": "0x8456CB59"
+    },
+    "71": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "EQ",
+      "path": "4"
+    },
+    "72": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x95"
+    },
+    "75": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "76": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "77": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "4",
+      "value": "0x8DA5CB5B"
+    },
+    "82": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "EQ",
+      "path": "4"
+    },
+    "83": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x9D"
+    },
+    "86": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "87": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "88": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH4",
+      "path": "4",
+      "value": "0xF2FDE38B"
+    },
+    "93": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "EQ",
+      "path": "4"
+    },
+    "94": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0xC1"
+    },
+    "97": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPI",
+      "path": "4"
+    },
+    "98": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "99": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "PUSH1",
+      "path": "4",
+      "value": "0x0"
+    },
+    "101": {
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "DUP1",
+      "path": "4"
+    },
+    "102": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        399,
+        759
+      ],
+      "op": "REVERT",
+      "path": "4"
+    },
+    "103": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "104": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x6F"
+    },
+    "107": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0xE7"
+    },
+    "110": {
+      "fn": "OwnerPausable.unpause",
+      "jump": "i",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "JUMP",
+      "path": "4"
+    },
+    "111": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "112": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "STOP",
+      "path": "4"
+    },
+    "113": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "114": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x79"
+    },
+    "117": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x153"
+    },
+    "120": {
+      "fn": "Pausable.paused",
+      "jump": "i",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "JUMP",
+      "path": "142"
+    },
+    "121": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "122": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x40"
+    },
+    "124": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "DUP1",
+      "path": "142"
+    },
+    "125": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "126": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "SWAP2",
+      "path": "142"
+    },
+    "127": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "ISZERO",
+      "path": "142"
+    },
+    "128": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "ISZERO",
+      "path": "142"
+    },
+    "129": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "130": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "131": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "132": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "133": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "DUP2",
+      "path": "142"
+    },
+    "134": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "135": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "SUB",
+      "path": "142"
+    },
+    "136": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x20"
+    },
+    "138": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "139": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "140": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "RETURN",
+      "path": "142"
+    },
+    "141": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1717,
+        1862
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "142": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1717,
+        1862
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x6F"
+    },
+    "145": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1717,
+        1862
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x163"
+    },
+    "148": {
+      "fn": "Ownable.renounceOwnership",
+      "jump": "i",
+      "offset": [
+        1717,
+        1862
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "149": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        526,
+        596
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "150": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        526,
+        596
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x6F"
+    },
+    "153": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        526,
+        596
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x20F"
+    },
+    "156": {
+      "fn": "OwnerPausable.pause",
+      "jump": "i",
+      "offset": [
+        526,
+        596
+      ],
+      "op": "JUMP",
+      "path": "4"
+    },
+    "157": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "158": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0xA5"
+    },
+    "161": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x279"
+    },
+    "164": {
+      "fn": "Ownable.owner",
+      "jump": "i",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "165": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "166": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "168": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "169": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "170": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "172": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "174": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "176": {
+      "op": "SHL"
+    },
+    "177": {
+      "op": "SUB"
+    },
+    "178": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "179": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SWAP3",
+      "path": "13"
+    },
+    "180": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "181": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "182": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "183": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "184": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "185": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "186": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "187": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "188": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "190": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "191": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "192": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "RETURN",
+      "path": "13"
+    },
+    "193": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "194": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x6F"
+    },
+    "197": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "199": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "200": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "CALLDATASIZE",
+      "path": "13"
+    },
+    "201": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "202": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "204": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "205": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "LT",
+      "path": "13"
+    },
+    "206": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "ISZERO",
+      "path": "13"
+    },
+    "207": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0xD7"
+    },
+    "210": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "211": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x0"
+    },
+    "213": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "214": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "REVERT",
+      "path": "13"
+    },
+    "215": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "216": {
+      "op": "POP"
+    },
+    "217": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "CALLDATALOAD",
+      "path": "13"
+    },
+    "218": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "220": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "222": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "224": {
+      "op": "SHL"
+    },
+    "225": {
+      "op": "SUB"
+    },
+    "226": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "227": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x288"
+    },
+    "230": {
+      "fn": "Ownable.transferOwnership",
+      "jump": "i",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "231": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "232": {
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0xEF"
+    },
+    "235": {
+      "offset": [
+        1308,
+        1318
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x38A"
+    },
+    "238": {
+      "jump": "i",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "239": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "240": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "242": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "244": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "246": {
+      "op": "SHL"
+    },
+    "247": {
+      "op": "SUB"
+    },
+    "248": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "249": {
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x100"
+    },
+    "252": {
+      "offset": [
+        1297,
+        1302
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x279"
+    },
+    "255": {
+      "jump": "i",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "256": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "257": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "259": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "261": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "263": {
+      "op": "SHL"
+    },
+    "264": {
+      "op": "SUB"
+    },
+    "265": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "266": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "267": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x149"
+    },
+    "270": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "271": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "273": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "274": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "275": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "279": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "281": {
+      "op": "SHL"
+    },
+    "282": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "283": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "284": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "286": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "288": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "289": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "290": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "291": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "292": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "293": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x24"
+    },
+    "295": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "296": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "297": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "298": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "300": {
+      "op": "DUP1"
+    },
+    "301": {
+      "op": "MLOAD"
+    },
+    "302": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "304": {
+      "op": "PUSH2",
+      "value": "0x4E1"
+    },
+    "307": {
+      "op": "DUP4"
+    },
+    "308": {
+      "op": "CODECOPY"
+    },
+    "309": {
+      "op": "DUP2"
+    },
+    "310": {
+      "op": "MLOAD"
+    },
+    "311": {
+      "op": "SWAP2"
+    },
+    "312": {
+      "op": "MSTORE"
+    },
+    "313": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x44"
+    },
+    "315": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "316": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "317": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "318": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "319": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "320": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "321": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "322": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "323": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "324": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x64"
+    },
+    "326": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "327": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "328": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "REVERT",
+      "path": "13"
+    },
+    "329": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "330": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        731,
+        750
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "statement": 0,
+      "value": "0x151"
+    },
+    "333": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        731,
+        748
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x38E"
+    },
+    "336": {
+      "fn": "OwnerPausable.unpause",
+      "jump": "i",
+      "offset": [
+        731,
+        750
+      ],
+      "op": "JUMP",
+      "path": "4"
+    },
+    "337": {
+      "fn": "OwnerPausable.unpause",
+      "offset": [
+        731,
+        750
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "338": {
+      "fn": "OwnerPausable.unpause",
+      "jump": "o",
+      "offset": [
+        683,
+        757
+      ],
+      "op": "JUMP",
+      "path": "4"
+    },
+    "339": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "340": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1099,
+        1103
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x0"
+    },
+    "342": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1122,
+        1129
+      ],
+      "op": "SLOAD",
+      "path": "142",
+      "statement": 1
+    },
+    "343": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "345": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "347": {
+      "op": "SHL"
+    },
+    "348": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1122,
+        1129
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "349": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1122,
+        1129
+      ],
+      "op": "DIV",
+      "path": "142"
+    },
+    "350": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1122,
+        1129
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0xFF"
+    },
+    "352": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1122,
+        1129
+      ],
+      "op": "AND",
+      "path": "142"
+    },
+    "353": {
+      "fn": "Pausable.paused",
+      "offset": [
+        1122,
+        1129
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "354": {
+      "fn": "Pausable.paused",
+      "jump": "o",
+      "offset": [
+        1052,
+        1136
+      ],
+      "op": "JUMP",
+      "path": "142"
+    },
+    "355": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1717,
+        1862
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "356": {
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x16B"
+    },
+    "359": {
+      "offset": [
+        1308,
+        1318
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x38A"
+    },
+    "362": {
+      "jump": "i",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "363": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "364": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "366": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "368": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "370": {
+      "op": "SHL"
+    },
+    "371": {
+      "op": "SUB"
+    },
+    "372": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "373": {
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x17C"
+    },
+    "376": {
+      "offset": [
+        1297,
+        1302
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x279"
+    },
+    "379": {
+      "jump": "i",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "380": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "381": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "383": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "385": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "387": {
+      "op": "SHL"
+    },
+    "388": {
+      "op": "SUB"
+    },
+    "389": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "390": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "391": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x1C5"
+    },
+    "394": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "395": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "397": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "398": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "399": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "403": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "405": {
+      "op": "SHL"
+    },
+    "406": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "407": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "408": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "410": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "412": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "413": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "414": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "415": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "416": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "417": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x24"
+    },
+    "419": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "420": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "421": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "422": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "424": {
+      "op": "DUP1"
+    },
+    "425": {
+      "op": "MLOAD"
+    },
+    "426": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "428": {
+      "op": "PUSH2",
+      "value": "0x4E1"
+    },
+    "431": {
+      "op": "DUP4"
+    },
+    "432": {
+      "op": "CODECOPY"
+    },
+    "433": {
+      "op": "DUP2"
+    },
+    "434": {
+      "op": "MLOAD"
+    },
+    "435": {
+      "op": "SWAP2"
+    },
+    "436": {
+      "op": "MSTORE"
+    },
+    "437": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x44"
+    },
+    "439": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "440": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "441": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "442": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "443": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "444": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "445": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "446": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "447": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "448": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x64"
+    },
+    "450": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "451": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "452": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "REVERT",
+      "path": "13"
+    },
+    "453": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "454": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1823,
+        1824
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "statement": 2,
+      "value": "0x0"
+    },
+    "456": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1807,
+        1813
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "457": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1807,
+        1813
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "458": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1786,
+        1826
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "460": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1786,
+        1826
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "461": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "463": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "465": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "467": {
+      "op": "SHL"
+    },
+    "468": {
+      "op": "SUB"
+    },
+    "469": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1807,
+        1813
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "470": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1807,
+        1813
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "471": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1807,
+        1813
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "472": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1807,
+        1813
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "473": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1786,
+        1826
+      ],
+      "op": "PUSH32",
+      "path": "13",
+      "value": "0x8BE0079C531659141344CD1FD0A4F28419497F9722A3DAAFE3B4186F6B6457E0"
+    },
+    "506": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1786,
+        1826
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "507": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1823,
+        1824
+      ],
+      "op": "DUP4",
+      "path": "13"
+    },
+    "508": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1823,
+        1824
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "509": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1786,
+        1826
+      ],
+      "op": "LOG3",
+      "path": "13"
+    },
+    "510": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1853,
+        1854
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "statement": 3,
+      "value": "0x0"
+    },
+    "512": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1836,
+        1855
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "513": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1836,
+        1855
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "514": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "516": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "518": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "520": {
+      "op": "SHL"
+    },
+    "521": {
+      "op": "SUB"
+    },
+    "522": {
+      "op": "NOT"
+    },
+    "523": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1836,
+        1855
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "524": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1836,
+        1855
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "525": {
+      "fn": "Ownable.renounceOwnership",
+      "offset": [
+        1836,
+        1855
+      ],
+      "op": "SSTORE",
+      "path": "13"
+    },
+    "526": {
+      "fn": "Ownable.renounceOwnership",
+      "jump": "o",
+      "offset": [
+        1717,
+        1862
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "527": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        526,
+        596
+      ],
+      "op": "JUMPDEST",
+      "path": "4"
+    },
+    "528": {
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x217"
+    },
+    "531": {
+      "offset": [
+        1308,
+        1318
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x38A"
+    },
+    "534": {
+      "jump": "i",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "535": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "536": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "538": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "540": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "542": {
+      "op": "SHL"
+    },
+    "543": {
+      "op": "SUB"
+    },
+    "544": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "545": {
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x228"
+    },
+    "548": {
+      "offset": [
+        1297,
+        1302
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x279"
+    },
+    "551": {
+      "jump": "i",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "552": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "553": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "555": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "557": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "559": {
+      "op": "SHL"
+    },
+    "560": {
+      "op": "SUB"
+    },
+    "561": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "562": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "563": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x271"
+    },
+    "566": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "567": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "569": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "570": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "571": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "575": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "577": {
+      "op": "SHL"
+    },
+    "578": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "579": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "580": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "582": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "584": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "585": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "586": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "587": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "588": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "589": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x24"
+    },
+    "591": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "592": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "593": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "594": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "596": {
+      "op": "DUP1"
+    },
+    "597": {
+      "op": "MLOAD"
+    },
+    "598": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "600": {
+      "op": "PUSH2",
+      "value": "0x4E1"
+    },
+    "603": {
+      "op": "DUP4"
+    },
+    "604": {
+      "op": "CODECOPY"
+    },
+    "605": {
+      "op": "DUP2"
+    },
+    "606": {
+      "op": "MLOAD"
+    },
+    "607": {
+      "op": "SWAP2"
+    },
+    "608": {
+      "op": "MSTORE"
+    },
+    "609": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x44"
+    },
+    "611": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "612": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "613": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "614": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "615": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "616": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "617": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "618": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "619": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "620": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x64"
+    },
+    "622": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "623": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "624": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "REVERT",
+      "path": "13"
+    },
+    "625": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "626": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        572,
+        589
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "statement": 4,
+      "value": "0x151"
+    },
+    "629": {
+      "fn": "OwnerPausable.pause",
+      "offset": [
+        572,
+        587
+      ],
+      "op": "PUSH2",
+      "path": "4",
+      "value": "0x431"
+    },
+    "632": {
+      "fn": "OwnerPausable.pause",
+      "jump": "i",
+      "offset": [
+        572,
+        589
+      ],
+      "op": "JUMP",
+      "path": "4"
+    },
+    "633": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "634": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1131,
+        1138
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x0"
+    },
+    "636": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1157,
+        1163
+      ],
+      "op": "SLOAD",
+      "path": "13",
+      "statement": 5
+    },
+    "637": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "639": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "641": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "643": {
+      "op": "SHL"
+    },
+    "644": {
+      "op": "SUB"
+    },
+    "645": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1157,
+        1163
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "646": {
+      "fn": "Ownable.owner",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "647": {
+      "fn": "Ownable.owner",
+      "jump": "o",
+      "offset": [
+        1085,
+        1170
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "648": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "649": {
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x290"
+    },
+    "652": {
+      "offset": [
+        1308,
+        1318
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x38A"
+    },
+    "655": {
+      "jump": "i",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "656": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1308,
+        1320
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "657": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "659": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "661": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "663": {
+      "op": "SHL"
+    },
+    "664": {
+      "op": "SUB"
+    },
+    "665": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "666": {
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x2A1"
+    },
+    "669": {
+      "offset": [
+        1297,
+        1302
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x279"
+    },
+    "672": {
+      "jump": "i",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "673": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1297,
+        1304
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "674": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "676": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "678": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "680": {
+      "op": "SHL"
+    },
+    "681": {
+      "op": "SUB"
+    },
+    "682": {
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "683": {
+      "branch": 14,
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1297,
+        1320
+      ],
+      "op": "EQ",
+      "path": "13"
+    },
+    "684": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x2EA"
+    },
+    "687": {
+      "branch": 14,
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "688": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "690": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "691": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "692": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "696": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "698": {
+      "op": "SHL"
+    },
+    "699": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "700": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "701": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "703": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "705": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "706": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "707": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "708": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "709": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "710": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x24"
+    },
+    "712": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "713": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "714": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "715": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "717": {
+      "op": "DUP1"
+    },
+    "718": {
+      "op": "MLOAD"
+    },
+    "719": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "721": {
+      "op": "PUSH2",
+      "value": "0x4E1"
+    },
+    "724": {
+      "op": "DUP4"
+    },
+    "725": {
+      "op": "CODECOPY"
+    },
+    "726": {
+      "op": "DUP2"
+    },
+    "727": {
+      "op": "MLOAD"
+    },
+    "728": {
+      "op": "SWAP2"
+    },
+    "729": {
+      "op": "MSTORE"
+    },
+    "730": {
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x44"
+    },
+    "732": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "733": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "734": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "735": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "736": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "737": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "738": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "739": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "740": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "741": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x64"
+    },
+    "743": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "744": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "745": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "REVERT",
+      "path": "13"
+    },
+    "746": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        1289,
+        1357
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "747": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "749": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "751": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "753": {
+      "op": "SHL"
+    },
+    "754": {
+      "op": "SUB"
+    },
+    "755": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2099,
+        2121
+      ],
+      "op": "DUP2",
+      "path": "13",
+      "statement": 6
+    },
+    "756": {
+      "branch": 15,
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2099,
+        2121
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "757": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x32F"
+    },
+    "760": {
+      "branch": 15,
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "JUMPI",
+      "path": "13"
+    },
+    "761": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "763": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "764": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "768": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "770": {
+      "op": "SHL"
+    },
+    "771": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "772": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "773": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x4"
+    },
+    "775": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "776": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "777": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "778": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "780": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "781": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "782": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "783": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "784": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP3",
+      "path": "13"
+    },
+    "785": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "786": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x26"
+    },
+    "788": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP2",
+      "path": "13"
+    },
+    "789": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "MSTORE",
+      "path": "13"
+    },
+    "790": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x20"
+    },
+    "792": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "793": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "794": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH2",
+      "path": "13",
+      "value": "0x4BB"
+    },
+    "797": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x26"
+    },
+    "799": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "800": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "CODECOPY",
+      "path": "13"
+    },
+    "801": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "803": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "ADD",
+      "path": "13"
+    },
+    "804": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "805": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "POP",
+      "path": "13"
+    },
+    "806": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "POP",
+      "path": "13"
+    },
+    "807": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "809": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "810": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "811": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "812": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "SUB",
+      "path": "13"
+    },
+    "813": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "814": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "REVERT",
+      "path": "13"
+    },
+    "815": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2091,
+        2164
+      ],
+      "op": "JUMPDEST",
+      "path": "13"
+    },
+    "816": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2200,
+        2206
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "statement": 7,
+      "value": "0x0"
+    },
+    "818": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2200,
+        2206
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "819": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2200,
+        2206
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "820": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "value": "0x40"
+    },
+    "822": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "MLOAD",
+      "path": "13"
+    },
+    "823": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "825": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "827": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "829": {
+      "op": "SHL"
+    },
+    "830": {
+      "op": "SUB"
+    },
+    "831": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "832": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "DUP6",
+      "path": "13"
+    },
+    "833": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "834": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "SWAP4",
+      "path": "13"
+    },
+    "835": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2200,
+        2206
+      ],
+      "op": "SWAP3",
+      "path": "13"
+    },
+    "836": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2200,
+        2206
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "837": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2200,
+        2206
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "838": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "PUSH32",
+      "path": "13",
+      "value": "0x8BE0079C531659141344CD1FD0A4F28419497F9722A3DAAFE3B4186F6B6457E0"
+    },
+    "871": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "872": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2179,
+        2217
+      ],
+      "op": "LOG3",
+      "path": "13"
+    },
+    "873": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2233
+      ],
+      "op": "PUSH1",
+      "path": "13",
+      "statement": 8,
+      "value": "0x0"
+    },
+    "875": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "DUP1",
+      "path": "13"
+    },
+    "876": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SLOAD",
+      "path": "13"
+    },
+    "877": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "879": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "881": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "883": {
+      "op": "SHL"
+    },
+    "884": {
+      "op": "SUB"
+    },
+    "885": {
+      "op": "NOT"
+    },
+    "886": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "887": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "889": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "891": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "893": {
+      "op": "SHL"
+    },
+    "894": {
+      "op": "SUB"
+    },
+    "895": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP3",
+      "path": "13"
+    },
+    "896": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "897": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP3",
+      "path": "13"
+    },
+    "898": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "AND",
+      "path": "13"
+    },
+    "899": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "900": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "901": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP2",
+      "path": "13"
+    },
+    "902": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "OR",
+      "path": "13"
+    },
+    "903": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SWAP1",
+      "path": "13"
+    },
+    "904": {
+      "fn": "Ownable.transferOwnership",
+      "offset": [
+        2227,
+        2244
+      ],
+      "op": "SSTORE",
+      "path": "13"
+    },
+    "905": {
+      "fn": "Ownable.transferOwnership",
+      "jump": "o",
+      "offset": [
+        2011,
+        2251
+      ],
+      "op": "JUMP",
+      "path": "13"
+    },
+    "906": {
+      "fn": "Context._msgSender",
+      "offset": [
+        598,
+        702
+      ],
+      "op": "JUMPDEST",
+      "path": "137"
+    },
+    "907": {
+      "fn": "Context._msgSender",
+      "offset": [
+        685,
+        695
+      ],
+      "op": "CALLER",
+      "path": "137",
+      "statement": 9
+    },
+    "908": {
+      "fn": "Context._msgSender",
+      "offset": [
+        598,
+        702
+      ],
+      "op": "SWAP1",
+      "path": "137"
+    },
+    "909": {
+      "fn": "Context._msgSender",
+      "jump": "o",
+      "offset": [
+        598,
+        702
+      ],
+      "op": "JUMP",
+      "path": "137"
+    },
+    "910": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2064,
+        2181
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "911": {
+      "offset": [
+        1631,
+        1639
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x396"
+    },
+    "914": {
+      "offset": [
+        1631,
+        1637
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x153"
+    },
+    "917": {
+      "jump": "i",
+      "offset": [
+        1631,
+        1639
+      ],
+      "op": "JUMP",
+      "path": "142"
+    },
+    "918": {
+      "branch": 16,
+      "fn": "Pausable._unpause",
+      "offset": [
+        1631,
+        1639
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "919": {
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x3DE"
+    },
+    "922": {
+      "branch": 16,
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "JUMPI",
+      "path": "142"
+    },
+    "923": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x40"
+    },
+    "925": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "DUP1",
+      "path": "142"
+    },
+    "926": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "927": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "931": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "933": {
+      "op": "SHL"
+    },
+    "934": {
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "DUP2",
+      "path": "142"
+    },
+    "935": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "936": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x20"
+    },
+    "938": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x4"
+    },
+    "940": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "941": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "942": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "943": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x14"
+    },
+    "945": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x24"
+    },
+    "947": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "948": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "949": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "950": {
+      "op": "PUSH20",
+      "value": "0x14185D5CD8589B194E881B9BDD081C185D5CD959"
+    },
+    "971": {
+      "op": "PUSH1",
+      "value": "0x62"
+    },
+    "973": {
+      "op": "SHL"
+    },
+    "974": {
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x44"
+    },
+    "976": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "977": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "978": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "979": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "980": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "981": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "982": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "DUP2",
+      "path": "142"
+    },
+    "983": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "984": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "SUB",
+      "path": "142"
+    },
+    "985": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x64"
+    },
+    "987": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "988": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "989": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "REVERT",
+      "path": "142"
+    },
+    "990": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        1623,
+        1664
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "991": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2132,
+        2137
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "statement": 10,
+      "value": "0x0"
+    },
+    "993": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2122,
+        2137
+      ],
+      "op": "DUP1",
+      "path": "142"
+    },
+    "994": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2122,
+        2137
+      ],
+      "op": "SLOAD",
+      "path": "142"
+    },
+    "995": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "997": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "999": {
+      "op": "SHL"
+    },
+    "1000": {
+      "op": "NOT"
+    },
+    "1001": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2122,
+        2137
+      ],
+      "op": "AND",
+      "path": "142"
+    },
+    "1002": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2122,
+        2137
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1003": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2122,
+        2137
+      ],
+      "op": "SSTORE",
+      "path": "142"
+    },
+    "1004": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "PUSH32",
+      "path": "142",
+      "statement": 11,
+      "value": "0x5DB9EE0A495BF2E6FF9C91A7834C1BA4FDD244A5E8AA4E537BD38AEAE4B073AA"
+    },
+    "1037": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2161,
+        2173
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x414"
+    },
+    "1040": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2161,
+        2171
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x38A"
+    },
+    "1043": {
+      "fn": "Pausable._unpause",
+      "jump": "i",
+      "offset": [
+        2161,
+        2173
+      ],
+      "op": "JUMP",
+      "path": "142"
+    },
+    "1044": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2161,
+        2173
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "1045": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x40"
+    },
+    "1047": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "DUP1",
+      "path": "142"
+    },
+    "1048": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "1049": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1051": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1053": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1055": {
+      "op": "SHL"
+    },
+    "1056": {
+      "op": "SUB"
+    },
+    "1057": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1058": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "SWAP3",
+      "path": "142"
+    },
+    "1059": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "AND",
+      "path": "142"
+    },
+    "1060": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "1061": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "1062": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "1063": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1064": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "DUP2",
+      "path": "142"
+    },
+    "1065": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1066": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "SUB",
+      "path": "142"
+    },
+    "1067": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x20"
+    },
+    "1069": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "1070": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1071": {
+      "fn": "Pausable._unpause",
+      "offset": [
+        2152,
+        2174
+      ],
+      "op": "LOG1",
+      "path": "142"
+    },
+    "1072": {
+      "fn": "Pausable._unpause",
+      "jump": "o",
+      "offset": [
+        2064,
+        2181
+      ],
+      "op": "JUMP",
+      "path": "142"
+    },
+    "1073": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1817,
+        1932
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "1074": {
+      "offset": [
+        1366,
+        1374
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x439"
+    },
+    "1077": {
+      "offset": [
+        1366,
+        1372
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x153"
+    },
+    "1080": {
+      "jump": "i",
+      "offset": [
+        1366,
+        1374
+      ],
+      "op": "JUMP",
+      "path": "142"
+    },
+    "1081": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1366,
+        1374
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "1082": {
+      "offset": [
+        1365,
+        1374
+      ],
+      "op": "ISZERO",
+      "path": "142"
+    },
+    "1083": {
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x47E"
+    },
+    "1086": {
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "JUMPI",
+      "path": "142"
+    },
+    "1087": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x40"
+    },
+    "1089": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "DUP1",
+      "path": "142"
+    },
+    "1090": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "1091": {
+      "op": "PUSH3",
+      "value": "0x461BCD"
+    },
+    "1095": {
+      "op": "PUSH1",
+      "value": "0xE5"
+    },
+    "1097": {
+      "op": "SHL"
+    },
+    "1098": {
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "DUP2",
+      "path": "142"
+    },
+    "1099": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "1100": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x20"
+    },
+    "1102": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x4"
+    },
+    "1104": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "1105": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "1106": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "1107": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x10"
+    },
+    "1109": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x24"
+    },
+    "1111": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "1112": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "1113": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "1114": {
+      "op": "PUSH16",
+      "value": "0x14185D5CD8589B194E881C185D5CD959"
+    },
+    "1131": {
+      "op": "PUSH1",
+      "value": "0x82"
+    },
+    "1133": {
+      "op": "SHL"
+    },
+    "1134": {
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x44"
+    },
+    "1136": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "DUP3",
+      "path": "142"
+    },
+    "1137": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "1138": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "MSTORE",
+      "path": "142"
+    },
+    "1139": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1140": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "MLOAD",
+      "path": "142"
+    },
+    "1141": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1142": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "DUP2",
+      "path": "142"
+    },
+    "1143": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1144": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "SUB",
+      "path": "142"
+    },
+    "1145": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "value": "0x64"
+    },
+    "1147": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "ADD",
+      "path": "142"
+    },
+    "1148": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1149": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "REVERT",
+      "path": "142"
+    },
+    "1150": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1357,
+        1395
+      ],
+      "op": "JUMPDEST",
+      "path": "142"
+    },
+    "1151": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1883
+      ],
+      "op": "PUSH1",
+      "path": "142",
+      "statement": 12,
+      "value": "0x0"
+    },
+    "1153": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1890
+      ],
+      "op": "DUP1",
+      "path": "142"
+    },
+    "1154": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1890
+      ],
+      "op": "SLOAD",
+      "path": "142"
+    },
+    "1155": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "1157": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1159": {
+      "op": "SHL"
+    },
+    "1160": {
+      "op": "NOT"
+    },
+    "1161": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1890
+      ],
+      "op": "AND",
+      "path": "142"
+    },
+    "1162": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1164": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "1166": {
+      "op": "SHL"
+    },
+    "1167": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1890
+      ],
+      "op": "OR",
+      "path": "142"
+    },
+    "1168": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1890
+      ],
+      "op": "SWAP1",
+      "path": "142"
+    },
+    "1169": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1876,
+        1890
+      ],
+      "op": "SSTORE",
+      "path": "142"
+    },
+    "1170": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1905,
+        1925
+      ],
+      "op": "PUSH32",
+      "path": "142",
+      "statement": 13,
+      "value": "0x62E78CEA01BEE320CD4E420270B5EA74000D11B0C9F74754EBDBFC544B05A258"
+    },
+    "1203": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1912,
+        1924
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x414"
+    },
+    "1206": {
+      "fn": "Pausable._pause",
+      "offset": [
+        1912,
+        1922
+      ],
+      "op": "PUSH2",
+      "path": "142",
+      "value": "0x38A"
+    },
+    "1209": {
+      "fn": "Pausable._pause",
+      "jump": "i",
+      "offset": [
+        1912,
+        1924
+      ],
+      "op": "JUMP",
+      "path": "142"
+    }
+  },
+  "sha1": "f67f4e5c8369a111cb5b40c1e1774bf4e20809f4",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\nimport './openzeppelin-contracts@3.4.0/contracts/access/Ownable.sol';\nimport './openzeppelin-contracts@3.4.0/contracts/utils/Pausable.sol';\n\n/**\n * @title OwnerPausable\n * @notice An ownable contract allows the owner to pause and unpause the\n * contract without a delay.\n * @dev Only methods using the provided modifiers will be paused.\n */\ncontract OwnerPausable is Ownable, Pausable {\n    /**\n     * @notice Pause the contract. Revert if already paused.\n     */\n    function pause() external onlyOwner {\n        Pausable._pause();\n    }\n\n    /**\n     * @notice Unpause the contract. Revert if already unpaused.\n     */\n    function unpause() external onlyOwner {\n        Pausable._unpause();\n    }\n}\n",
+  "sourceMap": "399:360:4:-:0;;;;;;;;;;;;-1:-1:-1;884:17:13;904:12;:10;:12::i;:::-;926:6;:18;;-1:-1:-1;;;;;;926:18:13;-1:-1:-1;;;;;926:18:13;;;;;;;959:43;;926:18;;-1:-1:-1;926:18:13;959:43;;926:6;;959:43;-1:-1:-1;945:5:142;935:15;;-1:-1:-1;;;;935:15:142;;;399:360:4;;598:104:137;685:10;598:104;:::o;399:360:4:-;;;;;;;",
+  "sourcePath": "contracts/OwnerPausable.sol",
+  "type": "contract"
+}

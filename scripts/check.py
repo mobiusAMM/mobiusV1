@@ -18,7 +18,7 @@ COINS = [
     "0xBe50a3013A1c94768A1ABb78c3cB79AB28fc1aCE"  # WBTC
 ]
 
-SWAP_ADDRESS = "0x19260b9b573569dDB105780176547875fE9fedA3"
+SWAP_ADDRESS = "0xE0F2cc70E52f05eDb383313393d88Df2937DA55a"
 
 LP = "0x8cD0E2F11ed2E896a8307280dEEEE15B27e46BbE"
 
@@ -28,7 +28,7 @@ lpAmount = 0.085338250711358822 * 10 ** 18
 def main():
     network.gas_limit(8000000)
     # admin = accounts.load('kyle_personal')
-    add = "0xf773C3F00F119985e98cfdF33BB20dcb778fe677"
+    add = "0xE0F2cc70E52f05eDb383313393d88Df2937DA55a"
     
     swap = Swap.at(SWAP_ADDRESS)
     coins = [interface.ERC20(addr) for addr in COINS]
@@ -40,8 +40,9 @@ def main():
     # lp.approve(swap.address, lpAmount, {"from": admin})
     
     # swap.removeLiquidity(lpAmount, [.047* 10 ** 18, .047 * 10 ** 8], '1000000000000000000000000000000000000', {'from': admin})
-    print(swap.getBalances())
-    print(lp.balanceOf(add))
-    print(swap.calculateRemoveLiquidity(add, lp.balanceOf(add)))
+    print(swap.getVirtualPrice())
+    # print(swap.getBalances())
+    # print(lp.balanceOf(add))
+    # print(swap.calculateRemoveLiquidity(add, lp.balanceOf(add)))
     # swap.addLiquidity([.05 * 10 ** 16, .05 * 10 ** 6], 0, '1000000000000000000000000000000000000', {'from': admin})
     

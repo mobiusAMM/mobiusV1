@@ -1,0 +1,1132 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "acceptEther",
+          "type": "bool"
+        }
+      ],
+      "name": "setAcceptEther",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "allSourcePaths": {
+    "68": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/EtherReceiverMock.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/EtherReceiverMock.sol",
+    "exportedSymbols": {
+      "EtherReceiverMock": [
+        13065
+      ]
+    },
+    "id": 13066,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13041,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:68"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13065,
+        "linearizedBaseContracts": [
+          13065
+        ],
+        "name": "EtherReceiverMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 13043,
+            "mutability": "mutable",
+            "name": "_acceptEther",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 13065,
+            "src": "99:25:68",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 13042,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "99:4:68",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 13052,
+              "nodeType": "Block",
+              "src": "180:43:68",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13050,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13048,
+                      "name": "_acceptEther",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13043,
+                      "src": "190:12:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 13049,
+                      "name": "acceptEther",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13045,
+                      "src": "205:11:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "190:26:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 13051,
+                  "nodeType": "ExpressionStatement",
+                  "src": "190:26:68"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "4fea120c",
+            "id": 13053,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setAcceptEther",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13046,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13045,
+                  "mutability": "mutable",
+                  "name": "acceptEther",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13053,
+                  "src": "155:16:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 13044,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:4:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:18:68"
+            },
+            "returnParameters": {
+              "id": 13047,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "180:0:68"
+            },
+            "scope": 13065,
+            "src": "131:92:68",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13063,
+              "nodeType": "Block",
+              "src": "257:68:68",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "id": 13057,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "271:13:68",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 13056,
+                      "name": "_acceptEther",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13043,
+                      "src": "272:12:68",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 13062,
+                  "nodeType": "IfStatement",
+                  "src": "267:52:68",
+                  "trueBody": {
+                    "id": 13061,
+                    "nodeType": "Block",
+                    "src": "286:33:68",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 13058,
+                            "name": "revert",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [
+                              -19,
+                              -19
+                            ],
+                            "referencedDeclaration": -19,
+                            "src": "300:6:68",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_revert_pure$__$returns$__$",
+                              "typeString": "function () pure"
+                            }
+                          },
+                          "id": 13059,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "300:8:68",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 13060,
+                        "nodeType": "ExpressionStatement",
+                        "src": "300:8:68"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 13064,
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13054,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "237:2:68"
+            },
+            "returnParameters": {
+              "id": 13055,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "257:0:68"
+            },
+            "scope": 13065,
+            "src": "229:96:68",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13066,
+        "src": "66:261:68"
+      }
+    ],
+    "src": "33:295:68"
+  },
+  "bytecode": "6080604052348015600f57600080fd5b5060a38061001e6000396000f3fe608060405260043610601f5760003560e01c80634fea120c146038576033565b3660335760005460ff16603157600080fd5b005b600080fd5b348015604357600080fd5b50603160048036036020811015605857600080fd5b506000805460ff19169135151591909117905556fea2646970667358221220da5f1288a8915c2ae1125bebb4c7757fcb89a53007a9e0bdf3d2180d3943357864736f6c634300060c0033",
+  "bytecodeSha1": "726a2efe02c1de69664dce9502a425c52a010509",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "EtherReceiverMock",
+  "coverageMap": {
+    "branches": {
+      "68": {
+        "EtherReceiverMock.<receive>": {
+          "2": [
+            272,
+            284,
+            false
+          ]
+        }
+      }
+    },
+    "statements": {
+      "68": {
+        "EtherReceiverMock.<receive>": {
+          "0": [
+            300,
+            308
+          ]
+        },
+        "EtherReceiverMock.setAcceptEther": {
+          "1": [
+            190,
+            216
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "608060405260043610601f5760003560e01c80634fea120c146038576033565b3660335760005460ff16603157600080fd5b005b600080fd5b348015604357600080fd5b50603160048036036020811015605857600080fd5b506000805460ff19169135151591909117905556fea2646970667358221220da5f1288a8915c2ae1125bebb4c7757fcb89a53007a9e0bdf3d2180d3943357864736f6c634300060c0033",
+  "deployedSourceMap": "66:261:68:-:0;;;;;;;;;;;;;;;;;;;;;;;272:12;;;;267:52;;300:8;;;267:52;66:261;;;;;131:92;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;190:12:68;:26;;-1:-1:-1;;190:26:68;131:92;;;;190:26;;;;;;131:92::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    66,
+    327
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x1F JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x4FEA120C EQ PUSH1 0x38 JUMPI PUSH1 0x33 JUMP JUMPDEST CALLDATASIZE PUSH1 0x33 JUMPI PUSH1 0x0 SLOAD PUSH1 0xFF AND PUSH1 0x31 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x43 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x31 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x58 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND SWAP2 CALLDATALOAD ISZERO ISZERO SWAP2 SWAP1 SWAP2 OR SWAP1 SSTORE JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xDA 0x5F SLT DUP9 0xA8 SWAP2 0x5C 0x2A 0xE1 SLT JUMPDEST 0xEB 0xB4 0xC7 PUSH22 0x7FCB89A53007A9E0BDF3D2180D3943357864736F6C63 NUMBER STOP MOD 0xC STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "MSTORE",
+      "path": "68"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x4"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "CALLDATASIZE",
+      "path": "68"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "LT",
+      "path": "68"
+    },
+    "9": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x1F"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "JUMPI",
+      "path": "68"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "CALLDATALOAD",
+      "path": "68"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0xE0"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "SHR",
+      "path": "68"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH4",
+      "path": "68",
+      "value": "0x4FEA120C"
+    },
+    "24": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "EQ",
+      "path": "68"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x38"
+    },
+    "27": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "JUMPI",
+      "path": "68"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x33"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "JUMP",
+      "path": "68"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "JUMPDEST",
+      "path": "68"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "CALLDATASIZE",
+      "path": "68"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x33"
+    },
+    "35": {
+      "fn": null,
+      "offset": [
+        66,
+        327
+      ],
+      "op": "JUMPI",
+      "path": "68"
+    },
+    "36": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        272,
+        284
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x0"
+    },
+    "38": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        272,
+        284
+      ],
+      "op": "SLOAD",
+      "path": "68"
+    },
+    "39": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        272,
+        284
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0xFF"
+    },
+    "41": {
+      "branch": 2,
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        272,
+        284
+      ],
+      "op": "AND",
+      "path": "68"
+    },
+    "42": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        267,
+        319
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x31"
+    },
+    "44": {
+      "branch": 2,
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        267,
+        319
+      ],
+      "op": "JUMPI",
+      "path": "68"
+    },
+    "45": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        300,
+        308
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "statement": 0,
+      "value": "0x0"
+    },
+    "47": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        300,
+        308
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "48": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        300,
+        308
+      ],
+      "op": "REVERT",
+      "path": "68"
+    },
+    "49": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        267,
+        319
+      ],
+      "op": "JUMPDEST",
+      "path": "68"
+    },
+    "50": {
+      "offset": [
+        66,
+        327
+      ],
+      "op": "STOP",
+      "path": "68"
+    },
+    "51": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        66,
+        327
+      ],
+      "op": "JUMPDEST",
+      "path": "68"
+    },
+    "52": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        66,
+        327
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x0"
+    },
+    "54": {
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        66,
+        327
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "55": {
+      "first_revert": true,
+      "fn": "EtherReceiverMock.<receive>",
+      "offset": [
+        66,
+        327
+      ],
+      "op": "REVERT",
+      "path": "68"
+    },
+    "56": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "JUMPDEST",
+      "path": "68"
+    },
+    "57": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "CALLVALUE",
+      "path": "68"
+    },
+    "58": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "59": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "ISZERO",
+      "path": "68"
+    },
+    "60": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x43"
+    },
+    "62": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "JUMPI",
+      "path": "68"
+    },
+    "63": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x0"
+    },
+    "65": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "66": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "REVERT",
+      "path": "68"
+    },
+    "67": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "JUMPDEST",
+      "path": "68"
+    },
+    "68": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "POP",
+      "path": "68"
+    },
+    "69": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x31"
+    },
+    "71": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x4"
+    },
+    "73": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "74": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "CALLDATASIZE",
+      "path": "68"
+    },
+    "75": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "SUB",
+      "path": "68"
+    },
+    "76": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x20"
+    },
+    "78": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "DUP2",
+      "path": "68"
+    },
+    "79": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "LT",
+      "path": "68"
+    },
+    "80": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "ISZERO",
+      "path": "68"
+    },
+    "81": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x58"
+    },
+    "83": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "JUMPI",
+      "path": "68"
+    },
+    "84": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "value": "0x0"
+    },
+    "86": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "87": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "REVERT",
+      "path": "68"
+    },
+    "88": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "JUMPDEST",
+      "path": "68"
+    },
+    "89": {
+      "op": "POP"
+    },
+    "90": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        202
+      ],
+      "op": "PUSH1",
+      "path": "68",
+      "statement": 1,
+      "value": "0x0"
+    },
+    "92": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "DUP1",
+      "path": "68"
+    },
+    "93": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "SLOAD",
+      "path": "68"
+    },
+    "94": {
+      "op": "PUSH1",
+      "value": "0xFF"
+    },
+    "96": {
+      "op": "NOT"
+    },
+    "97": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "AND",
+      "path": "68"
+    },
+    "98": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "SWAP2",
+      "path": "68"
+    },
+    "99": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "CALLDATALOAD",
+      "path": "68"
+    },
+    "100": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "ISZERO",
+      "path": "68"
+    },
+    "101": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "ISZERO",
+      "path": "68"
+    },
+    "102": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "SWAP2",
+      "path": "68"
+    },
+    "103": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "SWAP1",
+      "path": "68"
+    },
+    "104": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "SWAP2",
+      "path": "68"
+    },
+    "105": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "OR",
+      "path": "68"
+    },
+    "106": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "SWAP1",
+      "path": "68"
+    },
+    "107": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "offset": [
+        190,
+        216
+      ],
+      "op": "SSTORE",
+      "path": "68"
+    },
+    "108": {
+      "fn": "EtherReceiverMock.setAcceptEther",
+      "jump": "o",
+      "offset": [
+        131,
+        223
+      ],
+      "op": "JUMP",
+      "path": "68"
+    }
+  },
+  "sha1": "aff0d38cb79f5f397eb44d64ca82bb5b5221af28",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\ncontract EtherReceiverMock {\n    bool private _acceptEther;\n\n    function setAcceptEther(bool acceptEther) public {\n        _acceptEther = acceptEther;\n    }\n\n    receive () external payable {\n        if (!_acceptEther) {\n            revert();\n        }\n    }\n}\n",
+  "sourceMap": "66:261:68:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/EtherReceiverMock.sol",
+  "type": "contract"
+}

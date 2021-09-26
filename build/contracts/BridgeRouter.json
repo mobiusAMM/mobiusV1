@@ -1,0 +1,274 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "_destination",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_recipient",
+          "type": "bytes32"
+        }
+      ],
+      "name": "send",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/OpticsBridgeRouter.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/OpticsBridgeRouter.sol",
+    "exportedSymbols": {
+      "BridgeRouter": [
+        15
+      ]
+    },
+    "id": 16,
+    "license": "MIT OR Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "134:25:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2,
+          "nodeType": "StructuredDocumentation",
+          "src": "161:30:0",
+          "text": " @title BridgeRouter"
+        },
+        "fullyImplemented": false,
+        "id": 15,
+        "linearizedBaseContracts": [
+          15
+        ],
+        "name": "BridgeRouter",
+        "nameLocation": "202:12:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 3,
+              "nodeType": "StructuredDocumentation",
+              "src": "265:246:0",
+              "text": " @notice Send tokens to a recipient on a remote chain\n @param _token The token address\n @param _amount The token amount\n @param _destination The destination domain\n @param _recipient The recipient address"
+            },
+            "functionSelector": "1cabf08f",
+            "id": 14,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "send",
+            "nameLocation": "525:4:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nameLocation": "547:6:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "539:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "539:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "571:7:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "563:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "563:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9,
+                  "mutability": "mutable",
+                  "name": "_destination",
+                  "nameLocation": "595:12:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "588:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "588:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11,
+                  "mutability": "mutable",
+                  "name": "_recipient",
+                  "nameLocation": "625:10:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "617:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "617:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "529:112:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "650:0:0"
+            },
+            "scope": 15,
+            "src": "516:135:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 16,
+        "src": "192:461:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "134:519:0"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.7+commit.e28d00a7"
+  },
+  "contractName": "BridgeRouter",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {
+      "send(address,uint256,uint32,bytes32)": {
+        "notice": "Send tokens to a recipient on a remote chain",
+        "params": {
+          "_amount": "The token amount",
+          "_destination": "The destination domain",
+          "_recipient": "The recipient address",
+          "_token": "The token address"
+        }
+      }
+    },
+    "title": "BridgeRouter",
+    "version": 1
+  },
+  "offset": [
+    192,
+    653
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "fdb8c0e7deb14949438771002d5b7e830a819890",
+  "source": "// SPDX-License-Identifier: MIT OR Apache-2.0\n// This contract was made by the Optics team and is here merely for compilation reasons\npragma solidity >=0.6.11;\n\n/**\n * @title BridgeRouter\n */\ninterface BridgeRouter {\n    // ============ Libraries ============\n\n    /**\n     * @notice Send tokens to a recipient on a remote chain\n     * @param _token The token address\n     * @param _amount The token amount\n     * @param _destination The destination domain\n     * @param _recipient The recipient address\n     */\n    function send(\n        address _token,\n        uint256 _amount,\n        uint32 _destination,\n        bytes32 _recipient\n    ) external;\n}",
+  "sourceMap": "",
+  "sourcePath": "contracts/OpticsBridgeRouter.sol",
+  "type": "interface"
+}

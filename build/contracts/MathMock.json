@@ -1,0 +1,2840 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "average",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "max",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "min",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "26": "contracts/openzeppelin-contracts@3.4.0/contracts/math/Math.sol",
+    "73": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/MathMock.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/MathMock.sol",
+    "exportedSymbols": {
+      "MathMock": [
+        13367
+      ]
+    },
+    "id": 13368,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13317,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:73"
+      },
+      {
+        "absolutePath": "contracts/openzeppelin-contracts@3.4.0/contracts/math/Math.sol",
+        "file": "../math/Math.sol",
+        "id": 13318,
+        "nodeType": "ImportDirective",
+        "scope": 13368,
+        "sourceUnit": 9582,
+        "src": "66:26:73",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13367,
+        "linearizedBaseContracts": [
+          13367
+        ],
+        "name": "MathMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 13333,
+              "nodeType": "Block",
+              "src": "183:38:73",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 13329,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13320,
+                        "src": "209:1:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 13330,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13322,
+                        "src": "212:1:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 13327,
+                        "name": "Math",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9581,
+                        "src": "200:4:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Math_$9581_$",
+                          "typeString": "type(library Math)"
+                        }
+                      },
+                      "id": 13328,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "max",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9529,
+                      "src": "200:8:73",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 13331,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "200:14:73",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 13326,
+                  "id": 13332,
+                  "nodeType": "Return",
+                  "src": "193:21:73"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "6d5433e6",
+            "id": 13334,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "max",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13323,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13320,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13334,
+                  "src": "131:9:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13319,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "131:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13322,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13334,
+                  "src": "142:9:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13321,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "142:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "130:22:73"
+            },
+            "returnParameters": {
+              "id": 13326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13325,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13334,
+                  "src": "174:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13324,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "174:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "173:9:73"
+            },
+            "scope": 13367,
+            "src": "118:103:73",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13349,
+              "nodeType": "Block",
+              "src": "292:38:73",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 13345,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13336,
+                        "src": "318:1:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 13346,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13338,
+                        "src": "321:1:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 13343,
+                        "name": "Math",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9581,
+                        "src": "309:4:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Math_$9581_$",
+                          "typeString": "type(library Math)"
+                        }
+                      },
+                      "id": 13344,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "min",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9547,
+                      "src": "309:8:73",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 13347,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "309:14:73",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 13342,
+                  "id": 13348,
+                  "nodeType": "Return",
+                  "src": "302:21:73"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "7ae2b5c7",
+            "id": 13350,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "min",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13339,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13336,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13350,
+                  "src": "240:9:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13335,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "240:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13338,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13350,
+                  "src": "251:9:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13337,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "251:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "239:22:73"
+            },
+            "returnParameters": {
+              "id": 13342,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13341,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13350,
+                  "src": "283:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13340,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "283:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "282:9:73"
+            },
+            "scope": 13367,
+            "src": "227:103:73",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13365,
+              "nodeType": "Block",
+              "src": "405:42:73",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 13361,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13352,
+                        "src": "435:1:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 13362,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13354,
+                        "src": "438:1:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 13359,
+                        "name": "Math",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9581,
+                        "src": "422:4:73",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Math_$9581_$",
+                          "typeString": "type(library Math)"
+                        }
+                      },
+                      "id": 13360,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "average",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9580,
+                      "src": "422:12:73",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 13363,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:18:73",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 13358,
+                  "id": 13364,
+                  "nodeType": "Return",
+                  "src": "415:25:73"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "2b7423ab",
+            "id": 13366,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "average",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13355,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13352,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13366,
+                  "src": "353:9:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13351,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13354,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13366,
+                  "src": "364:9:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13353,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "364:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "352:22:73"
+            },
+            "returnParameters": {
+              "id": 13358,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13357,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 13366,
+                  "src": "396:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13356,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "396:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "395:9:73"
+            },
+            "scope": 13367,
+            "src": "336:111:73",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 13368,
+        "src": "94:355:73"
+      }
+    ],
+    "src": "33:417:73"
+  },
+  "bytecode": "608060405234801561001057600080fd5b5061016d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80632b7423ab146100465780636d5433e61461007b5780637ae2b5c71461009e575b600080fd5b6100696004803603604081101561005c57600080fd5b50803590602001356100c1565b60408051918252519081900360200190f35b6100696004803603604081101561009157600080fd5b50803590602001356100d4565b610069600480360360408110156100b457600080fd5b50803590602001356100e0565b60006100cd83836100ec565b9392505050565b60006100cd8383610111565b60006100cd8383610128565b600060028083066002850601816100ff57fe5b04600283046002850401019392505050565b60008183101561012157816100cd565b5090919050565b600081831061012157816100cd56fea264697066735822122029082a0ad9a70b177e80e02231c8be82851083356c9c203470ef7d627ccf5fd864736f6c634300060c0033",
+  "bytecodeSha1": "7f06ac8d094da6d78868258374e3fa4a1a890606",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "MathMock",
+  "coverageMap": {
+    "branches": {
+      "26": {
+        "Math.max": {
+          "6": [
+            307,
+            313,
+            true
+          ]
+        },
+        "Math.min": {
+          "7": [
+            483,
+            488,
+            true
+          ]
+        }
+      },
+      "73": {}
+    },
+    "statements": {
+      "26": {
+        "Math.average": {
+          "3": [
+            751,
+            799
+          ]
+        },
+        "Math.max": {
+          "4": [
+            300,
+            321
+          ]
+        },
+        "Math.min": {
+          "5": [
+            476,
+            496
+          ]
+        }
+      },
+      "73": {
+        "MathMock.average": {
+          "0": [
+            415,
+            440
+          ]
+        },
+        "MathMock.max": {
+          "1": [
+            193,
+            214
+          ]
+        },
+        "MathMock.min": {
+          "2": [
+            302,
+            323
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "Math"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c80632b7423ab146100465780636d5433e61461007b5780637ae2b5c71461009e575b600080fd5b6100696004803603604081101561005c57600080fd5b50803590602001356100c1565b60408051918252519081900360200190f35b6100696004803603604081101561009157600080fd5b50803590602001356100d4565b610069600480360360408110156100b457600080fd5b50803590602001356100e0565b60006100cd83836100ec565b9392505050565b60006100cd8383610111565b60006100cd8383610128565b600060028083066002850601816100ff57fe5b04600283046002850401019392505050565b60008183101561012157816100cd565b5090919050565b600081831061012157816100cd56fea264697066735822122029082a0ad9a70b177e80e02231c8be82851083356c9c203470ef7d627ccf5fd864736f6c634300060c0033",
+  "deployedSourceMap": "94:355:73:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;336:111;;;;;;;;;;;;;;;;-1:-1:-1;336:111:73;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;118:103;;;;;;;;;;;;;;;;-1:-1:-1;118:103:73;;;;;;;:::i;227:::-;;;;;;;;;;;;;;;;-1:-1:-1;227:103:73;;;;;;;:::i;336:111::-;396:7;422:18;435:1;438;422:12;:18::i;:::-;415:25;336:111;-1:-1:-1;;;336:111:73:o;118:103::-;174:7;200:14;209:1;212;200:8;:14::i;227:103::-;283:7;309:14;318:1;321;309:8;:14::i;616:190:26:-;678:7;797:1;;788;:5;784:1;780;:5;:13;779:19;;;;;;773:1;769;:5;763:1;759;:5;758:17;:41;;616:190;-1:-1:-1;;;616:190:26:o;223:105::-;281:7;312:1;307;:6;;:14;;320:1;307:14;;;-1:-1:-1;316:1:26;;223:105;-1:-1:-1;223:105:26:o;399:104::-;457:7;487:1;483;:5;:13;;495:1;483:13;",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    94,
+    449
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2B7423AB EQ PUSH2 0x46 JUMPI DUP1 PUSH4 0x6D5433E6 EQ PUSH2 0x7B JUMPI DUP1 PUSH4 0x7AE2B5C7 EQ PUSH2 0x9E JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x69 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x5C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0xC1 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH2 0x69 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x91 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0xD4 JUMP JUMPDEST PUSH2 0x69 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0xB4 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH2 0xE0 JUMP JUMPDEST PUSH1 0x0 PUSH2 0xCD DUP4 DUP4 PUSH2 0xEC JUMP JUMPDEST SWAP4 SWAP3 POP POP POP JUMP JUMPDEST PUSH1 0x0 PUSH2 0xCD DUP4 DUP4 PUSH2 0x111 JUMP JUMPDEST PUSH1 0x0 PUSH2 0xCD DUP4 DUP4 PUSH2 0x128 JUMP JUMPDEST PUSH1 0x0 PUSH1 0x2 DUP1 DUP4 MOD PUSH1 0x2 DUP6 MOD ADD DUP2 PUSH2 0xFF JUMPI INVALID JUMPDEST DIV PUSH1 0x2 DUP4 DIV PUSH1 0x2 DUP6 DIV ADD ADD SWAP4 SWAP3 POP POP POP JUMP JUMPDEST PUSH1 0x0 DUP2 DUP4 LT ISZERO PUSH2 0x121 JUMPI DUP2 PUSH2 0xCD JUMP JUMPDEST POP SWAP1 SWAP2 SWAP1 POP JUMP JUMPDEST PUSH1 0x0 DUP2 DUP4 LT PUSH2 0x121 JUMPI DUP2 PUSH2 0xCD JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x29 ADDMOD 0x2A EXP 0xD9 0xA7 SIGNEXTEND OR PUSH31 0x80E02231C8BE82851083356C9C203470EF7D627CCF5FD864736F6C63430006 0xC STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "MSTORE",
+      "path": "73"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "CALLVALUE",
+      "path": "73"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "ISZERO",
+      "path": "73"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "REVERT",
+      "path": "73"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "POP",
+      "path": "73"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "CALLDATASIZE",
+      "path": "73"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "LT",
+      "path": "73"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x41"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "SHR",
+      "path": "73"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH4",
+      "path": "73",
+      "value": "0x2B7423AB"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "EQ",
+      "path": "73"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x46"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH4",
+      "path": "73",
+      "value": "0x6D5433E6"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "EQ",
+      "path": "73"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x7B"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH4",
+      "path": "73",
+      "value": "0x7AE2B5C7"
+    },
+    "60": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "EQ",
+      "path": "73"
+    },
+    "61": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x9E"
+    },
+    "64": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "65": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "66": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "68": {
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "69": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        94,
+        449
+      ],
+      "op": "REVERT",
+      "path": "73"
+    },
+    "70": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "71": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x69"
+    },
+    "74": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x4"
+    },
+    "76": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "77": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "CALLDATASIZE",
+      "path": "73"
+    },
+    "78": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SUB",
+      "path": "73"
+    },
+    "79": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x40"
+    },
+    "81": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP2",
+      "path": "73"
+    },
+    "82": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "LT",
+      "path": "73"
+    },
+    "83": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "ISZERO",
+      "path": "73"
+    },
+    "84": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x5C"
+    },
+    "87": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "88": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "90": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "91": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "REVERT",
+      "path": "73"
+    },
+    "92": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "93": {
+      "op": "POP"
+    },
+    "94": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "95": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "96": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SWAP1",
+      "path": "73"
+    },
+    "97": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x20"
+    },
+    "99": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "ADD",
+      "path": "73"
+    },
+    "100": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "101": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0xC1"
+    },
+    "104": {
+      "fn": "MathMock.average",
+      "jump": "i",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "105": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "106": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x40"
+    },
+    "108": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "109": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "MLOAD",
+      "path": "73"
+    },
+    "110": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SWAP2",
+      "path": "73"
+    },
+    "111": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP3",
+      "path": "73"
+    },
+    "112": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "MSTORE",
+      "path": "73"
+    },
+    "113": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "MLOAD",
+      "path": "73"
+    },
+    "114": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SWAP1",
+      "path": "73"
+    },
+    "115": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "DUP2",
+      "path": "73"
+    },
+    "116": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SWAP1",
+      "path": "73"
+    },
+    "117": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SUB",
+      "path": "73"
+    },
+    "118": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x20"
+    },
+    "120": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "ADD",
+      "path": "73"
+    },
+    "121": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SWAP1",
+      "path": "73"
+    },
+    "122": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "RETURN",
+      "path": "73"
+    },
+    "123": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "124": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x69"
+    },
+    "127": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x4"
+    },
+    "129": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "130": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "CALLDATASIZE",
+      "path": "73"
+    },
+    "131": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "SUB",
+      "path": "73"
+    },
+    "132": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x40"
+    },
+    "134": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "DUP2",
+      "path": "73"
+    },
+    "135": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "LT",
+      "path": "73"
+    },
+    "136": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "ISZERO",
+      "path": "73"
+    },
+    "137": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x91"
+    },
+    "140": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "141": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "143": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "144": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "REVERT",
+      "path": "73"
+    },
+    "145": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "146": {
+      "op": "POP"
+    },
+    "147": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "148": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "149": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "SWAP1",
+      "path": "73"
+    },
+    "150": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x20"
+    },
+    "152": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "ADD",
+      "path": "73"
+    },
+    "153": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "154": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0xD4"
+    },
+    "157": {
+      "fn": "MathMock.max",
+      "jump": "i",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "158": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "159": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x69"
+    },
+    "162": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x4"
+    },
+    "164": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "165": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "CALLDATASIZE",
+      "path": "73"
+    },
+    "166": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "SUB",
+      "path": "73"
+    },
+    "167": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x40"
+    },
+    "169": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "DUP2",
+      "path": "73"
+    },
+    "170": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "LT",
+      "path": "73"
+    },
+    "171": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "ISZERO",
+      "path": "73"
+    },
+    "172": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0xB4"
+    },
+    "175": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "JUMPI",
+      "path": "73"
+    },
+    "176": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "178": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "179": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "REVERT",
+      "path": "73"
+    },
+    "180": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "181": {
+      "op": "POP"
+    },
+    "182": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "DUP1",
+      "path": "73"
+    },
+    "183": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "184": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "SWAP1",
+      "path": "73"
+    },
+    "185": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x20"
+    },
+    "187": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "ADD",
+      "path": "73"
+    },
+    "188": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "CALLDATALOAD",
+      "path": "73"
+    },
+    "189": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0xE0"
+    },
+    "192": {
+      "fn": "MathMock.min",
+      "jump": "i",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "193": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "194": {
+      "fn": "MathMock.average",
+      "offset": [
+        396,
+        403
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "196": {
+      "fn": "MathMock.average",
+      "offset": [
+        422,
+        440
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "statement": 0,
+      "value": "0xCD"
+    },
+    "199": {
+      "fn": "MathMock.average",
+      "offset": [
+        435,
+        436
+      ],
+      "op": "DUP4",
+      "path": "73"
+    },
+    "200": {
+      "fn": "MathMock.average",
+      "offset": [
+        438,
+        439
+      ],
+      "op": "DUP4",
+      "path": "73"
+    },
+    "201": {
+      "fn": "MathMock.average",
+      "offset": [
+        422,
+        434
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0xEC"
+    },
+    "204": {
+      "fn": "MathMock.average",
+      "jump": "i",
+      "offset": [
+        422,
+        440
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "205": {
+      "fn": "MathMock.average",
+      "offset": [
+        422,
+        440
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "206": {
+      "fn": "MathMock.average",
+      "offset": [
+        415,
+        440
+      ],
+      "op": "SWAP4",
+      "path": "73"
+    },
+    "207": {
+      "fn": "MathMock.average",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "SWAP3",
+      "path": "73"
+    },
+    "208": {
+      "op": "POP"
+    },
+    "209": {
+      "op": "POP"
+    },
+    "210": {
+      "op": "POP"
+    },
+    "211": {
+      "fn": "MathMock.average",
+      "jump": "o",
+      "offset": [
+        336,
+        447
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "212": {
+      "fn": "MathMock.max",
+      "offset": [
+        118,
+        221
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "213": {
+      "fn": "MathMock.max",
+      "offset": [
+        174,
+        181
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "215": {
+      "fn": "MathMock.max",
+      "offset": [
+        200,
+        214
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "statement": 1,
+      "value": "0xCD"
+    },
+    "218": {
+      "fn": "MathMock.max",
+      "offset": [
+        209,
+        210
+      ],
+      "op": "DUP4",
+      "path": "73"
+    },
+    "219": {
+      "fn": "MathMock.max",
+      "offset": [
+        212,
+        213
+      ],
+      "op": "DUP4",
+      "path": "73"
+    },
+    "220": {
+      "fn": "MathMock.max",
+      "offset": [
+        200,
+        208
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x111"
+    },
+    "223": {
+      "fn": "MathMock.max",
+      "jump": "i",
+      "offset": [
+        200,
+        214
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "224": {
+      "fn": "MathMock.min",
+      "offset": [
+        227,
+        330
+      ],
+      "op": "JUMPDEST",
+      "path": "73"
+    },
+    "225": {
+      "fn": "MathMock.min",
+      "offset": [
+        283,
+        290
+      ],
+      "op": "PUSH1",
+      "path": "73",
+      "value": "0x0"
+    },
+    "227": {
+      "fn": "MathMock.min",
+      "offset": [
+        309,
+        323
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "statement": 2,
+      "value": "0xCD"
+    },
+    "230": {
+      "fn": "MathMock.min",
+      "offset": [
+        318,
+        319
+      ],
+      "op": "DUP4",
+      "path": "73"
+    },
+    "231": {
+      "fn": "MathMock.min",
+      "offset": [
+        321,
+        322
+      ],
+      "op": "DUP4",
+      "path": "73"
+    },
+    "232": {
+      "fn": "MathMock.min",
+      "offset": [
+        309,
+        317
+      ],
+      "op": "PUSH2",
+      "path": "73",
+      "value": "0x128"
+    },
+    "235": {
+      "fn": "MathMock.min",
+      "jump": "i",
+      "offset": [
+        309,
+        323
+      ],
+      "op": "JUMP",
+      "path": "73"
+    },
+    "236": {
+      "fn": "Math.average",
+      "offset": [
+        616,
+        806
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "237": {
+      "fn": "Math.average",
+      "offset": [
+        678,
+        685
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "239": {
+      "fn": "Math.average",
+      "offset": [
+        797,
+        798
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "statement": 3,
+      "value": "0x2"
+    },
+    "241": {
+      "fn": "Math.average",
+      "offset": [
+        797,
+        798
+      ],
+      "op": "DUP1",
+      "path": "26"
+    },
+    "242": {
+      "fn": "Math.average",
+      "offset": [
+        788,
+        789
+      ],
+      "op": "DUP4",
+      "path": "26"
+    },
+    "243": {
+      "fn": "Math.average",
+      "offset": [
+        788,
+        793
+      ],
+      "op": "MOD",
+      "path": "26"
+    },
+    "244": {
+      "fn": "Math.average",
+      "offset": [
+        784,
+        785
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x2"
+    },
+    "246": {
+      "fn": "Math.average",
+      "offset": [
+        780,
+        781
+      ],
+      "op": "DUP6",
+      "path": "26"
+    },
+    "247": {
+      "fn": "Math.average",
+      "offset": [
+        780,
+        785
+      ],
+      "op": "MOD",
+      "path": "26"
+    },
+    "248": {
+      "fn": "Math.average",
+      "offset": [
+        780,
+        793
+      ],
+      "op": "ADD",
+      "path": "26"
+    },
+    "249": {
+      "fn": "Math.average",
+      "offset": [
+        779,
+        798
+      ],
+      "op": "DUP2",
+      "path": "26"
+    },
+    "250": {
+      "fn": "Math.average",
+      "offset": [
+        779,
+        798
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0xFF"
+    },
+    "253": {
+      "fn": "Math.average",
+      "offset": [
+        779,
+        798
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "254": {
+      "dev": "Division by zero",
+      "fn": "Math.average",
+      "offset": [
+        779,
+        798
+      ],
+      "op": "INVALID",
+      "path": "26"
+    },
+    "255": {
+      "fn": "Math.average",
+      "offset": [
+        779,
+        798
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "256": {
+      "fn": "Math.average",
+      "offset": [
+        779,
+        798
+      ],
+      "op": "DIV",
+      "path": "26"
+    },
+    "257": {
+      "fn": "Math.average",
+      "offset": [
+        773,
+        774
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x2"
+    },
+    "259": {
+      "fn": "Math.average",
+      "offset": [
+        769,
+        770
+      ],
+      "op": "DUP4",
+      "path": "26"
+    },
+    "260": {
+      "fn": "Math.average",
+      "offset": [
+        769,
+        774
+      ],
+      "op": "DIV",
+      "path": "26"
+    },
+    "261": {
+      "fn": "Math.average",
+      "offset": [
+        763,
+        764
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x2"
+    },
+    "263": {
+      "fn": "Math.average",
+      "offset": [
+        759,
+        760
+      ],
+      "op": "DUP6",
+      "path": "26"
+    },
+    "264": {
+      "fn": "Math.average",
+      "offset": [
+        759,
+        764
+      ],
+      "op": "DIV",
+      "path": "26"
+    },
+    "265": {
+      "fn": "Math.average",
+      "offset": [
+        758,
+        775
+      ],
+      "op": "ADD",
+      "path": "26"
+    },
+    "266": {
+      "fn": "Math.average",
+      "offset": [
+        758,
+        799
+      ],
+      "op": "ADD",
+      "path": "26"
+    },
+    "267": {
+      "fn": "Math.average",
+      "offset": [
+        758,
+        799
+      ],
+      "op": "SWAP4",
+      "path": "26"
+    },
+    "268": {
+      "fn": "Math.average",
+      "offset": [
+        616,
+        806
+      ],
+      "op": "SWAP3",
+      "path": "26"
+    },
+    "269": {
+      "op": "POP"
+    },
+    "270": {
+      "op": "POP"
+    },
+    "271": {
+      "op": "POP"
+    },
+    "272": {
+      "fn": "Math.average",
+      "jump": "o",
+      "offset": [
+        616,
+        806
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "273": {
+      "fn": "Math.max",
+      "offset": [
+        223,
+        328
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "274": {
+      "fn": "Math.max",
+      "offset": [
+        281,
+        288
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "276": {
+      "fn": "Math.max",
+      "offset": [
+        312,
+        313
+      ],
+      "op": "DUP2",
+      "path": "26",
+      "statement": 4
+    },
+    "277": {
+      "fn": "Math.max",
+      "offset": [
+        307,
+        308
+      ],
+      "op": "DUP4",
+      "path": "26"
+    },
+    "278": {
+      "fn": "Math.max",
+      "offset": [
+        307,
+        313
+      ],
+      "op": "LT",
+      "path": "26"
+    },
+    "279": {
+      "branch": 6,
+      "fn": "Math.max",
+      "offset": [
+        307,
+        313
+      ],
+      "op": "ISZERO",
+      "path": "26"
+    },
+    "280": {
+      "fn": "Math.max",
+      "offset": [
+        307,
+        321
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x121"
+    },
+    "283": {
+      "branch": 6,
+      "fn": "Math.max",
+      "offset": [
+        307,
+        321
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "284": {
+      "fn": "Math.max",
+      "offset": [
+        320,
+        321
+      ],
+      "op": "DUP2",
+      "path": "26"
+    },
+    "285": {
+      "fn": "Math.max",
+      "offset": [
+        307,
+        321
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0xCD"
+    },
+    "288": {
+      "fn": "Math.max",
+      "offset": [
+        307,
+        321
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "289": {
+      "fn": "Math.max",
+      "offset": [
+        307,
+        321
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "290": {
+      "op": "POP"
+    },
+    "291": {
+      "fn": "Math.max",
+      "offset": [
+        316,
+        317
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "292": {
+      "fn": "Math.max",
+      "offset": [
+        316,
+        317
+      ],
+      "op": "SWAP2",
+      "path": "26"
+    },
+    "293": {
+      "fn": "Math.max",
+      "offset": [
+        223,
+        328
+      ],
+      "op": "SWAP1",
+      "path": "26"
+    },
+    "294": {
+      "op": "POP"
+    },
+    "295": {
+      "fn": "Math.max",
+      "jump": "o",
+      "offset": [
+        223,
+        328
+      ],
+      "op": "JUMP",
+      "path": "26"
+    },
+    "296": {
+      "fn": "Math.min",
+      "offset": [
+        399,
+        503
+      ],
+      "op": "JUMPDEST",
+      "path": "26"
+    },
+    "297": {
+      "fn": "Math.min",
+      "offset": [
+        457,
+        464
+      ],
+      "op": "PUSH1",
+      "path": "26",
+      "value": "0x0"
+    },
+    "299": {
+      "fn": "Math.min",
+      "offset": [
+        487,
+        488
+      ],
+      "op": "DUP2",
+      "path": "26",
+      "statement": 5
+    },
+    "300": {
+      "fn": "Math.min",
+      "offset": [
+        483,
+        484
+      ],
+      "op": "DUP4",
+      "path": "26"
+    },
+    "301": {
+      "branch": 7,
+      "fn": "Math.min",
+      "offset": [
+        483,
+        488
+      ],
+      "op": "LT",
+      "path": "26"
+    },
+    "302": {
+      "fn": "Math.min",
+      "offset": [
+        483,
+        496
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0x121"
+    },
+    "305": {
+      "branch": 7,
+      "fn": "Math.min",
+      "offset": [
+        483,
+        496
+      ],
+      "op": "JUMPI",
+      "path": "26"
+    },
+    "306": {
+      "fn": "Math.min",
+      "offset": [
+        495,
+        496
+      ],
+      "op": "DUP2",
+      "path": "26"
+    },
+    "307": {
+      "fn": "Math.min",
+      "offset": [
+        483,
+        496
+      ],
+      "op": "PUSH2",
+      "path": "26",
+      "value": "0xCD"
+    },
+    "310": {
+      "fn": "Math.min",
+      "offset": [
+        483,
+        496
+      ],
+      "op": "JUMP",
+      "path": "26"
+    }
+  },
+  "sha1": "ffc6bad4374452082d2e4d87f41a063fed87dd79",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"../math/Math.sol\";\n\ncontract MathMock {\n    function max(uint256 a, uint256 b) public pure returns (uint256) {\n        return Math.max(a, b);\n    }\n\n    function min(uint256 a, uint256 b) public pure returns (uint256) {\n        return Math.min(a, b);\n    }\n\n    function average(uint256 a, uint256 b) public pure returns (uint256) {\n        return Math.average(a, b);\n    }\n}\n",
+  "sourceMap": "94:355:73:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/openzeppelin-contracts@3.4.0/contracts/mocks/MathMock.sol",
+  "type": "contract"
+}
