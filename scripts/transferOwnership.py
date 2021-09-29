@@ -23,5 +23,6 @@ def main():
     admin = accounts.load('kyle_personal')
     
     for pool in pools:
+        cont = 
         pool.setDevAddress(mobius_sig, {"from": admin})
         pool.transferOwnership(mobius_sig, {"from": admin})
