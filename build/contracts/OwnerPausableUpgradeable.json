@@ -1,0 +1,681 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Paused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Unpaused",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
+    "1": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+    "2": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
+    "3": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
+    "4": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
+    "8": "contracts/OwnerPausableUpgradeable.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/OwnerPausableUpgradeable.sol",
+    "exportedSymbols": {
+      "OwnerPausableUpgradeable": [
+        3873
+      ]
+    },
+    "id": 3874,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3826,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:8"
+      },
+      {
+        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
+        "file": "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
+        "id": 3827,
+        "nodeType": "ImportDirective",
+        "scope": 3874,
+        "sourceUnit": 8430,
+        "src": "58:103:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
+        "file": "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
+        "id": 3828,
+        "nodeType": "ImportDirective",
+        "scope": 3874,
+        "sourceUnit": 8543,
+        "src": "162:103:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3830,
+              "name": "OwnableUpgradeable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8429,
+              "src": "518:18:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_OwnableUpgradeable_$8429",
+                "typeString": "contract OwnableUpgradeable"
+              }
+            },
+            "id": 3831,
+            "nodeType": "InheritanceSpecifier",
+            "src": "518:18:8"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3832,
+              "name": "PausableUpgradeable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8542,
+              "src": "542:19:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PausableUpgradeable_$8542",
+                "typeString": "contract PausableUpgradeable"
+              }
+            },
+            "id": 3833,
+            "nodeType": "InheritanceSpecifier",
+            "src": "542:19:8"
+          }
+        ],
+        "contractDependencies": [
+          8429,
+          8542,
+          9654,
+          9699
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 3829,
+          "nodeType": "StructuredDocumentation",
+          "src": "268:199:8",
+          "text": " @title OwnerPausable\n @notice An ownable contract allows the owner to pause and unpause the\n contract without a delay.\n @dev Only methods using the provided modifiers will be paused."
+        },
+        "fullyImplemented": true,
+        "id": 3873,
+        "linearizedBaseContracts": [
+          3873,
+          8542,
+          8429,
+          9699,
+          9654
+        ],
+        "name": "OwnerPausableUpgradeable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3847,
+              "nodeType": "Block",
+              "src": "621:116:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3838,
+                      "name": "__Context_init_unchained",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9674,
+                      "src": "631:24:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 3839,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "631:26:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3840,
+                  "nodeType": "ExpressionStatement",
+                  "src": "631:26:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3841,
+                      "name": "__Ownable_init_unchained",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8351,
+                      "src": "667:24:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 3842,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "667:26:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3843,
+                  "nodeType": "ExpressionStatement",
+                  "src": "667:26:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3844,
+                      "name": "__Pausable_init_unchained",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8473,
+                      "src": "703:25:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 3845,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "703:27:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3846,
+                  "nodeType": "ExpressionStatement",
+                  "src": "703:27:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3848,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 3836,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 3835,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 9637,
+                  "src": "609:11:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "609:11:8"
+              }
+            ],
+            "name": "__OwnerPausable_init",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3834,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "597:2:8"
+            },
+            "returnParameters": {
+              "id": 3837,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "621:0:8"
+            },
+            "scope": 3873,
+            "src": "568:169:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 3859,
+              "nodeType": "Block",
+              "src": "856:45:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3854,
+                        "name": "PausableUpgradeable",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8542,
+                        "src": "866:19:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_PausableUpgradeable_$8542_$",
+                          "typeString": "type(contract PausableUpgradeable)"
+                        }
+                      },
+                      "id": 3856,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_pause",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 8521,
+                      "src": "866:26:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 3857,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "866:28:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3858,
+                  "nodeType": "ExpressionStatement",
+                  "src": "866:28:8"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3849,
+              "nodeType": "StructuredDocumentation",
+              "src": "743:72:8",
+              "text": " @notice Pause the contract. Revert if already paused."
+            },
+            "functionSelector": "8456cb59",
+            "id": 3860,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 3852,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 3851,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8374,
+                  "src": "846:9:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "846:9:8"
+              }
+            ],
+            "name": "pause",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3850,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "834:2:8"
+            },
+            "returnParameters": {
+              "id": 3853,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "856:0:8"
+            },
+            "scope": 3873,
+            "src": "820:81:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 3871,
+              "nodeType": "Block",
+              "src": "1026:47:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3866,
+                        "name": "PausableUpgradeable",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8542,
+                        "src": "1036:19:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_PausableUpgradeable_$8542_$",
+                          "typeString": "type(contract PausableUpgradeable)"
+                        }
+                      },
+                      "id": 3868,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_unpause",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 8537,
+                      "src": "1036:28:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 3869,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1036:30:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3870,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1036:30:8"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3861,
+              "nodeType": "StructuredDocumentation",
+              "src": "907:76:8",
+              "text": " @notice Unpause the contract. Revert if already unpaused."
+            },
+            "functionSelector": "3f4ba83a",
+            "id": 3872,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 3864,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 3863,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8374,
+                  "src": "1016:9:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1016:9:8"
+              }
+            ],
+            "name": "unpause",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3862,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1004:2:8"
+            },
+            "returnParameters": {
+              "id": 3865,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1026:0:8"
+            },
+            "scope": 3873,
+            "src": "988:85:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3874,
+        "src": "468:607:8"
+      }
+    ],
+    "src": "33:1042:8"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12+commit.27d51765"
+  },
+  "contractName": "OwnerPausableUpgradeable",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [
+    "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/AddressUpgradeable",
+    "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/ContextUpgradeable",
+    "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/Initializable",
+    "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/OwnableUpgradeable",
+    "OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/PausableUpgradeable"
+  ],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "details": "Only methods using the provided modifiers will be paused.",
+    "kind": "dev",
+    "methods": {
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "pause()": {
+        "notice": "Pause the contract. Revert if already paused."
+      },
+      "paused()": {
+        "details": "Returns true if the contract is paused, and false otherwise."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "unpause()": {
+        "notice": "Unpause the contract. Revert if already unpaused."
+      }
+    },
+    "notice": "An ownable contract allows the owner to pause and unpause the contract without a delay.",
+    "title": "OwnerPausable",
+    "version": 1
+  },
+  "offset": [
+    468,
+    1075
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "0c60eaa8b2fd39b640268a193c9264153314549f",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\nimport 'OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol';\nimport 'OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol';\n\n\n/**\n * @title OwnerPausable\n * @notice An ownable contract allows the owner to pause and unpause the\n * contract without a delay.\n * @dev Only methods using the provided modifiers will be paused.\n */\nabstract contract OwnerPausableUpgradeable is\n    OwnableUpgradeable,\n    PausableUpgradeable\n{\n    function __OwnerPausable_init() internal initializer {\n        __Context_init_unchained();\n        __Ownable_init_unchained();\n        __Pausable_init_unchained();\n    }\n\n    /**\n     * @notice Pause the contract. Revert if already paused.\n     */\n    function pause() external onlyOwner {\n        PausableUpgradeable._pause();\n    }\n\n    /**\n     * @notice Unpause the contract. Revert if already unpaused.\n     */\n    function unpause() external onlyOwner {\n        PausableUpgradeable._unpause();\n    }\n}",
+  "sourceMap": "",
+  "sourcePath": "contracts/OwnerPausableUpgradeable.sol",
+  "type": "contract"
+}
