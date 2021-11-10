@@ -28,21 +28,8 @@ lpAmount = 0.085338250711358822 * 10 ** 18
 def main():
     network.gas_limit(8000000)
     # admin = accounts.load('kyle_personal')
-    add = "0xE0F2cc70E52f05eDb383313393d88Df2937DA55a"
     
-    swap = Swap.at(SWAP_ADDRESS)
-    coins = [interface.ERC20(addr) for addr in COINS]
-    lp = LPToken.at(LP)
-    print(lp)
-    
-    # for coin in coins:
-    #     coin.approve(swap.address, .05 * 10 ** 18, {"from": admin})
-    # lp.approve(swap.address, lpAmount, {"from": admin})
-    
-    # swap.removeLiquidity(lpAmount, [.047* 10 ** 18, .047 * 10 ** 8], '1000000000000000000000000000000000000', {'from': admin})
-    print(swap.getVirtualPrice())
-    # print(swap.getBalances())
-    # print(lp.balanceOf(add))
-    # print(swap.calculateRemoveLiquidity(add, lp.balanceOf(add)))
-    # swap.addLiquidity([.05 * 10 ** 16, .05 * 10 ** 6], 0, '1000000000000000000000000000000000000', {'from': admin})
-    
+    swap = Swap.get_verification_info()
+
+    with open('swapdata.json', 'w+') as f:
+        json.dump(swap, f)
