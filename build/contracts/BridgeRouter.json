@@ -30,21 +30,21 @@
     }
   ],
   "allSourcePaths": {
-    "0": "contracts/OpticsBridgeRouter.sol"
+    "10": "contracts/OpticsBridgeRouter.sol"
   },
   "ast": {
     "absolutePath": "contracts/OpticsBridgeRouter.sol",
     "exportedSymbols": {
       "BridgeRouter": [
-        15
+        5485
       ]
     },
-    "id": 16,
+    "id": 5486,
     "license": "MIT OR Apache-2.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 5471,
         "literals": [
           "solidity",
           ">=",
@@ -52,7 +52,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "134:25:0"
+        "src": "134:25:10"
       },
       {
         "abstract": false,
@@ -60,48 +60,48 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 2,
+          "id": 5472,
           "nodeType": "StructuredDocumentation",
-          "src": "161:30:0",
+          "src": "161:30:10",
           "text": " @title BridgeRouter"
         },
         "fullyImplemented": false,
-        "id": 15,
+        "id": 5485,
         "linearizedBaseContracts": [
-          15
+          5485
         ],
         "name": "BridgeRouter",
-        "nameLocation": "202:12:0",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
+            "body": null,
             "documentation": {
-              "id": 3,
+              "id": 5473,
               "nodeType": "StructuredDocumentation",
-              "src": "265:246:0",
+              "src": "265:246:10",
               "text": " @notice Send tokens to a recipient on a remote chain\n @param _token The token address\n @param _amount The token amount\n @param _destination The destination domain\n @param _recipient The recipient address"
             },
             "functionSelector": "1cabf08f",
-            "id": 14,
+            "id": 5484,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "send",
-            "nameLocation": "525:4:0",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
-              "id": 12,
+              "id": 5482,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5,
+                  "id": 5475,
                   "mutability": "mutable",
                   "name": "_token",
-                  "nameLocation": "547:6:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 14,
-                  "src": "539:14:0",
+                  "overrides": null,
+                  "scope": 5484,
+                  "src": "539:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -109,27 +109,28 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4,
+                    "id": 5474,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "539:7:0",
+                    "src": "539:7:10",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
+                  "value": null,
                   "visibility": "internal"
                 },
                 {
                   "constant": false,
-                  "id": 7,
+                  "id": 5477,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "571:7:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 14,
-                  "src": "563:15:0",
+                  "overrides": null,
+                  "scope": 5484,
+                  "src": "563:15:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -137,26 +138,27 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6,
+                    "id": 5476,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "563:7:0",
+                    "src": "563:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
+                  "value": null,
                   "visibility": "internal"
                 },
                 {
                   "constant": false,
-                  "id": 9,
+                  "id": 5479,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "595:12:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 14,
-                  "src": "588:19:0",
+                  "overrides": null,
+                  "scope": 5484,
+                  "src": "588:19:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -164,26 +166,27 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 8,
+                    "id": 5478,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "588:6:0",
+                    "src": "588:6:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint32",
                       "typeString": "uint32"
                     }
                   },
+                  "value": null,
                   "visibility": "internal"
                 },
                 {
                   "constant": false,
-                  "id": 11,
+                  "id": 5481,
                   "mutability": "mutable",
                   "name": "_recipient",
-                  "nameLocation": "625:10:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 14,
-                  "src": "617:18:0",
+                  "overrides": null,
+                  "scope": 5484,
+                  "src": "617:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -191,39 +194,39 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 10,
+                    "id": 5480,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "617:7:0",
+                    "src": "617:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
+                  "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "529:112:0"
+              "src": "529:112:10"
             },
             "returnParameters": {
-              "id": 13,
+              "id": 5483,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "650:0:0"
+              "src": "650:0:10"
             },
-            "scope": 15,
-            "src": "516:135:0",
+            "scope": 5485,
+            "src": "516:135:10",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 16,
-        "src": "192:461:0",
-        "usedErrors": []
+        "scope": 5486,
+        "src": "192:461:10"
       }
     ],
-    "src": "134:519:0"
+    "src": "134:519:10"
   },
   "bytecode": "",
   "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
@@ -233,7 +236,7 @@
       "enabled": true,
       "runs": 200
     },
-    "version": "0.8.7+commit.e28d00a7"
+    "version": "0.6.12+commit.27d51765"
   },
   "contractName": "BridgeRouter",
   "coverageMap": {
