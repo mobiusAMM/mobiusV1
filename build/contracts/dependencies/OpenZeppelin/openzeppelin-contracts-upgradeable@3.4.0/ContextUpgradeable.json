@@ -1,16 +1,14 @@
 {
   "abi": [],
   "allSourcePaths": {
-    "1": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
-    "2": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
-    "3": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol"
+    "1": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+    "2": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
+    "3": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol"
   },
   "ast": {
-    "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
+    "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
     "exportedSymbols": {
-      "ContextUpgradeable": [
-        9699
-      ]
+      "ContextUpgradeable": [9699]
     },
     "id": 9700,
     "license": "MIT",
@@ -18,20 +16,12 @@
     "nodes": [
       {
         "id": 9656,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".0",
-          "<",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.6", ".0", "<", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:31:3"
       },
       {
-        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+        "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
         "file": "../proxy/Initializable.sol",
         "id": 9657,
         "nodeType": "ImportDirective",
@@ -63,17 +53,12 @@
             "src": "643:13:3"
           }
         ],
-        "contractDependencies": [
-          9654
-        ],
+        "contractDependencies": [9654],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 9699,
-        "linearizedBaseContracts": [
-          9699,
-          9654
-        ],
+        "linearizedBaseContracts": [9699, 9654],
         "name": "ContextUpgradeable",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -524,15 +509,12 @@
     "methods": {},
     "version": 1
   },
-  "offset": [
-    603,
-    1201
-  ],
+  "offset": [603, 1201],
   "opcodes": "",
   "pcMap": {},
   "sha1": "1e190a1ab3a1a512ede6c80cb7e12b432df1eeab",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\nimport \"../proxy/Initializable.sol\";\n\n/*\n * @dev Provides information about the current execution context, including the\n * sender of the transaction and its data. While these are generally available\n * via msg.sender and msg.data, they should not be accessed in such a direct\n * manner, since when dealing with GSN meta-transactions the account sending and\n * paying for execution may not be the actual sender (as far as an application\n * is concerned).\n *\n * This contract is only required for intermediate, library-like contracts.\n */\nabstract contract ContextUpgradeable is Initializable {\n    function __Context_init() internal initializer {\n        __Context_init_unchained();\n    }\n\n    function __Context_init_unchained() internal initializer {\n    }\n    function _msgSender() internal view virtual returns (address payable) {\n        return msg.sender;\n    }\n\n    function _msgData() internal view virtual returns (bytes memory) {\n        this; // silence state mutability warning without generating bytecode - see https://github.com/ethereum/solidity/issues/2691\n        return msg.data;\n    }\n    uint256[50] private __gap;\n}\n",
   "sourceMap": "",
-  "sourcePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
+  "sourcePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
   "type": "contract"
 }

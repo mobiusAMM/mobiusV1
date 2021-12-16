@@ -41,17 +41,15 @@
     }
   ],
   "allSourcePaths": {
-    "1": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
-    "2": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
-    "3": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
-    "4": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol"
+    "1": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+    "2": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
+    "3": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
+    "4": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol"
   },
   "ast": {
-    "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
+    "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
     "exportedSymbols": {
-      "PausableUpgradeable": [
-        8542
-      ]
+      "PausableUpgradeable": [8542]
     },
     "id": 8543,
     "license": "MIT",
@@ -59,20 +57,12 @@
     "nodes": [
       {
         "id": 8431,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".0",
-          "<",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.6", ".0", "<", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:31:4"
       },
       {
-        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
+        "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
         "file": "./ContextUpgradeable.sol",
         "id": 8432,
         "nodeType": "ImportDirective",
@@ -83,7 +73,7 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+        "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
         "file": "../proxy/Initializable.sol",
         "id": 8433,
         "nodeType": "ImportDirective",
@@ -133,10 +123,7 @@
             "src": "635:18:4"
           }
         ],
-        "contractDependencies": [
-          9654,
-          9699
-        ],
+        "contractDependencies": [9654, 9699],
         "contractKind": "contract",
         "documentation": {
           "id": 8434,
@@ -146,11 +133,7 @@
         },
         "fullyImplemented": true,
         "id": 8542,
-        "linearizedBaseContracts": [
-          8542,
-          9699,
-          9654
-        ],
+        "linearizedBaseContracts": [8542, 9699, 9654],
         "name": "PausableUpgradeable",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -696,10 +679,7 @@
                       "id": 8485,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1610:7:4",
                       "typeDescriptions": {
@@ -827,10 +807,7 @@
                       "id": 8497,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1876:7:4",
                       "typeDescriptions": {
@@ -1353,15 +1330,12 @@
     },
     "version": 1
   },
-  "offset": [
-    579,
-    2467
-  ],
+  "offset": [579, 2467],
   "opcodes": "",
   "pcMap": {},
   "sha1": "c5cb4815ffae05760cbba56d249b0af9efb89045",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"./ContextUpgradeable.sol\";\nimport \"../proxy/Initializable.sol\";\n\n/**\n * @dev Contract module which allows children to implement an emergency stop\n * mechanism that can be triggered by an authorized account.\n *\n * This module is used through inheritance. It will make available the\n * modifiers `whenNotPaused` and `whenPaused`, which can be applied to\n * the functions of your contract. Note that they will not be pausable by\n * simply including this module, only once the modifiers are put in place.\n */\nabstract contract PausableUpgradeable is Initializable, ContextUpgradeable {\n    /**\n     * @dev Emitted when the pause is triggered by `account`.\n     */\n    event Paused(address account);\n\n    /**\n     * @dev Emitted when the pause is lifted by `account`.\n     */\n    event Unpaused(address account);\n\n    bool private _paused;\n\n    /**\n     * @dev Initializes the contract in unpaused state.\n     */\n    function __Pausable_init() internal initializer {\n        __Context_init_unchained();\n        __Pausable_init_unchained();\n    }\n\n    function __Pausable_init_unchained() internal initializer {\n        _paused = false;\n    }\n\n    /**\n     * @dev Returns true if the contract is paused, and false otherwise.\n     */\n    function paused() public view virtual returns (bool) {\n        return _paused;\n    }\n\n    /**\n     * @dev Modifier to make a function callable only when the contract is not paused.\n     *\n     * Requirements:\n     *\n     * - The contract must not be paused.\n     */\n    modifier whenNotPaused() {\n        require(!paused(), \"Pausable: paused\");\n        _;\n    }\n\n    /**\n     * @dev Modifier to make a function callable only when the contract is paused.\n     *\n     * Requirements:\n     *\n     * - The contract must be paused.\n     */\n    modifier whenPaused() {\n        require(paused(), \"Pausable: not paused\");\n        _;\n    }\n\n    /**\n     * @dev Triggers stopped state.\n     *\n     * Requirements:\n     *\n     * - The contract must not be paused.\n     */\n    function _pause() internal virtual whenNotPaused {\n        _paused = true;\n        emit Paused(_msgSender());\n    }\n\n    /**\n     * @dev Returns to normal state.\n     *\n     * Requirements:\n     *\n     * - The contract must be paused.\n     */\n    function _unpause() internal virtual whenPaused {\n        _paused = false;\n        emit Unpaused(_msgSender());\n    }\n    uint256[49] private __gap;\n}\n",
   "sourceMap": "",
-  "sourcePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
+  "sourcePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/PausableUpgradeable.sol",
   "type": "contract"
 }

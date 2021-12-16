@@ -1,15 +1,13 @@
 {
   "abi": [],
   "allSourcePaths": {
-    "1": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
-    "2": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol"
+    "1": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+    "2": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol"
   },
   "ast": {
-    "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+    "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
     "exportedSymbols": {
-      "Initializable": [
-        9654
-      ]
+      "Initializable": [9654]
     },
     "id": 9655,
     "license": "MIT",
@@ -17,20 +15,12 @@
     "nodes": [
       {
         "id": 9590,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".24",
-          "<",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".24", "<", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "79:32:1"
       },
       {
-        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
+        "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
         "file": "../utils/AddressUpgradeable.sol",
         "id": 9591,
         "nodeType": "ImportDirective",
@@ -53,9 +43,7 @@
         },
         "fullyImplemented": true,
         "id": 9654,
-        "linearizedBaseContracts": [
-          9654
-        ],
+        "linearizedBaseContracts": [9654],
         "name": "Initializable",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -281,10 +269,7 @@
                       "id": 9601,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1504:7:1",
                       "typeDescriptions": {
@@ -312,9 +297,7 @@
                   "src": "1504:109:1"
                 },
                 {
-                  "assignments": [
-                    9613
-                  ],
+                  "assignments": [9613],
                   "declarations": [
                     {
                       "constant": false,
@@ -856,15 +839,12 @@
     },
     "version": 1
   },
-  "offset": [
-    1095,
-    2077
-  ],
+  "offset": [1095, 2077],
   "opcodes": "",
   "pcMap": {},
   "sha1": "a66236cbb9ae4df1adf8756f84065a668c196156",
   "source": "// SPDX-License-Identifier: MIT\n\n// solhint-disable-next-line compiler-version\npragma solidity >=0.4.24 <0.8.0;\n\nimport \"../utils/AddressUpgradeable.sol\";\n\n/**\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\n * behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\n *\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\n * possible by providing the encoded function call as the `_data` argument to {UpgradeableProxy-constructor}.\n *\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\n */\nabstract contract Initializable {\n\n    /**\n     * @dev Indicates that the contract has been initialized.\n     */\n    bool private _initialized;\n\n    /**\n     * @dev Indicates that the contract is in the process of being initialized.\n     */\n    bool private _initializing;\n\n    /**\n     * @dev Modifier to protect an initializer function from being invoked twice.\n     */\n    modifier initializer() {\n        require(_initializing || _isConstructor() || !_initialized, \"Initializable: contract is already initialized\");\n\n        bool isTopLevelCall = !_initializing;\n        if (isTopLevelCall) {\n            _initializing = true;\n            _initialized = true;\n        }\n\n        _;\n\n        if (isTopLevelCall) {\n            _initializing = false;\n        }\n    }\n\n    /// @dev Returns true if and only if the function is running in the constructor\n    function _isConstructor() private view returns (bool) {\n        return !AddressUpgradeable.isContract(address(this));\n    }\n}\n",
   "sourceMap": "",
-  "sourcePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+  "sourcePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
   "type": "contract"
 }

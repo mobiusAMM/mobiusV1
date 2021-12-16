@@ -54,17 +54,15 @@
     }
   ],
   "allSourcePaths": {
-    "0": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
-    "1": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
-    "2": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
-    "3": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol"
+    "0": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
+    "1": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+    "2": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/AddressUpgradeable.sol",
+    "3": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol"
   },
   "ast": {
-    "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
+    "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
     "exportedSymbols": {
-      "OwnableUpgradeable": [
-        8429
-      ]
+      "OwnableUpgradeable": [8429]
     },
     "id": 8430,
     "license": "MIT",
@@ -72,20 +70,12 @@
     "nodes": [
       {
         "id": 8300,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".0",
-          "<",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.6", ".0", "<", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "33:31:0"
       },
       {
-        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
+        "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/utils/ContextUpgradeable.sol",
         "file": "../utils/ContextUpgradeable.sol",
         "id": 8301,
         "nodeType": "ImportDirective",
@@ -96,7 +86,7 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
+        "absolutePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/proxy/Initializable.sol",
         "file": "../proxy/Initializable.sol",
         "id": 8302,
         "nodeType": "ImportDirective",
@@ -146,10 +136,7 @@
             "src": "695:18:0"
           }
         ],
-        "contractDependencies": [
-          9654,
-          9699
-        ],
+        "contractDependencies": [9654, 9699],
         "contractKind": "contract",
         "documentation": {
           "id": 8303,
@@ -159,11 +146,7 @@
         },
         "fullyImplemented": true,
         "id": 8429,
-        "linearizedBaseContracts": [
-          8429,
-          9699,
-          9654
-        ],
+        "linearizedBaseContracts": [8429, 9699, 9654],
         "name": "OwnableUpgradeable",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -409,9 +392,7 @@
               "src": "1124:135:0",
               "statements": [
                 {
-                  "assignments": [
-                    8334
-                  ],
+                  "assignments": [8334],
                   "declarations": [
                     {
                       "constant": false,
@@ -910,10 +891,7 @@
                       "id": 8363,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1539:7:0",
                       "typeDescriptions": {
@@ -1392,10 +1370,7 @@
                       "id": 8404,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "2341:7:0",
                       "typeDescriptions": {
@@ -1725,15 +1700,12 @@
     },
     "version": 1
   },
-  "offset": [
-    640,
-    2534
-  ],
+  "offset": [640, 2534],
   "opcodes": "",
   "pcMap": {},
   "sha1": "17afed429e62b310e385c94b116776d1ff9b5a39",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"../utils/ContextUpgradeable.sol\";\nimport \"../proxy/Initializable.sol\";\n/**\n * @dev Contract module which provides a basic access control mechanism, where\n * there is an account (an owner) that can be granted exclusive access to\n * specific functions.\n *\n * By default, the owner account will be the one that deploys the contract. This\n * can later be changed with {transferOwnership}.\n *\n * This module is used through inheritance. It will make available the modifier\n * `onlyOwner`, which can be applied to your functions to restrict their use to\n * the owner.\n */\nabstract contract OwnableUpgradeable is Initializable, ContextUpgradeable {\n    address private _owner;\n\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\n\n    /**\n     * @dev Initializes the contract setting the deployer as the initial owner.\n     */\n    function __Ownable_init() internal initializer {\n        __Context_init_unchained();\n        __Ownable_init_unchained();\n    }\n\n    function __Ownable_init_unchained() internal initializer {\n        address msgSender = _msgSender();\n        _owner = msgSender;\n        emit OwnershipTransferred(address(0), msgSender);\n    }\n\n    /**\n     * @dev Returns the address of the current owner.\n     */\n    function owner() public view virtual returns (address) {\n        return _owner;\n    }\n\n    /**\n     * @dev Throws if called by any account other than the owner.\n     */\n    modifier onlyOwner() {\n        require(owner() == _msgSender(), \"Ownable: caller is not the owner\");\n        _;\n    }\n\n    /**\n     * @dev Leaves the contract without owner. It will not be possible to call\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\n     *\n     * NOTE: Renouncing ownership will leave the contract without an owner,\n     * thereby removing any functionality that is only available to the owner.\n     */\n    function renounceOwnership() public virtual onlyOwner {\n        emit OwnershipTransferred(_owner, address(0));\n        _owner = address(0);\n    }\n\n    /**\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\n     * Can only be called by the current owner.\n     */\n    function transferOwnership(address newOwner) public virtual onlyOwner {\n        require(newOwner != address(0), \"Ownable: new owner is the zero address\");\n        emit OwnershipTransferred(_owner, newOwner);\n        _owner = newOwner;\n    }\n    uint256[49] private __gap;\n}\n",
   "sourceMap": "",
-  "sourcePath": "/Users/kylescott/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
+  "sourcePath": "/Users/dylma/.brownie/packages/OpenZeppelin/openzeppelin-contracts-upgradeable@3.4.0/contracts/access/OwnableUpgradeable.sol",
   "type": "contract"
 }
