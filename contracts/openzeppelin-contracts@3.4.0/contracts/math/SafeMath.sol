@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 
+//solidity version wrong (compile issue)
 pragma solidity >=0.6.0 <0.8.0;
 
 /**
